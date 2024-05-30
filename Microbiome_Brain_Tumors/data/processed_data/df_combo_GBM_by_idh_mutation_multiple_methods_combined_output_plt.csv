@@ -1,0 +1,129 @@
+Species,log2fc,qval,groupings,sample_type,method
+Alistipes onderdonkii,-3.98,< 2e-16,Wild,Stool,Maaslin2
+Escherichia coli,-3.51,< 2e-16,Wild,Stool,Maaslin2
+Haemophilus parainfluenzae,-2.54,< 2e-16,Wild,Stool,Maaslin2
+Enterococcus faecalis,-10.5,< 2e-16,Wild,Stool,Maaslin2
+Lactococcus lactis,-3.26,< 2e-16,Wild,Stool,Maaslin2
+Holdemania filiformis,-5.98,< 2e-16,Wild,Stool,Maaslin2
+Longicatena caecimuris,-2.98,< 2e-16,Wild,Stool,Maaslin2
+Hydrogeniiclostidium mannosilyticum,-4.64,< 2e-16,Wild,Stool,Maaslin2
+Anaerotruncus colihominis,-3.93,< 2e-16,Wild,Stool,Maaslin2
+Christensenellaceae bacterium,-2.09,< 2e-16,Wild,Stool,Maaslin2
+Blautia hydrogenotrophica,-2.49,< 2e-16,Wild,Stool,Maaslin2
+Sellimonas intestinalis,-2.22,< 2e-16,Wild,Stool,Maaslin2
+Ruminococcus gnavus,-3.49,< 2e-16,Wild,Stool,Maaslin2
+Clostridium sp AM33 3,2.9,< 2e-16,Mutant,Stool,Maaslin2
+Roseburia faecis,-3.76,< 2e-16,Wild,Stool,Maaslin2
+Eisenbergiella tayi,4.94,< 2e-16,Mutant,Stool,Maaslin2
+Veillonella dispar,-5.22,< 2e-16,Wild,Stool,Maaslin2
+Collinsella aerofaciens,-2.9,< 2e-16,Wild,Stool,Maaslin2
+Actinomyces graevenitzii,3.46,< 2e-16,Mutant,Stool,Maaslin2
+Clostridium symbiosum,17.16,7.1e-08,Mutant,Stool,Maaslin2
+Bacteroides cellulosilyticus,18.9,0.00139,Mutant,Stool,Maaslin2
+Clostridia unclassified SGB4121,11.51,0.00307,Mutant,Stool,Maaslin2
+Faecalibacillus intestinalis,15.99,0.00707,Mutant,Stool,Maaslin2
+Candidatus Borkfalkia ceftriaxoniphila,14.07,0.03065,Mutant,Stool,Maaslin2
+Enterocloster citroniae,-5.9,0.05343,Wild,Stool,Maaslin2
+Lacrimispora amygdalina,9.08,0.07177,Mutant,Stool,Maaslin2
+Ruminococcaceae unclassified SGB15234,13.03,0.07324,Mutant,Stool,Maaslin2
+Blautia caecimuris,-7.44,0.10210,Wild,Stool,Maaslin2
+Roseburia sp AF02 12,9.48,0.10650,Mutant,Stool,Maaslin2
+Ruminococcaceae bacterium,3.8,0.18783,Mutant,Stool,Maaslin2
+Streptococcus thermophilus,3.17,0.22613,Mutant,Stool,Maaslin2
+Paraprevotella clara,-4.91,< 2e-16,Wild,Stool,AncomBC
+Bacteroides cellulosilyticus,9.72,0.05011,Mutant,Stool,AncomBC
+Alistipes communis,6.63,0.09598,Mutant,Stool,AncomBC
+Alistipes indistinctus,-2.34,< 2e-16,Wild,Stool,AncomBC
+Streptococcus anginosus,-3.74,< 2e-16,Wild,Stool,AncomBC
+Anaerotruncus massiliensis,3.16,< 2e-16,Mutant,Stool,AncomBC
+Dysosmobacter sp NSJ 60,5.83,0.16171,Mutant,Stool,AncomBC
+Clostridiales bacterium Choco116,-4.14,< 2e-16,Wild,Stool,AncomBC
+Dorea sp AF24 7LB,4.94,< 2e-16,Mutant,Stool,AncomBC
+Enterocloster clostridioformis,-10.49,0.00056,Wild,Stool,AncomBC
+Clostridium sp AM49 4BH,2.52,< 2e-16,Mutant,Stool,AncomBC
+Clostridium sp AF36 4,7.36,0.12025,Mutant,Stool,AncomBC
+Roseburia hominis,7.2,0.13419,Mutant,Stool,AncomBC
+Eubacterium ramulus,7.31,0.01986,Mutant,Stool,AncomBC
+Veillonella parvula,-5.15,< 2e-16,Wild,Stool,AncomBC
+Dialister invisus,-6.57,< 2e-16,Wild,Stool,AncomBC
+Peptococcaceae bacterium,-2.51,< 2e-16,Wild,Stool,AncomBC
+Methanobrevibacter smithii,2.7,< 2e-16,Mutant,Stool,AncomBC
+LKT p  Actinobacteria,-3.62,< 2e-16,Wild,Stool,AncomBC
+Actinomyces sp ICM47,-3.83,< 2e-16,Wild,Stool,AncomBC
+Bifidobacterium adolescentis,-9.55,0.00136,Wild,Stool,AncomBC
+Bacteroides cellulosilyticus,8.31,6.7e-05,Mutant,Stool,AncomBC2
+Enterococcus faecium,-4.72,0.03911,Wild,Stool,AncomBC2
+Enterococcus faecalis,-5.87,0.01463,Wild,Stool,AncomBC2
+Clostridiaceae bacterium OM08 6BH,-3.74,0.16203,Wild,Stool,AncomBC2
+Ruminococcus lactaris,5.65,0.00580,Mutant,Stool,AncomBC2
+Roseburia sp AF02 12,7.74,0.00047,Mutant,Stool,AncomBC2
+Bifidobacterium adolescentis,-8.27,0.02156,Wild,Stool,AncomBC2
+Bifidobacterium pseudocatenulatum,6.49,0.00326,Mutant,Stool,AncomBC2
+Prevotella maculosa,2.5,< 2e-16,Mutant,Saliva,Maaslin2
+Prevotella sp A2879,-2.31,< 2e-16,Wild,Saliva,Maaslin2
+Prevotella pleuritidis,2.15,< 2e-16,Mutant,Saliva,Maaslin2
+Capnocytophaga granulosa,-4.88,< 2e-16,Wild,Saliva,Maaslin2
+Haemophilus haemolyticus,-7.15,< 2e-16,Wild,Saliva,Maaslin2
+Eikenella corrodens,2.46,< 2e-16,Mutant,Saliva,Maaslin2
+Gemella sanguinis,-3.62,< 2e-16,Wild,Saliva,Maaslin2
+Oribacterium parvum,-6.72,< 2e-16,Wild,Saliva,Maaslin2
+Peptostreptococcus stomatis,3.61,< 2e-16,Mutant,Saliva,Maaslin2
+Selenomonas SGB5880,-3.47,< 2e-16,Wild,Saliva,Maaslin2
+Actinomyces massiliensis,-3.34,< 2e-16,Wild,Saliva,Maaslin2
+Isoptericola variabilis,-4.8,< 2e-16,Wild,Saliva,Maaslin2
+Actinomyces sp S6 Spd3,-4.85,< 2e-16,Wild,Saliva,Maaslin2
+Solobacterium SGB6833,-7.64,< 2e-16,Wild,Saliva,Maaslin2
+Streptococcus anginosus,12.71,0.00162,Mutant,Saliva,Maaslin2
+Rothia mucilaginosa,-2.97,0.01665,Wild,Saliva,Maaslin2
+Rothia dentocariosa,-3.06,0.03993,Wild,Saliva,Maaslin2
+Candidatus Saccharibacteria unclassified SGB19850,-5.81,0.04290,Wild,Saliva,Maaslin2
+Actinomyces sp ICM47,-4.73,0.05347,Wild,Saliva,Maaslin2
+Prevotella denticola,5.19,0.10430,Mutant,Saliva,Maaslin2
+Prevotella oralis,9.76,0.12400,Mutant,Saliva,Maaslin2
+Lancefieldella parvula,-3.85,0.14979,Wild,Saliva,Maaslin2
+Campylobacter concisus,-2.56,0.20660,Wild,Saliva,Maaslin2
+Prevotella conceptionensis,-5.13,0.01380,Wild,Saliva,AncomBC
+Tannerella forsythia,-2.17,< 2e-16,Wild,Saliva,AncomBC
+Lachnoanaerobaculum saburreum,-2.51,< 2e-16,Wild,Saliva,AncomBC
+TM7 phylum sp oral taxon 348,-3.13,< 2e-16,Wild,Saliva,AncomBC
+Actinomyces israelii,-3.73,< 2e-16,Wild,Saliva,AncomBC
+Prevotella veroralis,5.59,0.01663,Mutant,Saliva,AncomBC2
+Bacteroidaceae bacterium,11.28,0.00015,Mutant,Saliva,AncomBC2
+Haemophilus haemolyticus,-4.73,0.06503,Wild,Saliva,AncomBC2
+Fusobacterium nucleatum,-4.29,0.01057,Wild,Saliva,AncomBC2
+Streptococcus oralis,3.38,0.02014,Mutant,Saliva,AncomBC2
+Solobacterium SGB6833,-4.44,0.00290,Wild,Saliva,AncomBC2
+Gemella haemolysans,-6.23,0.05756,Wild,Saliva,AncomBC2
+Oribacterium parvum,-4.57,0.01849,Wild,Saliva,AncomBC2
+Candidatus Nanosynsacchari sp TM7 ANC 38 39 G1 1,-5.56,0.00133,Wild,Saliva,AncomBC2
+LKT p  Candidatus Saccharibacteria,-4.32,0.00900,Wild,Saliva,AncomBC2
+Candidatus Saccharibacteria unclassified SGB19850,-3.17,0.20391,Wild,Saliva,AncomBC2
+Actinomyces dentalis,-3.05,0.23817,Wild,Saliva,AncomBC2
+Actinomyces SGB17168,-6.08,0.00089,Wild,Saliva,AncomBC2
+Actinomyces sp ICM58,-3.67,0.21383,Wild,Saliva,AncomBC2
+Prevotella oris,-2.41,< 2e-16,Wild,Oral swab,Maaslin2
+Prevotella jejuni,2.48,< 2e-16,Mutant,Oral swab,Maaslin2
+Capnocytophaga leadbetteri,2.75,< 2e-16,Mutant,Oral swab,Maaslin2
+Capnocytophaga granulosa,-3.93,< 2e-16,Wild,Oral swab,Maaslin2
+Lautropia mirabilis,3.56,< 2e-16,Mutant,Oral swab,Maaslin2
+Neisseria sicca,3.53,< 2e-16,Mutant,Oral swab,Maaslin2
+Neisseria elongata,-4.2,< 2e-16,Wild,Oral swab,Maaslin2
+Streptococcus parasanguinis,-2.3,< 2e-16,Wild,Oral swab,Maaslin2
+Veillonella rogosae,2.89,< 2e-16,Mutant,Oral swab,Maaslin2
+Bacteroidaceae unclassified SGB1468,-2.34,< 2e-16,Wild,Oral swab,Maaslin2
+Actinomyces sp ICM47,-14.55,0.01328,Wild,Oral swab,Maaslin2
+Rothia mucilaginosa,-5.09,0.07582,Wild,Oral swab,Maaslin2
+Streptococcus sp 263 SSPC,-4.68,0.23327,Wild,Oral swab,Maaslin2
+Prevotella salivae,5.58,0.01271,Mutant,Oral swab,AncomBC
+Prevotella denticola,7,0.00991,Mutant,Oral swab,AncomBC
+Capnocytophaga ochracea,5.75,0.00096,Mutant,Oral swab,AncomBC
+Neisseria subflava,4.72,0.17280,Mutant,Oral swab,AncomBC
+Granulicatella adiacens,3.55,0.16344,Mutant,Oral swab,AncomBC
+Lancefieldella parvula,3.66,0.00924,Mutant,Oral swab,AncomBC
+Prevotella jejuni,3.69,0.15209,Mutant,Oral swab,AncomBC2
+Porphyromonas endodontalis,-5.06,0.06592,Wild,Oral swab,AncomBC2
+Porphyromonas pasteri,2.73,0.18865,Mutant,Oral swab,AncomBC2
+Capnocytophaga granulosa,-3.53,0.21814,Wild,Oral swab,AncomBC2
+Neisseria elongata,-3.99,0.21814,Wild,Oral swab,AncomBC2
+Veillonella rogosae,2.92,0.09914,Mutant,Oral swab,AncomBC2
+Actinomyces sp ICM47,-3.85,0.06592,Wild,Oral swab,AncomBC2

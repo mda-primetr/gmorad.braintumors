@@ -1,0 +1,80 @@
+#----------------------------------------------------------------------------------------------------
+# Source files
+#----------------------------------------------------------------------------------------------------
+
+source("src/Libraries.R")
+source("src/Functions.R")
+
+#----------------------------------------------------------------------------------------------------
+# Cell typing Heatmap
+#----------------------------------------------------------------------------------------------------
+
+# Order of immune cells for heatmap
+cell_order <- c(
+  "B cell-like", "Endothelial", "Ly-like", "Myeloid", "Pericyte/vSMC", "T1", "T2",
+  "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12",
+  "T13", "T14", "T15", "T16", "T17", "T18"
+)
+
+# Create vector w/ bacterial probes to remove from cell typing
+bacteria <- c(
+  "Treponema genus", "Porphyromonas genus", "Fusobacterium genus", "Prevotella intermedia",
+  "Bacteroides genus", "Parvimonas micra", "Microbial16S"
+)
+
+# Get top genes per cell type
+top_genes <- read_csv("Input_files/SMI/Glioma/Glioma_CosMx_Cell_Typing.csv") %>%
+  na.omit() %>%
+  filter(!Gene %in% bacteria) %>% # remove any bacterial probes
+  pivot_longer(cols = 2:24, values_to = "Count", names_to = "Cell") %>%
+  group_by(Cell) %>%
+  slice_max(order_by = Count, n = 5, with_ties = FALSE) %>% # Get top 5 genes per cell type
+  as.data.frame()
+
+# Add specific T/B markers for better visualization
+B_markers <- c("IGHM", "IGKC", "IGHG1/2", "JCHAIN")
+T_markers <- c("CD4")
+
+Top_genes <- top_genes$Gene %>%
+  append(B_markers, after = 0) %>%
+  append(T_markers, after = 14) %>%
+  as.data.frame() %>%
+  dplyr::rename("Gene" = ".")
+
+# Create df with counts for top genes only
+df_Cell_Typing <- read_csv("Input_files/SMI/Glioma/Glioma_CosMx_Cell_Typing_complete.csv") %>%
+  na.omit() %>%
+  filter(Gene %in% Top_genes$Gene)
+
+# Set gene order
+gene_order <- Top_genes %>%
+  filter(Gene %in% df_Cell_Typing$Gene) %>%
+  distinct(Gene, .keep_all = TRUE)
+
+# Convert to matrix
+Cell_Typing_m <- df_Cell_Typing %>%
+  column_to_rownames("Gene") %>%
+  as.matrix()
+
+# Change mode to numeric
+mode(Cell_Typing_m) <- "numeric"
+
+# Scale
+Cell_Typing_mat <- t(scale(t(Cell_Typing_m)))
+
+# Set color for bar
+col <- colorRamp2(c(-2, 0, 2), c("darkblue", "white", "darkred"))
+
+# Plot heatmap
+pdf("Figures/FigureS3-2.pdf", width = 3.1, height = 8.1)
+ht <- Heatmap(Cell_Typing_mat,
+  name = "z-score", column_title = " ", column_title_gp = gpar(fontsize = 7, fontface = "bold"),
+  col = col, rect_gp = gpar(col = "white", lwd = 0.7), column_names_gp = gpar(fontsize = 7),
+  column_order = cell_order, row_order = gene_order$Gene,
+  row_title_rot = 0, show_column_names = TRUE, border = TRUE, row_names_gp = gpar(fontsize = 5),
+  row_gap = unit(1.6, "mm"), row_names_side = "left", show_row_dend = TRUE,
+  heatmap_legend_param = list(direction = "vertical", column_names_side = "bottom")
+)
+draw(ht, merge_legend = TRUE, heatmap_legend_side = "right", annotation_legend_side = "right")
+dev.off()
+

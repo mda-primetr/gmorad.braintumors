@@ -1,0 +1,247 @@
+{
+  "Name": "Human Procode NGS Core Protein", 
+  "Version": 1.0, 
+  "AnalyteType": "Protein", 
+  "MinArea": 1600, 
+  "MinNuclei": 20, 
+  "Compatibility": "001", 
+  "Date": "231020", 
+  "ReporterSpace": "1", 
+  "ProbeGroups": [
+    {
+      "Name": "ER Control", 
+      "Targets": [
+        "Calreticulin"
+      ]
+    }, 
+    {
+      "Name": "Mitochondrial Control", 
+      "Targets": [
+        "TOMM20"
+      ]
+    }, 
+    {
+      "Name": "Normalization", 
+      "Targets": [
+        "GAPDH", 
+        "Histone H3", 
+        "RPS6"
+      ]
+    }, 
+    {
+      "Name": "Background", 
+      "Targets": [
+        "Rb IgG", 
+        "Ms IgG1", 
+        "Ms IgG2b", 
+        "Rt IgG2a", 
+        "Hmr IgG"
+      ]
+    }
+  ], 
+  "ProbeGroupVersion": 1.0, 
+  "Targets": [
+    {
+      "GeneID": [
+        8352, 
+        8353, 
+        8354, 
+        8355, 
+        8356, 
+        8357, 
+        8358, 
+        8968, 
+        8350, 
+        8351
+      ], 
+      "AnalyteType": "Protein", 
+      "DisplayName": "Histone H3", 
+      "SystematicName": [
+        "H3C2", 
+        "H3C11", 
+        "H3C10", 
+        "H3C3", 
+        "H3C12", 
+        "H3C1", 
+        "H3C6", 
+        "H3C7", 
+        "H3C4", 
+        "H3C8"
+      ], 
+      "CodeClass": "Control", 
+      "RTS_ID": "RTS0049298", 
+      "RTS_Seq": "ATAGTAATTATT", 
+      "Probes": [
+        {
+          "ProbeID": "DPROT_01223.1", 
+          "Accession": [
+            "P68431"
+          ]
+        }
+      ]
+    }, 
+    {
+      "GeneID": [
+        6194
+      ], 
+      "AnalyteType": "Protein", 
+      "DisplayName": "RPS6", 
+      "SystematicName": [
+        "RPS6"
+      ], 
+      "CodeClass": "Control", 
+      "RTS_ID": "RTS0049299", 
+      "RTS_Seq": "CGCTGAATCCAA", 
+      "Probes": [
+        {
+          "ProbeID": "DPROT_01224.1", 
+          "Accession": [
+            "P62753", 
+            "A2A3R6"
+          ]
+        }
+      ]
+    }, 
+    {
+      "GeneID": [
+        2597
+      ], 
+      "AnalyteType": "Protein", 
+      "DisplayName": "GAPDH", 
+      "SystematicName": [
+        "GAPDH"
+      ], 
+      "CodeClass": "Control", 
+      "RTS_ID": "RTS0049301", 
+      "RTS_Seq": "ACGGATGTCACT", 
+      "Probes": [
+        {
+          "ProbeID": "DPROT_00020.1", 
+          "Accession": [
+            "P04406", 
+            "V9HVZ4"
+          ]
+        }
+      ]
+    }, 
+    {
+      "GeneID": [], 
+      "AnalyteType": "Protein", 
+      "DisplayName": "Ms IgG2b", 
+      "SystematicName": [], 
+      "CodeClass": "Negative", 
+      "RTS_ID": "RTS0049303", 
+      "RTS_Seq": "GATGCTCAAGTT", 
+      "Probes": [
+        {
+          "ProbeID": "DPROT_01221.1", 
+          "Accession": []
+        }
+      ]
+    }, 
+    {
+      "GeneID": [], 
+      "AnalyteType": "Protein", 
+      "DisplayName": "Rb IgG", 
+      "SystematicName": [], 
+      "CodeClass": "Negative", 
+      "RTS_ID": "RTS0049304", 
+      "RTS_Seq": "ATCTCCTGCTCT", 
+      "Probes": [
+        {
+          "ProbeID": "DPROT_01219.1", 
+          "Accession": []
+        }
+      ]
+    }, 
+    {
+      "GeneID": [], 
+      "AnalyteType": "Protein", 
+      "DisplayName": "Ms IgG1", 
+      "SystematicName": [], 
+      "CodeClass": "Negative", 
+      "RTS_ID": "RTS0049306", 
+      "RTS_Seq": "TTGAGTGGTCTA", 
+      "Probes": [
+        {
+          "ProbeID": "DPROT_01220.1", 
+          "Accession": []
+        }
+      ]
+    }, 
+    {
+      "GeneID": [
+        9804
+      ], 
+      "AnalyteType": "Protein", 
+      "DisplayName": "TOMM20", 
+      "SystematicName": [
+        "TOMM20"
+      ], 
+      "CodeClass": "Control", 
+      "RTS_ID": "RTS0049300", 
+      "RTS_Seq": "GTAGGTCTGGTC", 
+      "Probes": [
+        {
+          "ProbeID": "DPROT_01225.1", 
+          "Accession": [
+            "Q15388", 
+            "A0A024R3W2"
+          ]
+        }
+      ]
+    }, 
+    {
+      "GeneID": [], 
+      "AnalyteType": "Protein", 
+      "DisplayName": "Hmr IgG", 
+      "SystematicName": [], 
+      "CodeClass": "Negative", 
+      "RTS_ID": "RTS0049302", 
+      "RTS_Seq": "CAGCAATGTCCT", 
+      "Probes": [
+        {
+          "ProbeID": "DPROT_01222.1", 
+          "Accession": []
+        }
+      ]
+    }, 
+    {
+      "GeneID": [
+        811
+      ], 
+      "AnalyteType": "Protein", 
+      "DisplayName": "Calreticulin", 
+      "SystematicName": [
+        "CALR"
+      ], 
+      "CodeClass": "Control", 
+      "RTS_ID": "RTS0049297", 
+      "RTS_Seq": "GTGGTACAGGAA", 
+      "Probes": [
+        {
+          "ProbeID": "DPROT_00540.1", 
+          "Accession": [
+            "V9HW88", 
+            "P27797"
+          ]
+        }
+      ]
+    }, 
+    {
+      "GeneID": [], 
+      "AnalyteType": "Protein", 
+      "DisplayName": "Rt IgG2a", 
+      "SystematicName": [], 
+      "CodeClass": "Negative", 
+      "RTS_ID": "RTS0049305", 
+      "RTS_Seq": "CTGACATCGGCC", 
+      "Probes": [
+        {
+          "ProbeID": "DPROT_00640.1", 
+          "Accession": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+﻿Patient,Target,padj,log2FC,Category
+P3,SREBF2,0.00083595,-0.6038047,Metabolism and lipid homeostasis
+P3,SREBF1,1.89E-10,-0.668297,Metabolism and lipid homeostasis
+P6,SLC7A11,0.01249114,-0.773013,Metabolism and lipid homeostasis
+P3,SLC38A2,1.12E-27,-0.8727167,Metabolism and lipid homeostasis
+P3,SLC38A1,3.49E-16,-0.6062707,Metabolism and lipid homeostasis
+P3,SLC26A2,0.01046111,-0.6024934,Metabolism and lipid homeostasis
+P1,SLC25A10,0.01959805,-0.7121982,Metabolism and lipid homeostasis
+P6,SCP2,0.01620667,-0.8685845,Metabolism and lipid homeostasis
+P3,SCD,4.68E-09,-0.8957206,Metabolism and lipid homeostasis
+P3,PLIN3,0.00209256,-0.584243,Metabolism and lipid homeostasis
+P5,PLD3,0.012597221,-0.645655427,Metabolism and lipid homeostasis
+P3,PGS1,0.01107767,-0.6179241,Metabolism and lipid homeostasis
+P6,PFKP,0.00019172,-0.8559826,Metabolism and lipid homeostasis
+P1,PFKL,0.01196275,-0.6647589,Metabolism and lipid homeostasis
+P6,OSBPL3,0.01718409,-0.779904,Metabolism and lipid homeostasis
+P6,MBOAT2,0.01825279,-0.8645452,Metabolism and lipid homeostasis
+P3,LPAR2,0.00081017,-0.6709232,Metabolism and lipid homeostasis
+P3,LDLR,6.28E-09,-0.6482279,Metabolism and lipid homeostasis
+P3,FASN,9.36E-22,-0.8664898,Metabolism and lipid homeostasis
+P1,FASN,0.01561631,-0.690321,Metabolism and lipid homeostasis
+P3,FADS2,4.02E-07,-0.808216,Metabolism and lipid homeostasis
+P3,ELOVL5,0.00018575,-0.7625433,Metabolism and lipid homeostasis
+P1,D2HGDH,0.01012508,-0.6741263,Metabolism and lipid homeostasis
+P3,BCL2L2,6.94E-13,-0.7243701,Metabolism and lipid homeostasis
+P5,BCHE,0.048784469,-1.268873948,Metabolism and lipid homeostasis
+P3,B3GNT7,8.75E-09,-0.6585813,Metabolism and lipid homeostasis
+P6,APOC3,3.07E-07,-0.8328468,Metabolism and lipid homeostasis
+P3,ALOX15B,1.17E-09,-0.6755692,Metabolism and lipid homeostasis
+P1,ACSS1,0.00122372,-1.0504972,Metabolism and lipid homeostasis
+P3,ACADVL,5.75E-09,-0.6990018,Metabolism and lipid homeostasis
+P3,ACAD9,1.74E-05,-0.6649736,Metabolism and lipid homeostasis
+P3,VEGFA,2.23E-05,-0.648644,Hypoxia and angiogenesis
+P6,VEGFA,0.00081703,-0.8468454,Hypoxia and angiogenesis
+P3,HYOU1,6.12E-05,-0.6625453,Hypoxia and angiogenesis
+P5,F2RL3,0.000103869,-1.068078101,Hypoxia and angiogenesis
+P5,F12,0.020226577,-1.441789701,Hypoxia and angiogenesis
+P1,HSPA1A,0.00060158,-0.654236709,Hypoxia and angiogenesis
+P1,HSPB1,0.002774737,-0.594638161,Hypoxia and angiogenesis
+P3,HSPH1,0.017158379,-0.804553433,Hypoxia and angiogenesis
+P3,FGFR3,1.78E-14,-0.6762215,Hypoxia and angiogenesis
+P1,TNFRSF14,0.02490417,-0.7574864,Anti-microbial and immune response
+P5,PRTN3,0.048784469,-1.516449343,Anti-microbial and immune response
+P5,PIGR,0.030093743,-1.140444583,Anti-microbial and immune response
+P1,NOD2,0.00072746,-1.6929544,Anti-microbial and immune response
+P6,MHC I,2.36E-24,-0.7921967,Anti-microbial and immune response
+P5,IL22RA2,1.47E-43,-1.531426823,Anti-microbial and immune response
+P3,IKBKB,6.94E-13,-0.6959112,Anti-microbial and immune response
+P3,IFNGR1,6.60E-05,-0.5922789,Anti-microbial and immune response
+P5,CRLF1,0.048784469,-1.065390564,Anti-microbial and immune response
+P6,CEBPD,0.00158968,-0.7662683,Anti-microbial and immune response
+P3,CD24,6.94E-13,-0.6254562,Anti-microbial and immune response
+P3,ALCAM,7.30E-05,-0.6274256,Anti-microbial and immune response
+P1,NEAT1,3.00E-11,-0.860458997,Anti-microbial and immune response
+P6,NEAT1,6.49E-10,-0.796103589,Anti-microbial and immune response
+P3,NEAT1,3.15E-14,-0.585496613,Anti-microbial and immune response

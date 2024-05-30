@@ -1,0 +1,165 @@
+#----------------------------------------------------------------------------------------------------
+# Source files
+#----------------------------------------------------------------------------------------------------
+
+source("src/Libraries.R")
+source("src/Functions.R")
+load("Structure/DSP/BrM/BrM_target_Data_WTA_PCA.RData")
+
+#----------------------------------------------------------------------------------------------------
+# Load and transform IF data
+#----------------------------------------------------------------------------------------------------
+
+# Load Myeloid IF data
+BrM_Myeloid <- read_csv("Input_files/IF/BrM_Myeloid_IF.csv") %>%
+    na.omit()
+
+# Load BrM phenoData from DSP
+df_pData <- pData(BrM_target_Data_WTA) %>%
+    as.data.frame() %>%
+    rownames_to_column() %>%
+    dplyr::rename("Sample_ID" = "rowname")
+
+# Join IF data with phenoData
+df_data_Myeloid <- df_pData %>%
+    inner_join(BrM_Myeloid, by = "ROI") %>%
+    filter(test_16SrRNA_status_25_75 != "NA") %>%
+    as.data.frame() %>%
+    column_to_rownames("Sample_ID")
+
+# Select columns to be evaluated (log)
+m_data_Myeloid_log <- df_data_Myeloid %>%
+    select(27:46) %>%
+    mutate(across(.cols = c(1:20), .fns = function(x) x + 1)) %>%
+    mutate(across(.cols = c(1:20), .fns = function(x) log(x, 2))) %>%
+    as.matrix() %>%
+    t()
+
+# Select columns to be evaluated (non-log)
+m_data_Myeloid <- df_data_Myeloid %>%
+    select(27:46) %>%
+    as.matrix() %>%
+    t()
+
+#----------------------------------------------------------------------------------------------------
+# Create NanoStringGeoMxSet object to use Linear Mix Model
+#----------------------------------------------------------------------------------------------------
+
+# Subset BrM DSP object to use as basis for new object containing IF data
+BrM_target_Data_WTA_16S_25_75 <- BrM_target_Data_WTA[
+    , which(pData(BrM_target_Data_WTA)$test_16SrRNA_status_25_75 != "NA" &
+        pData(BrM_target_Data_WTA)$RNA_ID %in% df_data_Myeloid$RNA_ID)
+]
+
+# Create NanoStringGeoMxSet with log transformed counts
+Myeloid_IF_log <- NanoStringGeoMxSet(
+    assayData = m_data_Myeloid_log,
+    phenoData = AnnotatedDataFrame(pData(BrM_target_Data_WTA_16S_25_75)),
+    protocolData = protocolData(BrM_target_Data_WTA_16S_25_75),
+    featureData = AnnotatedDataFrame(as.data.frame(m_data_Myeloid_log)),
+    featureType = "IF",
+    check = FALSE
+)
+
+# Create NanoStringGeoMxSet with untransformed counts
+Myeloid_IF <- NanoStringGeoMxSet(
+    assayData = m_data_Myeloid,
+    phenoData = AnnotatedDataFrame(pData(BrM_target_Data_WTA_16S_25_75)),
+    protocolData = protocolData(BrM_target_Data_WTA_16S_25_75),
+    featureData = AnnotatedDataFrame(as.data.frame(m_data_Myeloid)),
+    featureType = "IF",
+    check = FALSE
+)
+
+#---------------------------------------------------------------------------------------------------
+# Differential expression (Linear Mix Model)
+#---------------------------------------------------------------------------------------------------
+
+# 25-75% log
+results <- c()
+
+for (compartment in "BrM") {
+    ind <- pData(Myeloid_IF_log)$Type == compartment
+    mixedOutmc <-
+        mixedModelDE(Myeloid_IF_log[, ind],
+            elt = "exprs",
+            modelFormula = ~ test_16SrRNA_status_25_75 + Primary_Tumor +
+                (1 + test_16SrRNA_status_25_75 | Patient),
+            groupVar = "test_16SrRNA_status_25_75",
+            nCores = parallel::detectCores(),
+            multiCore = FALSE
+        )
+    r_test <- do.call(rbind, mixedOutmc["lsmeans", ])
+    tests <- rownames(r_test)
+    r_test <- as.data.frame(r_test)
+    r_test$Contrast <- tests
+    r_test$Cell <-
+        unlist(lapply(
+            colnames(mixedOutmc),
+            rep, nrow(mixedOutmc["lsmeans", ][[1]])
+        ))
+    r_test$Subset <- compartment
+    r_test$FDR <- p.adjust(r_test$`Pr(>|t|)`, method = "BH")
+    r_test <- r_test[, c(
+        "Cell", "Subset", "Contrast", "Estimate",
+        "Pr(>|t|)", "FDR"
+    )]
+    results <- rbind(results, r_test)
+}
+BrM_Myeloid_IF_by_16S_25_75_log <- as.data.frame(results) %>%
+    dplyr::rename(log2FC = Estimate) # rename for better readability
+
+# Save object
+save(BrM_Myeloid_IF_by_16S_25_75_log,
+    file =
+        "Structure/IF/BrM_Myeloid_IF_by_16S_25_75_log.RData"
+)
+# Write csv
+write.csv(
+    BrM_Myeloid_IF_by_16S_25_75_log,
+    "Output_files/IF/BrM_Myeloid_IF_by_16S_25_75_log.csv"
+)
+
+# 25-75% non-log
+results <- c()
+
+for (compartment in "BrM") {
+    ind <- pData(Myeloid_IF)$Type == compartment
+    mixedOutmc <-
+        mixedModelDE(Myeloid_IF[, ind],
+            elt = "exprs",
+            modelFormula = ~ test_16SrRNA_status_25_75 + Primary_Tumor +
+                (1 + test_16SrRNA_status_25_75 | Patient),
+            groupVar = "test_16SrRNA_status_25_75",
+            nCores = parallel::detectCores(),
+            multiCore = FALSE
+        )
+    r_test <- do.call(rbind, mixedOutmc["lsmeans", ])
+    tests <- rownames(r_test)
+    r_test <- as.data.frame(r_test)
+    r_test$Contrast <- tests
+    r_test$Cell <-
+        unlist(lapply(
+            colnames(mixedOutmc),
+            rep, nrow(mixedOutmc["lsmeans", ][[1]])
+        ))
+    r_test$Subset <- compartment
+    r_test$FDR <- p.adjust(r_test$`Pr(>|t|)`, method = "BH")
+    r_test <- r_test[, c(
+        "Cell", "Subset", "Contrast", "Estimate",
+        "Pr(>|t|)", "FDR"
+    )]
+    results <- rbind(results, r_test)
+}
+BrM_Myeloid_IF_by_16S_25_75_non_log <- as.data.frame(results)
+
+# Save object
+save(BrM_Myeloid_IF_by_16S_25_75_non_log,
+    file =
+        "Structure/IF/BrM_Myeloid_IF_by_16S_25_75_non_log.RData"
+)
+# Write csv
+write.csv(
+    BrM_Myeloid_IF_by_16S_25_75_non_log,
+    "Output_files/IF/BrM_Myeloid_IF_by_16S_25_75_non_log.csv"
+)

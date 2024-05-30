@@ -1,0 +1,118 @@
+#----------------------------------------------------------------------------------------------------
+# Source files
+#----------------------------------------------------------------------------------------------------
+
+source("src/Libraries.R")
+source("src/Functions.R")
+
+#----------------------------------------------------------------------------------------------------
+# Volcano plot (4 patients)
+#----------------------------------------------------------------------------------------------------
+
+# Load individual patient files
+P5_Neighborhood_volcano <- read_csv("Input_files/SMI/BrM/P5_Neighborhood_DGE.csv") %>%
+    mutate(Patient = rep("P5", 6166))
+P3_Neighborhood_volcano <- read_csv("Input_files/SMI/BrM/P3_Neighborhood_DGE.csv") %>%
+    mutate(Patient = rep("P3", 6177)) %>%
+    select(-msg)
+P6_Neighborhood_volcano <- read_csv("Input_files/SMI/BrM/P6_Neighborhood_DGE.csv") %>%
+    mutate(Patient = rep("P6", 6112)) %>%
+    select(-msg)
+P1_Neighborhood_volcano <- read_csv("Input_files/SMI/BrM/P1_Neighborhood_DGE.csv") %>%
+    mutate(Patient = rep("P1", 6128))
+
+# Bacterial probes to remove
+bacteria <- c(bacteria <- c(
+    "Treponema genus", "Porphyromonas genus", "Fusobacterium genus",
+    "Prevotella intermedia", "Bacteroides genus", "Parvimonas micra", "Microbial16S"
+))
+
+# Combine patients, remove bacterial probes and order patients
+volcano <- rbind(P5_Neighborhood_volcano, P3_Neighborhood_volcano, P6_Neighborhood_volcano, P1_Neighborhood_volcano) %>%
+    mutate(log2fc = log2fc * -1) %>%
+    filter(!target %in% bacteria) %>%
+    mutate(Patient = factor(Patient, levels = c("P1", "P3", "P5", "P6")))
+
+# Set color for dots
+volcano$Color <- "Not Significant"
+volcano$Color[volcano$padj < 0.05 & volcano$log2fc > 0.58] <- "Up-regulated"
+volcano$Color[volcano$padj < 0.05 & volcano$log2fc < -0.58] <- "Down-regulated"
+volcano$Color <- factor(volcano$Color,
+    levels = c(
+        "Not Significant", "Up-regulated",
+        "Down-regulated"
+    )
+)
+
+# Plot combined volcano
+ggplot(volcano, aes(
+    x = log2fc, y = -log10(padj),
+    color = Color, label = target, shape = Patient
+)) +
+    geom_vline(xintercept = c(0.58, -0.58), lty = "dashed") +
+    geom_hline(yintercept = -log10(0.05), lty = "dashed") +
+    ggrastr::rasterise(geom_point(alpha = 0.5, size = 3), dpi = 300) +
+    labs(
+        y = expression("-log"[10] ~ "(FDR)"),
+        x = expression("16S rRNA-Low <-- log"[2] ~ "(Fold Change) --> 16S rRNA-High"), color = "Significance"
+    ) +
+    scale_color_manual(values = c(
+        `Not Significant` = "#9E9E9E",
+        `Up-regulated` = "darkred",
+        `Down-regulated` = "darkblue"
+    )) +
+    geom_text_repel(
+        data = subset(volcano, abs(log2fc) > 0.58 & padj < 0.05),
+        size = 3, max.overlaps = 10, segment.size = 0.15, fontface = "bold", color = "gray19"
+    ) +
+    scale_y_continuous(expand = expansion(mult = c(0, 0.05))) +
+    theme_bw(base_size = 12) +
+    guides(color = "none") +
+    theme(
+        legend.position = "right", legend.key.size = unit(0.3, "cm"),
+        panel.grid.major = element_blank(), panel.grid.minor = element_blank(), legend.box = "vertical",
+        legend.margin = margin()
+    )
+
+# Save pdf
+ggsave("Figures/Figure4E.pdf", width = 8, height = 4)
+
+#----------------------------------------------------------------------------------------------------
+# Dot plot
+#----------------------------------------------------------------------------------------------------
+
+# Load and transform data
+dotplot <- read_csv("Input_files/SMI/BrM/BrM_Enriched_PosNeighborhood_4Pt.csv") %>%
+    mutate(log2FC = log2FC * -1) %>%
+    mutate(
+        Analyte = rep("RNA", 55),
+        Order = (rep(1:55)),
+        Patient = factor(Patient, levels = c("P6", "P5", "P3", "P1")),
+        Category = factor(Category, levels = c(
+            "Anti-microbial and immune response",
+            "Metabolism and lipid homeostasis", "Hypoxia and angiogenesis"
+        ))
+    )
+
+# Plot biologically relevant genes
+ggplot(dotplot, aes(
+    x = Patient, y = reorder(Target, Order, decreasing = TRUE), color = padj,
+    size = log2FC
+)) +
+    geom_point() +
+    scale_color_distiller(palette = "PuBu") +
+    theme_bw(base_size = 9) +
+    theme(
+        legend.key.size = unit(0.3, "cm"),
+        axis.ticks.x = element_blank(), strip.placement = "outside",
+        strip.background = element_rect(colour = "white", fill = "white"),
+        axis.text.x = element_text(angle = 45, hjust = 1),
+        strip.text = element_text(face = "bold")
+    ) +
+    labs(x = " ", y = " ", size = "log2FC", color = "FDR") +
+    coord_flip() +
+    facet_grid(~Category, scales = "free", space = "free_x") +
+    scale_size_continuous(limits = c(0.5, 4))
+
+# Save pdf
+ggsave("Figures/Figure4F.pdf", width = 10, height = 2.5)

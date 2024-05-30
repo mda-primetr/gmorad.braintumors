@@ -1,0 +1,41 @@
+tumor,tax_id,taxa_name,saliva,tumor_total_genome_length,other_sample_genome_match,percent_of_length_matching,coded_id,tumor_category
+BTM-T-255,729,Haemophilus parainfluenzae,GBM-BM-Kit-275-SL,657,151,0.2298325722983257,a762,Glioma
+BTM-T-292,29466,Veillonella parvula,GBM-BM-293-SL,150,150,1,e79f,Met
+BTM-T-292,2682456,Veillonella nakazawae,GBM-BM-293-SL,151,151,1,e79f,Met
+BTM-T-292,2545799,Capnocytophaga sp. FDAARGOS_737,GBM-BM-293-SL,235,235,1,e79f,Met
+BTM-T-012,39777,Veillonella atypica,01-2020-046_SL,151,151,1,478e,Glioma
+T-052,1660,Schaalia odontolytica,01-2020-058-SL,302,151,0.5,f983,Glioma
+T-052,2682455,Veillonella sp. S12025-13,01-2020-058-SL,458,151,0.3296943231441048,f983,Glioma
+T-052,2545799,Capnocytophaga sp. FDAARGOS_737,01-2020-058-SL,587,436,0.7427597955706984,f983,Glioma
+T-052,84135,Gemella sanguinis,01-2020-058-SL,453,453,1,f983,Glioma
+T-052,28132,Prevotella melaninogenica,01-2020-058-SL,302,151,0.5,f983,Glioma
+T-052,2610896,Streptococcus sp. LPB0220,01-2020-058-SL,143,143,1,f983,Glioma
+T-052,29466,Veillonella parvula,01-2020-058-SL,506,506,1,f983,Glioma
+T-052,1318,Streptococcus parasanguinis,01-2020-058-SL,453,151,0.3333333333333333,f983,Glioma
+BTM-T-251,33053,Neisseria perflava,GBM-BM-257-SL,453,151,0.3333333333333333,fe5a,Glioma
+BTM-T-251,28132,Prevotella melaninogenica,GBM-BM-257-SL,146,146,1,fe5a,Glioma
+BTM-T-251,47671,Lautropia mirabilis,GBM-BM-257-SL,302,302,1,fe5a,Glioma
+BTM-T-289,43675,Rothia mucilaginosa,GBM-BM-284-SL,302,151,0.5,8f20,Glioma
+BTM-T-289,28449,Neisseria subflava,GBM-BM-284-SL,453,151,0.3333333333333333,8f20,Glioma
+BTM-T-289,84135,Gemella sanguinis,GBM-BM-284-SL,301,150,0.4983388704318937,8f20,Glioma
+BTM-T-289,39777,Veillonella atypica,GBM-BM-284-SL,302,151,0.5,8f20,Glioma
+BTM-T-289,1177574,Prevotella jejuni,GBM-BM-284-SL,112,112,1,8f20,Glioma
+BTM-T-088,165179,Segatella copri,02-2020-52-SL,363,106,0.29201101928374656,41c9,Met
+BTM-T-088,537011,Segatella copri DSM 18205,02-2020-52-SL,167,167,1,41c9,Met
+BTM-T-002,1308,Streptococcus thermophilus,01-2020-041_SL,5930,4588,0.7736930860033726,8616,Glioma
+BTM-T-257,2682456,Veillonella nakazawae,GBM-BM-276-SL,302,151,0.5,8cb8,Met
+BTM-T-169,423477,Veillonella rogosae,01-2020-108-SL,915,436,0.4765027322404371,8a16,Glioma
+BTM-T-061,423477,Veillonella rogosae,01-2020-056_SL,1207,739,0.6122618061309031,3bb0,Glioma
+BTM-T-343,2682455,Veillonella sp. S12025-13,GBM-BM-299-SL,302,302,1,5f86,Glioma
+BTM-T-343,28131,Prevotella intermedia,GBM-BM-299-SL,81,81,1,5f86,Glioma
+BTM-T-007,28133,Prevotella nigrescens,01-2020-044_SL,302,151,0.5,9d16,Glioma
+BTM-T-007,423477,Veillonella rogosae,01-2020-044_SL,302,151,0.5,9d16,Glioma
+BTM-T-254,2682456,Veillonella nakazawae,GBM-BM-260-SL,283,283,1,c275,Glioma
+BTM-T-254,28449,Neisseria subflava,GBM-BM-260-SL,302,151,0.5,c275,Glioma
+BTM-T-254,84135,Gemella sanguinis,GBM-BM-260-SL,450,148,0.3288888888888889,c275,Glioma
+BTM-T-021,423477,Veillonella rogosae,01-2020-049_SL,1369,878,0.6413440467494521,d5e9,Glioma
+BTM-T-044,423477,Veillonella rogosae,02-2020-043_SL,150,150,1,e891,Met
+BTM-T-335,712982,Lachnospiraceae bacterium oral taxon 096,GBM-BM-307-SL,151,151,1,76b4,Glioma
+BTM-T-335,28132,Prevotella melaninogenica,GBM-BM-307-SL,390,239,0.6128205128205128,76b4,Glioma
+BTM-T-335,1302,Streptococcus gordonii,GBM-BM-307-SL,54,54,1,76b4,Glioma
+BTM-T-005,423477,Veillonella rogosae,01-2020-043_SL,584,302,0.5171232876712328,2c41,Glioma

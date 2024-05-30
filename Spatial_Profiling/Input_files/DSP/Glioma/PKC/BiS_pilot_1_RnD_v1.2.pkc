@@ -1,0 +1,798 @@
+{
+  "Name": "BiS_pilot_1_RnD", 
+  "Version": 1.2, 
+  "AnalyteType": "RNA", 
+  "MinArea": 16000, 
+  "MinNuclei": 200, 
+  "Compatibility": "01", 
+  "Date": "230804", 
+  "ReporterSpace": "0", 
+  "ProbeGroups": [
+    {
+      "Name": "Custom Target", 
+      "Targets": [
+        "Custom Negative Set 1", 
+        "Microbial16S_01", 
+        "Microbial16S_02", 
+        "Microbial16S_03", 
+        "Microbial16S_04", 
+        "Microbial16S_05", 
+        "Microbial16S_06", 
+        "Microbial16S_07", 
+        "Microbial16S_08", 
+        "Microbial16S_09", 
+        "Microbial16S_10"
+      ]
+    }
+  ], 
+  "ProbeGroupVersion": 1.0, 
+  "Targets": [
+    {
+      "AnalyteType": "RNA", 
+      "DisplayName": "Microbial16S_08", 
+      "CodeClass": "Endogenous02", 
+      "Probes": [
+        {
+          "RTS_Seq": "CCGGTCTGACTA", 
+          "DisplayName": "Microbial16S_08", 
+          "ProbeID": "129602", 
+          "SystematicName": [
+            "Lactobacillus_16S", 
+            "Treponema_16S", 
+            "Pseudomonas_16S", 
+            "Fusobacterium_16S", 
+            "Rhodoferax_16S", 
+            "16S", 
+            "Acidovorax_16S"
+          ], 
+          "Accession": [
+            "NR_036982.1", 
+            "Fb_16S_11.1", 
+            "NR_113599.1", 
+            "T_16S_2.1", 
+            "T_16S_1.1", 
+            "T_16S_3.1", 
+            "NR_028715.1", 
+            "Fb_16S_8.1", 
+            "Fb_16S_1.1", 
+            "Fb_16S_4.1", 
+            "Fb_16S_10.1", 
+            "Fb_16S_5.1", 
+            "Fb_16S_2.1", 
+            "Fb_16S_9.1", 
+            "16SBac_01.1", 
+            "16SBac_05.1", 
+            "Fb_16S_7.1", 
+            "Fb_16S_12.1", 
+            "Fb_16S_3.1", 
+            "Fb_16S_6.1"
+          ], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "GGAAGGTGGGGATGACGTCAAGTCATCATGGCCCT", 
+          "RTS_ID": "RTS1003678", 
+          "GeneID": [
+            200068482, 
+            200068419, 
+            200068420, 
+            200068422, 
+            200068486, 
+            200068414
+          ]
+        }
+      ]
+    }, 
+    {
+      "AnalyteType": "RNA", 
+      "DisplayName": "Microbial16S_09", 
+      "CodeClass": "Endogenous02", 
+      "Probes": [
+        {
+          "RTS_Seq": "CGCGATAATCAT", 
+          "DisplayName": "Microbial16S_09", 
+          "ProbeID": "129926", 
+          "SystematicName": [
+            "rBAC_21119_16S"
+          ], 
+          "Accession": [
+            "rBAC_21119.1"
+          ], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "TGCAACTCGACTACGTGAAGTCGGAATCGCTAGTA", 
+          "RTS_ID": "RTS1003679", 
+          "GeneID": []
+        }
+      ]
+    }, 
+    {
+      "AnalyteType": "SpikeIn", 
+      "DisplayName": "Custom Negative Set 1", 
+      "CodeClass": "Negative02", 
+      "Probes": [
+        {
+          "RTS_Seq": "TACTCATGCGTG", 
+          "DisplayName": "CustomNegProbe2_11", 
+          "ProbeID": "52751", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "ATTCATACATTAATGAATAAGCTCAGGAAGTTTGA", 
+          "RTS_ID": "RTS1003892", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "CAGCCAGCGACG", 
+          "DisplayName": "CustomNegProbe2_10", 
+          "ProbeID": "52554", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "ATATTAAAGCAATAGCAGATAGAATGGGATATACA", 
+          "RTS_ID": "RTS1003891", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "AGCCACGGCGAT", 
+          "DisplayName": "CustomNegProbe2_09", 
+          "ProbeID": "52170", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "ATGAAAATCGTATCTATTGAGGATACTCCAGAAAT", 
+          "RTS_ID": "RTS1003890", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "CGGTAGCCAGAG", 
+          "DisplayName": "CustomNegProbe2_08", 
+          "ProbeID": "56993", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "TAGATTTATTGAGTGGATTATAAGCTTAAAATGGA", 
+          "RTS_ID": "RTS1003889", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "ACAGCGCACGAT", 
+          "DisplayName": "CustomNegProbe2_07", 
+          "ProbeID": "56996", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "ATTCCTCTTTGTTAATATACCTAATCCAAAGATAA", 
+          "RTS_ID": "RTS1003888", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "CTATACATATGC", 
+          "DisplayName": "CustomNegProbe2_06", 
+          "ProbeID": "56995", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "TGTTAATATACCTAATCCAAAGATAACGTTTATCA", 
+          "RTS_ID": "RTS1003887", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "AGCGCGGTGTAC", 
+          "DisplayName": "CustomNegProbe2_05", 
+          "ProbeID": "56994", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "ACCTAATCCAAAGATAACGTTTATCAGTATTAAAA", 
+          "RTS_ID": "RTS1003886", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "GAAGACTAGAGG", 
+          "DisplayName": "CustomNegProbe2_04", 
+          "ProbeID": "56992", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "CACATCTGGAAGTAAATCAATATCTGATTTCTTAT", 
+          "RTS_ID": "RTS1003885", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "TTAGAGGCCACA", 
+          "DisplayName": "CustomNegProbe2_03", 
+          "ProbeID": "56991", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "AAATAATCTCTTAATTTTATCTATAAAGCTTTCTT", 
+          "RTS_ID": "RTS1003884", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "CGTTAGCACCTC", 
+          "DisplayName": "CustomNegProbe2_02", 
+          "ProbeID": "56990", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "CTTAATTTTATCTATAAAGCTTTCTTTCCTTATTA", 
+          "RTS_ID": "RTS1003883", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "GGTATTGATACA", 
+          "DisplayName": "CustomNegProbe2_01", 
+          "ProbeID": "56989", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "AATAGAGTTAGAGTTTATGTATTTGGTTATGATAA", 
+          "RTS_ID": "RTS1003882", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "ACTCACGCTATT", 
+          "DisplayName": "CustomNegProbe2_22", 
+          "ProbeID": "56575", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "CAGTTCGGTACCCAAGATAGCGGACTCTCAAAGAA", 
+          "RTS_ID": "RTS1003903", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "TGTAATGGTATG", 
+          "DisplayName": "CustomNegProbe2_21", 
+          "ProbeID": "56544", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "CCACTTAGGCCTATCTATCGCGTCTTTTTACTGGT", 
+          "RTS_ID": "RTS1003902", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "TTATTCGCAAGA", 
+          "DisplayName": "CustomNegProbe2_20", 
+          "ProbeID": "56536", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "GCTCGTTACTCGGTTTGTGATTAGGATCAACTTTA", 
+          "RTS_ID": "RTS1003901", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "TGTGACACGGCT", 
+          "DisplayName": "CustomNegProbe2_19", 
+          "ProbeID": "56517", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "GGTGCCGATATAAGGTACATTGTTGCGGATGTCAA", 
+          "RTS_ID": "RTS1003900", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "GCCGACATCTTA", 
+          "DisplayName": "CustomNegProbe2_18", 
+          "ProbeID": "56510", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "CCCTCTGCACGAACTATAGATACGTCTTTCATCGG", 
+          "RTS_ID": "RTS1003899", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "GCTTCCATTATG", 
+          "DisplayName": "CustomNegProbe2_17", 
+          "ProbeID": "56502", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "CGCCCTAAAGTCGGTACGCGTTTTGGTAGTGAATA", 
+          "RTS_ID": "RTS1003898", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "CAAGTGGTCACT", 
+          "DisplayName": "CustomNegProbe2_16", 
+          "ProbeID": "56403", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "TTTAACAATTATAGTTTATCTTAGGGGCTATTAAT", 
+          "RTS_ID": "RTS1003897", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "AACTATTGTTGA", 
+          "DisplayName": "CustomNegProbe2_15", 
+          "ProbeID": "53999", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "CCGAGCTCAAGATGCGTTAATTATGTGGGTGACGA", 
+          "RTS_ID": "RTS1003896", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "ACCGTTATCTAT", 
+          "DisplayName": "CustomNegProbe2_14", 
+          "ProbeID": "53350", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "CCTTTTGAGGATTCTCCATAACGTTTATGTATTCT", 
+          "RTS_ID": "RTS1003895", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "CGTCTGCATACT", 
+          "DisplayName": "CustomNegProbe2_13", 
+          "ProbeID": "53310", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "AAAAACAGTTGCTCTACATTCGCTATGCATTTTAA", 
+          "RTS_ID": "RTS1003894", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "AGCAGGACACTC", 
+          "DisplayName": "CustomNegProbe2_12", 
+          "ProbeID": "53196", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "GGCCAGGAATGACAATAGAACATTAATCTAATTTA", 
+          "RTS_ID": "RTS1003893", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "ACCGTAGTGACA", 
+          "DisplayName": "CustomNegProbe2_32", 
+          "ProbeID": "53536", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "CCATCGTCATAATCGCTAGATTCTAGGTATTTCGG", 
+          "RTS_ID": "RTS1003913", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "ATGTATATGCGC", 
+          "DisplayName": "CustomNegProbe2_31", 
+          "ProbeID": "52488", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "AATTTTATGAAAGATAGATAAACATAAATTGGTAG", 
+          "RTS_ID": "RTS1003912", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "TAATTGGAGATT", 
+          "DisplayName": "CustomNegProbe2_30", 
+          "ProbeID": "56971", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "ATTTCGTGAATACTGAGCCGAATATCGTAAGACAC", 
+          "RTS_ID": "RTS1003911", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "CGTTGGTGCACC", 
+          "DisplayName": "CustomNegProbe2_29", 
+          "ProbeID": "56941", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "TAACAGGCCCAGGGTTAACATGTACGGAACATACT", 
+          "RTS_ID": "RTS1003910", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "ATGAATCACATT", 
+          "DisplayName": "CustomNegProbe2_28", 
+          "ProbeID": "56859", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "CGTCTGACGGGACAAGGGATCAACCTTTCCCGGCA", 
+          "RTS_ID": "RTS1003909", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "TGCGGATAATTG", 
+          "DisplayName": "CustomNegProbe2_27", 
+          "ProbeID": "56831", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "GTGCCGCGACACAACATCCGCTAGCCTCAGTCGAA", 
+          "RTS_ID": "RTS1003908", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "GTGTAACCTAAT", 
+          "DisplayName": "CustomNegProbe2_26", 
+          "ProbeID": "56829", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "AAGGTACGCCCTTCAGTCAAGACCGGCCCGGCGTT", 
+          "RTS_ID": "RTS1003907", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "GTACTGCACGCG", 
+          "DisplayName": "CustomNegProbe2_25", 
+          "ProbeID": "56813", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "ACTTCGAGTCACTTGGGATACTTCGATAGCGTTGT", 
+          "RTS_ID": "RTS1003906", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "AATGCCTTCGGA", 
+          "DisplayName": "CustomNegProbe2_24", 
+          "ProbeID": "56711", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "CGGCGAAAGATGTATGCGTGAGCATTAAATTTACG", 
+          "RTS_ID": "RTS1003905", 
+          "GeneID": []
+        }, 
+        {
+          "RTS_Seq": "CTGACGCAGCGA", 
+          "DisplayName": "CustomNegProbe2_23", 
+          "ProbeID": "56668", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "GCGACTAAGATGTACGGTGATCGTGGACGCTTGAC", 
+          "RTS_ID": "RTS1003904", 
+          "GeneID": []
+        }
+      ]
+    }, 
+    {
+      "AnalyteType": "RNA", 
+      "DisplayName": "Microbial16S_10", 
+      "CodeClass": "Endogenous02", 
+      "Probes": [
+        {
+          "RTS_Seq": "AGTCAATATGCT", 
+          "DisplayName": "Microbial16S_10", 
+          "ProbeID": "129365", 
+          "SystematicName": [
+            "Acidovorax_16S", 
+            "Campylobacter_16S", 
+            "Pseudomonas_16S", 
+            "16S"
+          ], 
+          "Accession": [
+            "16SBac_01.1", 
+            "NR_028715.1", 
+            "NR_113599.1", 
+            "NR_024948.1"
+          ], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "GGTCTTGTACACACCGCCCGTCACACCATGGGAGT", 
+          "RTS_ID": "RTS1003680", 
+          "GeneID": [
+            200068417, 
+            200068419, 
+            200068422, 
+            200068414
+          ]
+        }
+      ]
+    }, 
+    {
+      "AnalyteType": "RNA", 
+      "DisplayName": "Microbial16S_01", 
+      "CodeClass": "Endogenous02", 
+      "Probes": [
+        {
+          "RTS_Seq": "AATACTACTTAT", 
+          "DisplayName": "Microbial16S_01", 
+          "ProbeID": "129923", 
+          "SystematicName": [
+            "R_ferrireducens_16S", 
+            "T_fonticaldi_16S"
+          ], 
+          "Accession": [
+            "16SBac_03.1", 
+            "16SBac_06.1"
+          ], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "GAACGCTGGCGGCATGCCTTACACATGCAAGTCGA", 
+          "RTS_ID": "RTS1003671", 
+          "GeneID": []
+        }
+      ]
+    }, 
+    {
+      "AnalyteType": "RNA", 
+      "DisplayName": "Microbial16S_02", 
+      "CodeClass": "Endogenous02", 
+      "Probes": [
+        {
+          "RTS_Seq": "TGATGTCGTAAG", 
+          "DisplayName": "Microbial16S_02", 
+          "ProbeID": "129598", 
+          "SystematicName": [
+            "MZ031426.1", 
+            "Corynebacterium_16S", 
+            "Rhodoferax_16S", 
+            "16S", 
+            "Klebsiella_16S", 
+            "Acidovorax_16S"
+          ], 
+          "Accession": [
+            "16SBac_05.1", 
+            "NR_028715.1", 
+            "NR_042139.1", 
+            "MZ031426.1", 
+            "16SBac_01.1", 
+            "rBAC_19069.1"
+          ], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "CCTACGGGAGGCAGCAGTGGGGAATTTTGCACAAT", 
+          "RTS_ID": "RTS1003672", 
+          "GeneID": [
+            200068419, 
+            200068421, 
+            200068414, 
+            200068415
+          ]
+        }
+      ]
+    }, 
+    {
+      "AnalyteType": "RNA", 
+      "DisplayName": "Microbial16S_03", 
+      "CodeClass": "Endogenous02", 
+      "Probes": [
+        {
+          "RTS_Seq": "AGTACCATGATT", 
+          "DisplayName": "Microbial16S_03", 
+          "ProbeID": "129924", 
+          "SystematicName": [], 
+          "Accession": [], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "AGCCGCGGTAATACGGAGGGTGCAAGCGTTAATCG", 
+          "RTS_ID": "RTS1003673", 
+          "GeneID": []
+        }
+      ]
+    }, 
+    {
+      "AnalyteType": "RNA", 
+      "DisplayName": "Microbial16S_04", 
+      "CodeClass": "Endogenous02", 
+      "Probes": [
+        {
+          "RTS_Seq": "CCAGTAGCATGA", 
+          "DisplayName": "Microbial16S_04", 
+          "ProbeID": "129599", 
+          "SystematicName": [
+            "Staphylococcus_16S", 
+            "Campylobacter_16S", 
+            "Streptococcus_16S", 
+            "Pseudomonas_16S", 
+            "Porphyromonas_16S", 
+            "Bacterial_16S", 
+            "MZ031426.1", 
+            "Fusobacterium_16S", 
+            "16S", 
+            "Klebsiella_16S", 
+            "Acidovorax_16S"
+          ], 
+          "Accession": [
+            "NR_028715.1", 
+            "NR_025922.1", 
+            "NR_113599.1", 
+            "rBAC_17856.1", 
+            "Fb_16S_9.1", 
+            "NR_024842.1", 
+            "NR_024948.1", 
+            "P_16S_3.1", 
+            "Fb_16S_1.1", 
+            "Fb_16S_2.1", 
+            "16SBac_01.1", 
+            "Fb_16S_7.1", 
+            "rBAC_19069.1", 
+            "Fb_16S_12.1", 
+            "Fb_16S_3.1", 
+            "Fb_16S_6.1", 
+            "Fb_16S_11.1", 
+            "Fb_16S_5.1", 
+            "Fb_16S_8.1", 
+            "Fb_16S_4.1", 
+            "Fb_16S_10.1", 
+            "MZ031426.1"
+          ], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "AAAGCGTGGGGAGCAAACAGGATTAGATACCCTGG", 
+          "RTS_ID": "RTS1003674", 
+          "GeneID": [
+            200068416, 
+            200068417, 
+            200068418, 
+            200068419, 
+            200068422, 
+            200068482, 
+            200068494, 
+            200068414, 
+            200068415
+          ]
+        }
+      ]
+    }, 
+    {
+      "AnalyteType": "RNA", 
+      "DisplayName": "Microbial16S_05", 
+      "CodeClass": "Endogenous02", 
+      "Probes": [
+        {
+          "RTS_Seq": "CGTCGAGTATAC", 
+          "DisplayName": "Microbial16S_05", 
+          "ProbeID": "129600", 
+          "SystematicName": [
+            "Staphylococcus_16S", 
+            "Campylobacter_16S", 
+            "Streptococcus_16S", 
+            "Lactobacillus_16S", 
+            "Treponema_16S", 
+            "Pseudomonas_16S", 
+            "Veillonella_16S", 
+            "Fusobacterium_16S", 
+            "Rhodoferax_16S", 
+            "16S", 
+            "Acidovorax_16S"
+          ], 
+          "Accession": [
+            "NR_028715.1", 
+            "T_16S_4.1", 
+            "NR_025922.1", 
+            "NR_113599.1", 
+            "NR_024842.1", 
+            "NR_024948.1", 
+            "Fb_16S_1.1", 
+            "T_16S_1.1", 
+            "NR_119169.1", 
+            "16SBac_01.1", 
+            "16SBac_05.1", 
+            "Fb_16S_7.1", 
+            "Fb_16S_12.1", 
+            "Fb_16S_3.1", 
+            "Fb_16S_6.1", 
+            "NR_036982.1", 
+            "Fb_16S_11.1", 
+            "T_16S_2.1", 
+            "Fb_16S_5.1", 
+            "Fb_16S_8.1", 
+            "Fb_16S_4.1", 
+            "Fb_16S_10.1", 
+            "Fb_16S_2.1", 
+            "Fb_16S_9.1"
+          ], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "CCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGA", 
+          "RTS_ID": "RTS1003675", 
+          "GeneID": [
+            200068416, 
+            200068417, 
+            200068418, 
+            200068419, 
+            200068420, 
+            200068486, 
+            200068422, 
+            200068423, 
+            200068482, 
+            200068414
+          ]
+        }
+      ]
+    }, 
+    {
+      "AnalyteType": "RNA", 
+      "DisplayName": "Microbial16S_06", 
+      "CodeClass": "Endogenous02", 
+      "Probes": [
+        {
+          "RTS_Seq": "CGCGACTGGAGC", 
+          "DisplayName": "Microbial16S_06", 
+          "ProbeID": "129925", 
+          "SystematicName": [
+            "R_ferrireducens_16S", 
+            "rBAC_21119_16S"
+          ], 
+          "Accession": [
+            "16SBac_03.1", 
+            "rBAC_21119.1"
+          ], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "GACACAGGTGCTGCATGGCTGTCGTCAGCTCGTGT", 
+          "RTS_ID": "RTS1003676", 
+          "GeneID": []
+        }
+      ]
+    }, 
+    {
+      "AnalyteType": "RNA", 
+      "DisplayName": "Microbial16S_07", 
+      "CodeClass": "Endogenous02", 
+      "Probes": [
+        {
+          "RTS_Seq": "TCCTATTGCGCC", 
+          "DisplayName": "Microbial16S_07", 
+          "ProbeID": "129601", 
+          "SystematicName": [
+            "Staphylococcus_16S", 
+            "Streptococcus_16S", 
+            "Lactobacillus_16S", 
+            "Treponema_16S", 
+            "Pseudomonas_16S", 
+            "Veillonella_16S", 
+            "Fusobacterium_16S", 
+            "Corynebacterium_16S", 
+            "16S", 
+            "Klebsiella_16S", 
+            "Acidovorax_16S"
+          ], 
+          "Accession": [
+            "NR_028715.1", 
+            "T_16S_4.1", 
+            "NR_025922.1", 
+            "NR_113599.1", 
+            "NR_042139.1", 
+            "NR_024842.1", 
+            "T_16S_3.1", 
+            "Fb_16S_1.1", 
+            "T_16S_1.1", 
+            "NR_119169.1", 
+            "16SBac_01.1", 
+            "Fb_16S_7.1", 
+            "rBAC_19069.1", 
+            "Fb_16S_12.1", 
+            "Fb_16S_3.1", 
+            "Fb_16S_6.1", 
+            "NR_036982.1", 
+            "Fb_16S_11.1", 
+            "T_16S_2.1", 
+            "Fb_16S_5.1", 
+            "Fb_16S_8.1", 
+            "Fb_16S_4.1", 
+            "Fb_16S_10.1", 
+            "Fb_16S_2.1", 
+            "Fb_16S_9.1"
+          ], 
+          "GenomeCoordinates": [], 
+          "TargetSequence": "TGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAAC", 
+          "RTS_ID": "RTS1003677", 
+          "GeneID": [
+            200068416, 
+            200068418, 
+            200068419, 
+            200068420, 
+            200068421, 
+            200068422, 
+            200068423, 
+            200068482, 
+            200068486, 
+            200068414
+          ]
+        }
+      ]
+    }
+  ]
+}

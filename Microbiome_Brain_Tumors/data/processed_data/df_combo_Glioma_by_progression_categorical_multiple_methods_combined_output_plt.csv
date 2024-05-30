@@ -1,0 +1,107 @@
+Species,log2fc,qval,groupings,sample_type,method
+Alistipes ihumii,2.345453782552133,0,Y,Stool,Maaslin2
+Turicibacter sanguinis,2.008710632058767,0,Y,Stool,Maaslin2
+Hydrogeniiclostidium mannosilyticum,-2.4941505254127154,0,N,Stool,Maaslin2
+Faecalibacterium SGB15346,2.301817119158803,0,Y,Stool,Maaslin2
+Ruminococcus bicirculans,-4.908701909629114,0,N,Stool,Maaslin2
+Oscillibacter sp ER4,-2.601215603001157,0,N,Stool,Maaslin2
+Christensenellaceae bacterium,2.2129912568375105,0,Y,Stool,Maaslin2
+Clostridium symbiosum,-2.1944760705056225,0,N,Stool,Maaslin2
+Roseburia hominis,2.55081577527007,0,Y,Stool,Maaslin2
+Roseburia faecis,2.560957764131167,0,Y,Stool,Maaslin2
+Veillonella dispar,2.2943582534110214,0,Y,Stool,Maaslin2
+Bifidobacterium pseudocatenulatum,3.384631370807801,0,Y,Stool,Maaslin2
+Clostridium sp AM22 11AC,19.54261729552792,4.71922209063231e-11,Y,Stool,Maaslin2
+Ruminococcaceae unclassified SGB15234,-23.67553593708366,1.3254181549372e-4,N,Stool,Maaslin2
+Intestinimonas butyriciproducens,-7.1064275021671435,0.0051191928951003,N,Stool,Maaslin2
+Anaerotruncus rubiinfantis,-9.842091466308652,0.00728617680340581,N,Stool,Maaslin2
+Clostridium fessum,5.438979622865997,0.0270640326653335,Y,Stool,Maaslin2
+Bacteroides fragilis,8.330143088207999,0.0271588801213194,Y,Stool,Maaslin2
+Massilimaliae timonensis,-5.647447792995635,0.03261016300813,N,Stool,Maaslin2
+Coprococcus catus,-8.086139903674288,0.0461221506534386,N,Stool,Maaslin2
+Clostridia bacterium UC5 1 1D1,6.824836402827672,0.0474911634459717,Y,Stool,Maaslin2
+LKT p  Actinobacteria,8.390900753431001,0.0540517063092756,Y,Stool,Maaslin2
+LKT f  Ruminococcaceae,-2.546431734088332,0.0665248071675403,N,Stool,Maaslin2
+Bacteroides nordii,-6.601295459200578,0.109033318571006,N,Stool,Maaslin2
+Clostridium sp AF36 4,-6.849874939308625,0.141372673993165,N,Stool,Maaslin2
+Hungatella hathewayi,-3.113007482810499,0.158245419683953,N,Stool,Maaslin2
+Rothia mucilaginosa,2.858163201203091,0.206480950755144,Y,Stool,Maaslin2
+Bittarella massiliensis,-5.505301994848773,0.213757121779195,N,Stool,Maaslin2
+Anaerostipes hadrus,-2.054437627813861,0.242794321402367,N,Stool,Maaslin2
+Streptococcus mutans,3.2541566354669715,0,Y,Stool,AncomBC
+Streptococcus gordonii,2.16502283013174,0,Y,Stool,AncomBC
+Bittarella massiliensis,-2.3877274535147563,0,N,Stool,AncomBC
+Candidatus Avimicrobium caecorum,3.676649236434351,0.23110060395224305,Y,Stool,AncomBC
+Clostridium sp AM22 11AC,6.220292773721813,0.00588496311174442,Y,Stool,AncomBC
+Veillonella parvula,2.679536333356305,0,Y,Stool,AncomBC
+Bifidobacterium dentium,2.055837676492652,0,Y,Stool,AncomBC
+Paraprevotella clara,4.4413594067219275,0.00574436914073128,Y,Stool,AncomBC2
+Bacteroides finegoldii,2.1383872307506655,0.14962123272421746,Y,Stool,AncomBC2
+Butyricimonas faecihominis,-2.072928231478381,0.15918574244877437,N,Stool,AncomBC2
+Alistipes ihumii,3.8074463433393415,0.00875136682819292,Y,Stool,AncomBC2
+Enterococcus faecalis,-2.333600441560274,0.16573165716101437,N,Stool,AncomBC2
+Ruminococcus bromii,2.396658823779784,0.0734698602010617,Y,Stool,AncomBC2
+Hydrogeniiclostidium mannosilyticum,-3.976407950542237,0.01306496030186908,N,Stool,AncomBC2
+Faecalibacterium SGB15346,3.1269047486122235,0.00450541198629298,Y,Stool,AncomBC2
+Anaerotruncus rubiinfantis,3.245000440152329,0.04648579018074152,Y,Stool,AncomBC2
+Harryflintia acetispora,5.983191496607499,0.00900960679347513,Y,Stool,AncomBC2
+Ruminococcus bicirculans,-2.067693054557011,0.20768459843928225,N,Stool,AncomBC2
+Massilioclostridium coli,-5.483281387026977,3.793996612205269e-5,N,Stool,AncomBC2
+Blautia SGB4815,2.5618127737437164,0.03003975314488832,Y,Stool,AncomBC2
+Lactonifactor sp BIOML A6,-7.7468645745773825,0.23113697967488575,N,Stool,AncomBC2
+Catenibacillus scindens,2.304434948691178,0.14233534974308878,Y,Stool,AncomBC2
+Roseburia faecis,2.590873105503805,0.04727303925015017,Y,Stool,AncomBC2
+Roseburia sp AF02 12,2.0377333884428666,0.23113697967488575,Y,Stool,AncomBC2
+Eubacterium ramulus,3.987639194485056,1.266301349206813e-4,Y,Stool,AncomBC2
+Lachnospiraceae bacterium WCA3 601 WT 6H,-2.355449778970338,0.00603880338084189,N,Stool,AncomBC2
+Firmicutes bacterium AF16 15,2.5288139853228895,4.61413372858083e-4,Y,Stool,AncomBC2
+Romboutsia timonensis,2.330342066813049,0.018709707676616,Y,Stool,AncomBC2
+Collinsella aerofaciens,-2.1431073436116312,0.00425353954828442,N,Stool,AncomBC2
+LKT p  Actinobacteria,-2.6230819270278247,0.00900960679347513,N,Stool,AncomBC2
+Actinomyces graevenitzii,-2.3173524008758455,0.19946712915046128,N,Stool,AncomBC2
+Rothia mucilaginosa,2.029613421845715,0.0156715726800908,Y,Stool,AncomBC2
+Prevotella oulorum,2.619460240637227,0,Y,Saliva,Maaslin2
+Prevotella intermedia,-4.4939293448509385,0,N,Saliva,Maaslin2
+Capnocytophaga sp oral taxon 332,-2.020553963286023,0,N,Saliva,Maaslin2
+Aggregatibacter segnis,-3.316981658274166,0,N,Saliva,Maaslin2
+Campylobacter gracilis,2.543867163542227,0,Y,Saliva,Maaslin2
+Treponema sp OMZ 804,-2.2893760929823657,0,N,Saliva,Maaslin2
+Leptotrichia wadei,-2.466912335385515,0,N,Saliva,Maaslin2
+Abiotrophia defectiva,-2.528733534428211,0,N,Saliva,Maaslin2
+Lachnoanaerobaculum sp ICM7,-3.0781807781568804,0,N,Saliva,Maaslin2
+Mogibacterium timidum,-3.3758337231114,0,N,Saliva,Maaslin2
+Parvimonas micra,-5.434025094597259,0,N,Saliva,Maaslin2
+Corynebacterium durum,2.542753233002502,0,Y,Saliva,Maaslin2
+Actinomyces massiliensis,-2.2115121173084398,0,N,Saliva,Maaslin2
+Alloscardovia omnicolens,-3.55523957723833,0,N,Saliva,Maaslin2
+Scardovia wiggsiae,2.9483349191879182,0,Y,Saliva,Maaslin2
+Selenomonas noxia,8.533157678196567,1.47953490313765e-6,Y,Saliva,Maaslin2
+Alloprevotella rava,-17.14067732660466,1.7893916571923e-4,N,Saliva,Maaslin2
+Lancefieldella parvula,-2.958801593454341,0.0510205342742323,N,Saliva,Maaslin2
+Stomatobaculum SGB5266,-5.5921193505783995,0.0569035577718686,N,Saliva,Maaslin2
+LKT p  Proteobacteria,-11.091976569046475,0.101936586517625,N,Saliva,Maaslin2
+Prevotella shahii,-2.424501351565505,0,N,Saliva,AncomBC
+Prevotella oralis,2.450982124784163,0,Y,Saliva,AncomBC
+Alloprevotella SGB1466,-3.4395357578593835,0,N,Saliva,AncomBC
+Streptococcus constellatus,2.31563677757351,0,Y,Saliva,AncomBC
+Shuttleworthia satelles,2.3516771341869624,0,Y,Saliva,AncomBC
+Selenomonas noxia,3.890303064042659,0.04395066341106196,Y,Saliva,AncomBC
+Prevotella oulorum,2.323327109070316,0.11120070743774524,Y,Saliva,AncomBC2
+Prevotella intermedia,-2.992593716639299,0.2075955435831735,N,Saliva,AncomBC2
+Prevotellaceae bacterium Marseille P2826,-4.825029864327295,0.09895930151250772,N,Saliva,AncomBC2
+Aggregatibacter segnis,-4.351668848724726,0.2075955435831735,N,Saliva,AncomBC2
+LKT p  Proteobacteria,-4.609380953708736,0.05253951366291908,N,Saliva,AncomBC2
+Leptotrichia wadei,-3.4933356354198977,0.0045627637813829,N,Saliva,AncomBC2
+Abiotrophia defectiva,-3.2580276476041203,0.02889381147912568,N,Saliva,AncomBC2
+Eubacterium sulci,-2.027606528421861,0.10566128360132555,N,Saliva,AncomBC2
+Mogibacterium timidum,-2.144819686703218,0.06436528461061447,N,Saliva,AncomBC2
+Eubacterium brachy,-2.294278471012037,0.00798163833130488,N,Saliva,AncomBC2
+Parvimonas micra,-2.511581857368651,0.08113662851722687,N,Saliva,AncomBC2
+Selenomonas noxia,4.103538822193965,2.245784443446272e-6,Y,Saliva,AncomBC2
+Prevotella melaninogenica,-2.026874600481432,0,N,Oral swab,Maaslin2
+LKT f  Weeksellaceae,-3.1505861519714244,0,N,Oral swab,Maaslin2
+Corynebacterium durum,2.403885890560278,0,Y,Oral swab,Maaslin2
+Alloprevotella SGB1466,-3.6507208824806487,0,N,Oral swab,AncomBC
+Streptococcus gordonii,2.48433700545816,0,Y,Oral swab,AncomBC
+Abiotrophia defectiva,-2.1213286517060266,0,N,Oral swab,AncomBC
+Corynebacterium durum,2.876282534328243,0.2053154343991562,Y,Oral swab,AncomBC2

@@ -1,0 +1,47 @@
+﻿Patient,Target,log2FC,p-value,padj,Category
+P3,BST2,1.737667075,0.007584719,0.043129297,Anti-microbial and immune response
+P3,IL32,1.38406428,0.006522263,0.037606682,Anti-microbial and immune response
+P3,IL4R,1.334777903,0.003196673,0.019515059,Anti-microbial and immune response
+P3,TRIM27,0.920492671,0.000373916,0.002598219,Anti-microbial and immune response
+P3,LTBR,0.731620038,0.003895332,0.023421244,Anti-microbial and immune response
+P3,NEAT1,0.947326326,2.72E-05,0.000211516,Anti-microbial and immune response
+P5,CCL26,2.847741796,0.005572152,0.041469154,Anti-microbial and immune response
+P5,P2RX5,2.418876913,0.004224704,0.032391452,Anti-microbial and immune response
+P5,CCR4,2.230189429,0.002296857,0.018577195,Anti-microbial and immune response
+P5,TNFSF13B,1.994774905,0.003419792,0.026732757,Anti-microbial and immune response
+P5,STAB1,1.9372932,0.002517336,0.020204993,Anti-microbial and immune response
+P5,IL18BP,1.842042581,0.005334667,0.039877763,Anti-microbial and immune response
+P6,IL1A,2.963775679,0.00529003,0.048616893,Anti-microbial and immune response
+P1,XCR1,2.815282582,0.002463922,0.022962758,Anti-microbial and immune response
+P3,PDK3,1.950252613,0.003686429,0.022259,Metabolism and lipid homeostasis
+P3,NNT,1.763077228,0.002479679,0.015414152,Metabolism and lipid homeostasis
+P3,LIAS,1.39224758,0.000415495,0.00287207,Metabolism and lipid homeostasis
+P3,PLPP1,1.355920777,0.002839766,0.017477835,Metabolism and lipid homeostasis
+P3,MBTPS1,1.332621669,0.000841748,0.005608425,Metabolism and lipid homeostasis
+P3,PTGR1,1.209963643,0.002877631,0.017695144,Metabolism and lipid homeostasis
+P3,SLC7A5,1.028068846,0.004284929,0.025655624,Metabolism and lipid homeostasis
+P3,DGKA,0.841143552,0.005791505,0.033760569,Metabolism and lipid homeostasis
+P3,D2HGDH,0.710878306,0.002182404,0.013715645,Metabolism and lipid homeostasis
+P5,LPAR6,2.71112864,0.000653901,0.005772127,Metabolism and lipid homeostasis
+P5,GPBAR1,2.705794046,0.004611112,0.035048234,Metabolism and lipid homeostasis
+P5,CETP,1.924906472,0.002750528,0.021916775,Metabolism and lipid homeostasis
+P6,HK2,3.868079766,5.89E-05,0.000734567,Metabolism and lipid homeostasis
+P6,GALP,3.621004352,0.000555768,0.006113451,Metabolism and lipid homeostasis
+P6,GPAT3,3.535066699,0.003595922,0.034438406,Metabolism and lipid homeostasis
+P6,HSD3B7,2.7221957,0.003538242,0.033938572,Metabolism and lipid homeostasis
+P6,MVD,2.319406766,0.00116418,0.012205132,Metabolism and lipid homeostasis
+P1,ACOT9,3.106467127,0.000276728,0.003006563,Metabolism and lipid homeostasis
+P1,PDK3,2.627167056,0.005030223,0.043994587,Metabolism and lipid homeostasis
+P1,AGPS,2.436716651,0.001217893,0.012040001,Metabolism and lipid homeostasis
+P1,INPP5D,1.932769518,0.005674271,0.04909495,Metabolism and lipid homeostasis
+P3,RAD9A,0.997412264,0.00243347,0.015158594,"Stress response, apoptosis, and autophagy"
+P3,BCL2L2,0.740572385,0.002144618,0.013498756,"Stress response, apoptosis, and autophagy"
+P3,ATF6B,0.718370831,0.005444242,0.031926931,"Stress response, apoptosis, and autophagy"
+P5,APIP,1.183816186,0.000835945,0.007251372,"Stress response, apoptosis, and autophagy"
+P6,DNAJC13,3.371101784,0.001796854,0.018225021,"Stress response, apoptosis, and autophagy"
+P6,FOXO3,3.162635556,0.000511872,0.005667573,"Stress response, apoptosis, and autophagy"
+P6,ATG16L1,3.027624595,0.004363087,0.040826339,"Stress response, apoptosis, and autophagy"
+P6,ALDH2,2.700746493,9.10E-05,0.001109909,"Stress response, apoptosis, and autophagy"
+P6,GABARAPL1,1.809419117,0.003186563,0.030836418,"Stress response, apoptosis, and autophagy"
+P1,SH3GLB2,1.430904007,0.000257436,0.002807649,"Stress response, apoptosis, and autophagy"
+P1,PRDX2,1.276919741,0.00155419,0.015047772,"Stress response, apoptosis, and autophagy"
