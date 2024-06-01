@@ -1,4 +1,4 @@
-# Use this script to generate Top n taxa plots ----
+# Script for alluvial plot to show the filteration steps in 16S data
 source("src/libraries.R")
 source("src/common_functions.R")
 

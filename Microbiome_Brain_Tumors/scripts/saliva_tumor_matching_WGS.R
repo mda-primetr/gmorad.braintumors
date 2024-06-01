@@ -1,4 +1,4 @@
-# Use gtsummary package or similar package to summarize the metadata
+# Script to compare matches between saliva and tumor samples based on WGS data
 source("src/libraries.R")
 source("src/common_functions.R")
 
@@ -74,7 +74,7 @@ df_plt_overlap %>%
     facet_grid(coded_id + tumor_category ~ .,
         space = "free",
         scales = "free_y",
-        switch = "y" # ,
+        switch = "y"
     ) +
     scale_fill_manual(values = color_for_species) +
     theme_bw(base_size = 20) +
