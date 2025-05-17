@@ -55,7 +55,7 @@ The `script folder` contains all the scripts under numbered folder to guide the 
 
 ``session_info.txt`` : This file contains all the packages that are loaded in the R environment during the analysis. 
 
-`WGS` and `16S` folders are created where necessary to indicate which sequencing data used to generate the output. 
+`WGS` and `16S` folders are created where necessary to indicate which sequencing data was used to generate the output. 
 
 
 ## Script workflow 
