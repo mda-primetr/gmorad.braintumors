@@ -1,0 +1,19 @@
+taxa_name,tumor_total_genome_length,other_sample_genome_match,percent_of_length_matching,coded_id,tumor_category,coded_id_tumor,sample_type
+Streptococcus koreensis,301,151,0.50166113,8f20,Glioma,8f20_Glioma,Saliva
+Granulicatella adiacens,151,151,1,8f20,Glioma,8f20_Glioma,Saliva
+Prevotella denticola,302,144,0.476821192,8f20,Glioma,8f20_Glioma,Saliva
+Veillonella sp  S12025-13,151,151,1,5f86,Glioma,5f86_Glioma,Saliva
+Prevotella jejuni,151,151,1,9d16,Glioma,9d16_Glioma,Saliva
+Granulicatella adiacens,151,151,1,fe5a,Glioma,fe5a_Glioma,Saliva
+Veillonella sp  S12025-13,425,149,0.350588235,fe5a,Glioma,fe5a_Glioma,Saliva
+Prevotella jejuni,302,301,0.996688742,fe5a,Glioma,fe5a_Glioma,Saliva
+Veillonella nakazawae,532,532,1,f983,Glioma,f983_Glioma,Saliva
+Prevotella jejuni,149,149,1,f983,Glioma,f983_Glioma,Saliva
+Bacteroides eggerthii,151,151,1,a762,Glioma,a762_Glioma,Saliva
+Veillonella nakazawae,302,151,0.5,8cb8,Met,8cb8_Met,Saliva
+Veillonella sp  S12025-13,283,283,1,c275,Glioma,c275_Glioma,Saliva
+Prevotella corporis,835,151,0.180838323,3e90,Met,3e90_Met,Saliva
+Lactococcus raffinolactis,176,176,1,2466,Glioma,2466_Glioma,Saliva
+Neisseria sp  Marseille-Q5346,302,151,0.5,76b4,Glioma,76b4_Glioma,Saliva
+Veillonella sp  S12025-13,296,296,1,76b4,Glioma,76b4_Glioma,Saliva
+Bifidobacterium catenulatum,301,151,0.50166113,2e0f,Glioma,2e0f_Glioma,Stool

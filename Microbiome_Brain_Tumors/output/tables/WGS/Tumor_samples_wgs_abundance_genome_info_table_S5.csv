@@ -1,0 +1,33 @@
+Species,total_abundance,median_abundance,min_abundance,max_abundance,Glioma_count_n,Met_count_n,Glioma_present,Met_present,TaxaId,Approx Genome completion,Max Coverage in completed segments,Reads,Total Letters In Reads
+Bacteroides.caccae,4,2,2,2,1,1,Yes,Yes,47678,8.879470544646018e-5,2,4,590
+Bacteroides.eggerthii,21,4,1,8,4,1,Yes,Yes,28111,4.9688036700563e-4,2,20,2850
+Bifidobacterium.catenulatum,23,2,1,9,4,4,Yes,Yes,1686,8.8574140358524e-4,2,22,3187
+Capnocytophaga.sp..FDAARGOS 737,8,2,2,4,2,1,Yes,Yes,2545799,4.2258527948116e-4,2,8,1204
+Clostridium.perfringens,4,2,2,2,2,0,Yes,No,1502,1.6276666649231e-4,2,4,603
+Corynebacterium.glaucum,4,2,2,2,0,2,No,Yes,187491,1.7985747188684e-4,1,3,453
+Enterococcus.cecorum,4,2,2,2,1,1,Yes,Yes,44008,1.7145449869422e-4,2,4,575
+Faecalibaculum.rodentium,4,2,2,2,0,2,No,Yes,1702221,1.2546765215804e-4,2,4,588
+Fusobacterium.nucleatum,52,4,1,8,7,6,Yes,Yes,851,0.00226861662584736,2,47,6751
+Gardnerella.vaginalis,10,2,2,6,1,2,Yes,Yes,2702,5.6966799735644e-4,2,8,1140
+Granulicatella.adiacens,3,1,1,1,2,1,Yes,Yes,46124,1.8155373067273e-4,2,3,453
+Jeotgalibaca.porci,10,10,10,10,1,0,Yes,No,1868793,3.9335114726692e-4,2,10,1507
+Lachnoanaerobaculum.umeaense,4,2,2,2,1,1,Yes,Yes,617123,2.1455692216493e-4,1,4,603
+Lactobacillus.gasseri,2,2,2,2,1,0,Yes,No,1596,1.5942042756347e-4,1,2,302
+Lactococcus.raffinolactis,5,2,1,2,2,1,Yes,Yes,1366,2.7193777991439e-4,1,4,603
+Mycolicibacterium.fortuitum,4,4,4,4,1,0,Yes,No,1766,7.071413786353389e-5,1,3,453
+Mycolicibacterium.thermoresistibile,2,2,2,2,0,1,No,Yes,1797,2.8480895681750836e-5,2,2,282
+Neisseria.sp..Marseille-Q5346,5,1,1,2,3,1,Yes,Yes,2972775,3.2061966651308e-4,1,5,755
+Neisseria.sp..RH3002v2g,2,1,1,1,2,0,Yes,No,1871109,1.3584365205312e-4,1,2,302
+Peptoniphilus.harei,3,1.5,1,2,1,1,Yes,Yes,54005,2.5167803961222e-4,1,3,451
+Phascolarctobacterium.faecium,4,2,2,2,1,1,Yes,Yes,33025,1.5319594861905e-4,2,3,453
+Phocaeicola.coprophilus,8,2,2,4,1,2,Yes,Yes,387090,2.1489614365953e-4,2,7,1012
+Prevotella.corporis,61,4,2,10,6,7,Yes,Yes,28128,0.00254562492435623,2,58,8089
+Prevotella.denticola,2,2,2,2,1,0,Yes,No,28129,2.4776884566058e-4,1,2,301
+Prevotella.jejuni,10,2,1,2,5,1,Yes,Yes,1177574,6.0752396651364e-4,2,10,1425
+Pseudomonas.fragi,8,2,2,4,1,2,Yes,Yes,296,1.8727584805896e-4,2,8,1133
+Sphingobacterium.sp..UDSM-2020,2,2,2,2,1,0,Yes,No,2795738,4.1463684449889173e-5,2,2,301
+Sphingomonas.koreensis,4,2,2,2,1,1,Yes,Yes,93064,9.449263223644984e-5,2,4,595
+Streptococcus.koreensis,7,1.5,1,3,2,2,Yes,Yes,2382163,5.249800955414e-4,1,7,1055
+Streptomyces.albus,2,2,2,2,1,0,Yes,No,1888,3.016813793379691e-5,2,2,301
+Veillonella.nakazawae,16,2,1,5,6,2,Yes,Yes,2682456,9.4860378869493e-4,2,16,2362
+Veillonella.sp..S12025-13,11,2,1,5,4,1,Yes,Yes,2682455,6.1558976249138e-4,2,10,1393

@@ -1,0 +1,23 @@
+coded_id,tumor_category,richness,taxa_status
+2466,Glioma,5,Not in overlap with saliva or stool
+2466,Glioma,1,Overlap with saliva
+2e0f,Glioma,1,Overlap with stool
+3e90,Met,6,Not in overlap with saliva or stool
+3e90,Met,1,Overlap with saliva
+5f86,Glioma,1,Not in overlap with saliva or stool
+5f86,Glioma,1,Overlap with saliva
+76b4,Glioma,1,Not in overlap with saliva or stool
+76b4,Glioma,2,Overlap with saliva
+8cb8,Met,3,Not in overlap with saliva or stool
+8cb8,Met,1,Overlap with saliva
+8f20,Glioma,2,Not in overlap with saliva or stool
+8f20,Glioma,3,Overlap with saliva
+9d16,Glioma,1,Overlap with saliva
+a762,Glioma,2,Not in overlap with saliva or stool
+a762,Glioma,1,Overlap with saliva
+c275,Glioma,2,Not in overlap with saliva or stool
+c275,Glioma,1,Overlap with saliva
+f983,Glioma,2,Not in overlap with saliva or stool
+f983,Glioma,2,Overlap with saliva
+fe5a,Glioma,1,Not in overlap with saliva or stool
+fe5a,Glioma,3,Overlap with saliva

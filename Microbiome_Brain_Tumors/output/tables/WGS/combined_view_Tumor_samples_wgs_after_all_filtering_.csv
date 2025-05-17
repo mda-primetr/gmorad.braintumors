@@ -1,0 +1,648 @@
+Species,Abundance,filter_step
+Achromobacter.xylosoxidans,2,Before any filtering
+Acidovorax.temperans,54,Before any filtering
+Acinetobacter.baumannii,28,Before any filtering
+Acinetobacter.guillouiae,3,Before any filtering
+Acinetobacter.indicus,20,Before any filtering
+Acinetobacter.johnsonii,382,Before any filtering
+Acinetobacter.junii,2,Before any filtering
+Acinetobacter.lwoffii,22,Before any filtering
+Acinetobacter.nosocomialis,2,Before any filtering
+Acinetobacter.radioresistens,6,Before any filtering
+Acinetobacter.schindleri,3,Before any filtering
+Acinetobacter.seifertii,2,Before any filtering
+Acinetobacter.soli,5,Before any filtering
+Acinetobacter.sp..Colony158,2,Before any filtering
+Acinetobacter.sp..TAC-1,3,Before any filtering
+Acinetobacter.sp..TTH0-4,8,Before any filtering
+Acinetobacter.sp..Tol.5,2,Before any filtering
+Acinetobacter.ursingii,9,Before any filtering
+Actinomyces.oris,3,Before any filtering
+Actinomyces.pacaensis,2,Before any filtering
+Actinomyces.viscosus,2,Before any filtering
+Aeromonas.hydrophila,14,Before any filtering
+Agathobacter.rectalis,6,Before any filtering
+Aggregatibacter.sp..2125159857,11,Before any filtering
+Agrobacterium.tumefaciens,2,Before any filtering
+Agrococcus.sp..Marseille-Q4369,2,Before any filtering
+Agrococcus.sp..SL85,4,Before any filtering
+Akkermansia.muciniphila,2,Before any filtering
+Alcaligenes.faecalis,24,Before any filtering
+Alistipes.dispar,2,Before any filtering
+Alistipes.finegoldii,1,Before any filtering
+Anabaena.sp..WA102,7,Before any filtering
+Anaerobutyricum.hallii,6,Before any filtering
+Anaerostipes.hadrus,11,Before any filtering
+Arachnia.propionica,4,Before any filtering
+Bacillus.spizizenii,65,Before any filtering
+Bacteroides.caccae,2,Before any filtering
+Bacteroides.eggerthii,18,Before any filtering
+Bacteroides.fragilis,120,Before any filtering
+Bacteroides.intestinalis,2,Before any filtering
+Bacteroides.ovatus,3,Before any filtering
+Bacteroides.salyersiae,2,Before any filtering
+Bacteroides.stercoris,2,Before any filtering
+Bacteroides.thetaiotaomicron,2,Before any filtering
+Bacteroides.uniformis,17,Before any filtering
+Bacteroides.xylanisolvens,2,Before any filtering
+Bifidobacterium.adolescentis,37,Before any filtering
+Bifidobacterium.catenulatum,10,Before any filtering
+Bifidobacterium.longum,6,Before any filtering
+Bifidobacterium.pseudolongum,2,Before any filtering
+Blautia.coccoides,2,Before any filtering
+Blautia.pseudococcoides,2,Before any filtering
+Blautia.wexlerae,23,Before any filtering
+Brachybacterium.sp..GU-2,2,Before any filtering
+Bradyrhizobium.betae,19,Before any filtering
+Bradyrhizobium.sp..BTAi1,13,Before any filtering
+Bradyrhizobium.sp..CB1015,19,Before any filtering
+Bradyrhizobium.sp..sBnM-33,12,Before any filtering
+Brevibacterium.sp..CS2,2,Before any filtering
+Brevundimonas.fontaquae,4,Before any filtering
+Brevundimonas.pondensis,2,Before any filtering
+Brucella.intermedia,2,Before any filtering
+Burkholderia.anthina,1,Before any filtering
+Burkholderia.contaminans,2,Before any filtering
+Butyrivibrio.crossotus,2,Before any filtering
+Caldibacillus.thermoamylovorans,25,Before any filtering
+Caldimonas.thermodepolymerans,4,Before any filtering
+Campylobacter.concisus,3,Before any filtering
+Campylobacter.rectus,2,Before any filtering
+Campylobacter.showae,4,Before any filtering
+Candidatus.Methylopumilus.rimovensis,2,Before any filtering
+Candidatus.Nanopelagicus.limnes,6,Before any filtering
+Candidatus.Nanosynbacter.sp..HMT-352,2,Before any filtering
+Candidatus.Planktophila.versatilis,1,Before any filtering
+Capnocytophaga.gingivalis,3,Before any filtering
+Capnocytophaga.sp..FDAARGOS 737,6,Before any filtering
+Caulobacter.flavus,2,Before any filtering
+Caulobacter.sp..FWC26,4,Before any filtering
+Citricoccus.muralis,2,Before any filtering
+Clavibacter.californiensis,2,Before any filtering
+Cloacibacterium.caeni,2,Before any filtering
+Clostridioides.difficile,22,Before any filtering
+Clostridium.perfringens,2,Before any filtering
+Collinsella.aerofaciens,4,Before any filtering
+Comamonas.terrigena,6,Before any filtering
+Comamonas.testosteroni,2,Before any filtering
+Coprococcus.catus,3,Before any filtering
+Corynebacterium.accolens,2,Before any filtering
+Corynebacterium.afermentans,6,Before any filtering
+Corynebacterium.aquatimens,2,Before any filtering
+Corynebacterium.aurimucosum,2,Before any filtering
+Corynebacterium.coyleae,20,Before any filtering
+Corynebacterium.doosanense,1,Before any filtering
+Corynebacterium.freneyi,2,Before any filtering
+Corynebacterium.glaucum,2,Before any filtering
+Corynebacterium.gottingense,2,Before any filtering
+Corynebacterium.hadale,2,Before any filtering
+Corynebacterium.jeikeium,2,Before any filtering
+Corynebacterium.kefirresidentii,6,Before any filtering
+Corynebacterium.matruchotii,6,Before any filtering
+Corynebacterium.propinquum,3,Before any filtering
+Corynebacterium.pseudodiphtheriticum,9,Before any filtering
+Corynebacterium.pyruviciproducens,2,Before any filtering
+Corynebacterium.riegelii,5,Before any filtering
+Corynebacterium.simulans,6,Before any filtering
+Corynebacterium.singulare,6,Before any filtering
+Corynebacterium.sp..ATCC.6931,2,Before any filtering
+Corynebacterium.sp..SCR221107,4,Before any filtering
+Corynebacterium.sp..Z-1,2,Before any filtering
+Corynebacterium.tuberculostearicum,20,Before any filtering
+Corynebacterium.ureicelerivorans,22,Before any filtering
+Cupriavidus.gilardii,6,Before any filtering
+Cupriavidus.metallidurans,6,Before any filtering
+Curtobacterium.sp..MCPF17 002,2,Before any filtering
+Cutibacterium.acnes,3590,Before any filtering
+Cutibacterium.granulosum,13,Before any filtering
+Cutibacterium.modestum,20,Before any filtering
+Deinococcus.gobiensis,2,Before any filtering
+Dermacoccus.nishinomiyaensis,2,Before any filtering
+Dermacoccus.sp..PAMC28757,4,Before any filtering
+Desulfovibrio.fairfieldensis,2,Before any filtering
+Dietzia.kunjamensis,6,Before any filtering
+Dietzia.sp..oral.taxon.368,3,Before any filtering
+Dolichospermum.circinale,2,Before any filtering
+Dolosigranulum.pigrum,12,Before any filtering
+Dorea.longicatena,2,Before any filtering
+Dyadobacter.chenwenxiniae,2,Before any filtering
+Eggerthella.lenta,2,Before any filtering
+Eikenella.corrodens,4,Before any filtering
+Enterobacter.soli,2,Before any filtering
+Enterocloster.bolteae,6,Before any filtering
+Enterococcus.cecorum,2,Before any filtering
+Enterococcus.faecalis,742,Before any filtering
+Enterococcus.faecium,3,Before any filtering
+Enterococcus.sp..E1123,2,Before any filtering
+Epilithonimonas.vandammei,3,Before any filtering
+Escherichia.coli,658,Before any filtering
+Facklamia.hominis,2,Before any filtering
+Faecalibacterium.prausnitzii,56,Before any filtering
+Faecalibacterium.sp..IP-1-18,2,Before any filtering
+Faecalibaculum.rodentium,2,Before any filtering
+Finegoldia.magna,3,Before any filtering
+Flavobacterium.sp..N1719,2,Before any filtering
+Flavonifractor.plautii,2,Before any filtering
+Fusobacterium.nucleatum,28,Before any filtering
+Fusobacterium.polymorphum,5,Before any filtering
+Gardnerella.leopoldii,6,Before any filtering
+Gardnerella.vaginalis,8,Before any filtering
+Gemella.sanguinis,5,Before any filtering
+Glutamicibacter.halophytocola,8,Before any filtering
+Gordonia.bronchialis,2,Before any filtering
+Granulicatella.adiacens,1,Before any filtering
+Haematobacter.massiliensis,4,Before any filtering
+Haemophilus.parainfluenzae,15,Before any filtering
+Halopseudomonas.litoralis,2,Before any filtering
+Heyndrickxia.coagulans,6,Before any filtering
+Hydrogenophilus.thermoluteolus,6,Before any filtering
+Janibacter.indicus,11,Before any filtering
+Janibacter.limosus,2,Before any filtering
+Janibacter.sp..CX7,21,Before any filtering
+Janibacter.sp..DB-40,2,Before any filtering
+Jeotgalibaca.porci,10,Before any filtering
+Jeotgalicoccus.sp..ATCC.8456,6,Before any filtering
+Klebsiella.aerogenes,74,Before any filtering
+Kocuria.palustris,2,Before any filtering
+Kocuria.rosea,8,Before any filtering
+Kocuria.sp..KD4,2,Before any filtering
+Kytococcus.sedentarius,1,Before any filtering
+LKT g  Exiguobacterium.alkaliphilum,2,Before any filtering
+LKT g  Labilithrix.luteola,2,Before any filtering
+LKT g  Tepidimonas.taiwanensis,8,Before any filtering
+LKT o  Candidatus.Minimicrobia.vallesae,1,Before any filtering
+Lachnoanaerobaculum.umeaense,2,Before any filtering
+Lachnospira.eligens,2,Before any filtering
+Lactobacillus.crispatus,25,Before any filtering
+Lactobacillus.gasseri,2,Before any filtering
+Lactobacillus.iners,6,Before any filtering
+Lactobacillus.johnsonii,13,Before any filtering
+Lactococcus.cremoris,1,Before any filtering
+Lactococcus.raffinolactis,3,Before any filtering
+Lautropia.mirabilis,2,Before any filtering
+Leclercia.adecarboxylata,3,Before any filtering
+Legionella.fallonii,1,Before any filtering
+Leptotrichia.hongkongensis,2,Before any filtering
+Ligilactobacillus.murinus,45,Before any filtering
+Ligilactobacillus.ruminis,2,Before any filtering
+Limnohabitans.sp..103DPR2,12,Before any filtering
+Limosilactobacillus.fermentum,112,Before any filtering
+Listeria.monocytogenes,82,Before any filtering
+Mammaliicoccus.lentus,2,Before any filtering
+Massilia.sp..NP310,2,Before any filtering
+Mediterraneibacter.gnavus,6,Before any filtering
+Megamonas.funiformis,14,Before any filtering
+Megasphaera.stantonii,3,Before any filtering
+Meiothermus.ruber,10,Before any filtering
+Methylobacterium.brachiatum,2,Before any filtering
+Methylobacterium.radiotolerans,2,Before any filtering
+Methylobacterium.sp..C1,15,Before any filtering
+Methylophaga.nitratireducenticrescens,8,Before any filtering
+Methylorubrum.extorquens,2,Before any filtering
+Methylorubrum.populi,6,Before any filtering
+Methylorubrum.sp..B1-46,3,Before any filtering
+Microbacterium.aurum,3,Before any filtering
+Microbacterium.lemovicicum,6,Before any filtering
+Micrococcus.luteus,6,Before any filtering
+Micrococcus.lylae,2,Before any filtering
+Micrococcus.porci,4,Before any filtering
+Micrococcus.sp..KBS0714,6,Before any filtering
+Micrococcus.sp..V7,2,Before any filtering
+Microcystis.sp..MC19,7,Before any filtering
+Micromonospora.sp..HUAS.LYJ1,2,Before any filtering
+Microvirga.ossetica,1,Before any filtering
+Mogibacterium.diversum,5,Before any filtering
+Moraxella.osloensis,5,Before any filtering
+Muribaculum.intestinale,3,Before any filtering
+Mycobacteroides.chelonae,2,Before any filtering
+Mycolicibacterium.fortuitum,4,Before any filtering
+Mycolicibacterium.litorale,2,Before any filtering
+Mycolicibacterium.phocaicum,2,Before any filtering
+Mycolicibacterium.sediminis,4,Before any filtering
+Mycolicibacterium.thermoresistibile,2,Before any filtering
+Neisseria.macacae,9,Before any filtering
+Neisseria.sicca,3,Before any filtering
+Neisseria.sp..Marseille-Q5346,3,Before any filtering
+Neisseria.sp..RH3002v2g,1,Before any filtering
+Neisseria.sp..oral.taxon.014,2,Before any filtering
+Neisseria.subflava,15,Before any filtering
+Novosphingobium.olei,2,Before any filtering
+Pandoraea.pnomenusa,1,Before any filtering
+Pantoea.agglomerans,2,Before any filtering
+Pantoea.piersonii,2,Before any filtering
+Pantoea.stewartii,1,Before any filtering
+Paraburkholderia.fungorum,72,Before any filtering
+Paracoccus.yeei,2,Before any filtering
+Paramuribaculum.intestinale,2,Before any filtering
+Pediococcus.pentosaceus,2,Before any filtering
+Peptoniphilus.harei,3,Before any filtering
+Peribacillus.psychrosaccharolyticus,8,Before any filtering
+Phascolarctobacterium.faecium,2,Before any filtering
+Phenylobacterium.sp..NIBR.498073,2,Before any filtering
+Phocaeicola.coprophilus,4,Before any filtering
+Phocaeicola.vulgatus,30,Before any filtering
+Polynucleobacter.sp..HIN8,1,Before any filtering
+Porphyromonas.gingivalis,2,Before any filtering
+Prevotella.corporis,39,Before any filtering
+Prevotella.denticola,2,Before any filtering
+Prevotella.histicola,3,Before any filtering
+Prevotella.intermedia,28,Before any filtering
+Prevotella.jejuni,3,Before any filtering
+Prevotella.melaninogenica,30,Before any filtering
+Prevotella.nigrescens,1,Before any filtering
+Proteus.mirabilis,2,Before any filtering
+Pseudochrobactrum.algeriensis,4,Before any filtering
+Pseudoglutamicibacter.albus,1,Before any filtering
+Pseudomonas.aeruginosa,41,Before any filtering
+Pseudomonas.agarici,2,Before any filtering
+Pseudomonas.azotoformans,2,Before any filtering
+Pseudomonas.chengduensis,3,Before any filtering
+Pseudomonas.extremaustralis,2,Before any filtering
+Pseudomonas.fluorescens,15,Before any filtering
+Pseudomonas.fragi,6,Before any filtering
+Pseudomonas.hydrolytica,2,Before any filtering
+Pseudomonas.luteola,2,Before any filtering
+Pseudomonas.oleovorans,15,Before any filtering
+Pseudomonas.reinekei,1,Before any filtering
+Pseudomonas.sp..273,6,Before any filtering
+Pseudomonas.sp..DY-1,6,Before any filtering
+Pseudomonas.sp..J380,3,Before any filtering
+Pseudomonas.sp..MYb193,3,Before any filtering
+Pseudomonas.sp..NS1(2017),2,Before any filtering
+Pseudomonas.sp..Ost2,2,Before any filtering
+Pseudomonas.tolaasii,2,Before any filtering
+Pseudomonas.yamanorum,2,Before any filtering
+Pseudoxanthomonas.mexicana,6,Before any filtering
+Psychrobacter.sp..van23A,23,Before any filtering
+Pusillibacter.faecalis,4,Before any filtering
+Ralstonia.insidiosa,6,Before any filtering
+Ralstonia.mannitolilytica,3,Before any filtering
+Ralstonia.pickettii,43,Before any filtering
+Rhodobacter.xanthinilyticus,2,Before any filtering
+Rhodococcus.fascians,2,Before any filtering
+Romboutsia.ilealis,23,Before any filtering
+Roseburia.hominis,106,Before any filtering
+Roseburia.intestinalis,2,Before any filtering
+Rothia.amarae,6,Before any filtering
+Rothia.dentocariosa,2,Before any filtering
+Rothia.mucilaginosa,14,Before any filtering
+Rothia.terrae,2,Before any filtering
+Salmonella.enterica,63,Before any filtering
+Schaalia.odontolytica,3,Before any filtering
+Schlegelella.aquatica,112,Before any filtering
+Segatella.copri,37,Before any filtering
+Segatella.hominis,2,Before any filtering
+Serratia.liquefaciens,30,Before any filtering
+Sphaerospermopsis.torques-reginae,3,Before any filtering
+Sphingobacterium.sp..UDSM-2020,2,Before any filtering
+Sphingobium.sp..AntQ-1,6,Before any filtering
+Sphingobium.sp..PAMC28499,10,Before any filtering
+Sphingobium.sp..WTD-1,2,Before any filtering
+Sphingobium.xenophagum,2,Before any filtering
+Sphingobium.yanoikuyae,35,Before any filtering
+Sphingomonas.aerolata,2,Before any filtering
+Sphingomonas.bisphenolicum,3,Before any filtering
+Sphingomonas.koreensis,2,Before any filtering
+Sphingomonas.melonis,15,Before any filtering
+Sphingomonas.sp..AAP5,28,Before any filtering
+Sphingomonas.sp..AP4-R1,2,Before any filtering
+Sphingomonas.sp..HMP6,5,Before any filtering
+Sphingomonas.taxi,2,Before any filtering
+Sphingopyxis.sp..113P3,2,Before any filtering
+Sphingopyxis.sp..FD7,2,Before any filtering
+Sphingopyxis.sp..GC21,3,Before any filtering
+Sphingopyxis.terrae,2,Before any filtering
+Staphylococcus.arlettae,8,Before any filtering
+Staphylococcus.aureus,87,Before any filtering
+Staphylococcus.capitis,14,Before any filtering
+Staphylococcus.cohnii,3,Before any filtering
+Staphylococcus.epidermidis,56,Before any filtering
+Staphylococcus.equorum,6,Before any filtering
+Staphylococcus.hominis,99,Before any filtering
+Staphylococcus.nepalensis,8,Before any filtering
+Staphylococcus.pasteuri,20,Before any filtering
+Staphylococcus.saprophyticus,54,Before any filtering
+Staphylococcus.xylosus,2,Before any filtering
+Stenotrophomonas.acidaminiphila,4,Before any filtering
+Stenotrophomonas.maltophilia,17,Before any filtering
+Stenotrophomonas.sp..24(2023),1,Before any filtering
+Stenotrophomonas.sp..610A2,2,Before any filtering
+Stenotrophomonas.sp..BIO128-Bstrain,6,Before any filtering
+Stenotrophomonas.sp..DFS-20110405,13,Before any filtering
+Stomatobaculum.sp..F0698,3,Before any filtering
+Streptococcus.anginosus,1,Before any filtering
+Streptococcus.australis,2,Before any filtering
+Streptococcus.constellatus,4,Before any filtering
+Streptococcus.gordonii,2,Before any filtering
+Streptococcus.ilei,3,Before any filtering
+Streptococcus.infantis,1,Before any filtering
+Streptococcus.koreensis,2,Before any filtering
+Streptococcus.lactarius,6,Before any filtering
+Streptococcus.mitis,11,Before any filtering
+Streptococcus.oralis,7,Before any filtering
+Streptococcus.parasanguinis,3,Before any filtering
+Streptococcus.rubneri,1,Before any filtering
+Streptococcus.salivarius,2,Before any filtering
+Streptococcus.sanguinis,5,Before any filtering
+Streptococcus.sp..LPB0220,1,Before any filtering
+Streptococcus.sp..Marseille-Q6470,1,Before any filtering
+Streptococcus.sp..SP4011,2,Before any filtering
+Streptococcus.sp..oral.taxon.061,2,Before any filtering
+Streptococcus.sp..oral.taxon.064,3,Before any filtering
+Streptococcus.thermophilus,687,Before any filtering
+Streptomyces.albus,2,Before any filtering
+Streptomyces.bathyalis,2,Before any filtering
+Streptomyces.sp..S399,2,Before any filtering
+Stutzerimonas.stutzeri,7,Before any filtering
+Thermus.sp..NEB1569,6,Before any filtering
+Thermus.thermophilus,4,Before any filtering
+Treponema.medium,12,Before any filtering
+Turicibacter.sp..TC023,32,Before any filtering
+Veillonella.nakazawae,8,Before any filtering
+Veillonella.parvula,15,Before any filtering
+Veillonella.rogosae,153,Before any filtering
+Veillonella.sp..S12025-13,8,Before any filtering
+Weissella.cibaria,2,Before any filtering
+Xanthomonas.campestris,4,Before any filtering
+Acinetobacter.baumannii,30,After controls removal filter
+Acinetobacter.indicus,20,After controls removal filter
+Acinetobacter.nosocomialis,2,After controls removal filter
+Acinetobacter.radioresistens,9,After controls removal filter
+Actinomyces.pacaensis,2,After controls removal filter
+Aeromonas.hydrophila,15,After controls removal filter
+Bacteroides.caccae,2,After controls removal filter
+Bacteroides.eggerthii,21,After controls removal filter
+Bifidobacterium.catenulatum,16,After controls removal filter
+Bifidobacterium.pseudolongum,2,After controls removal filter
+Campylobacter.concisus,3,After controls removal filter
+Candidatus.Methylopumilus.rimovensis,2,After controls removal filter
+Capnocytophaga.sp..FDAARGOS 737,6,After controls removal filter
+Clostridium.perfringens,2,After controls removal filter
+Corynebacterium.aquatimens,6,After controls removal filter
+Corynebacterium.glaucum,2,After controls removal filter
+Corynebacterium.tuberculostearicum,20,After controls removal filter
+Cupriavidus.gilardii,8,After controls removal filter
+Dermacoccus.nishinomiyaensis,2,After controls removal filter
+Dietzia.kunjamensis,6,After controls removal filter
+Dolosigranulum.pigrum,12,After controls removal filter
+Enterocloster.bolteae,6,After controls removal filter
+Enterococcus.cecorum,2,After controls removal filter
+Faecalibaculum.rodentium,2,After controls removal filter
+Fusobacterium.nucleatum,28,After controls removal filter
+Gardnerella.vaginalis,8,After controls removal filter
+Granulicatella.adiacens,1,After controls removal filter
+Heyndrickxia.coagulans,12,After controls removal filter
+Janibacter.sp..CX7,21,After controls removal filter
+Jeotgalibaca.porci,10,After controls removal filter
+Jeotgalicoccus.sp..ATCC.8456,6,After controls removal filter
+Klebsiella.aerogenes,94,After controls removal filter
+Kocuria.rosea,8,After controls removal filter
+Lachnoanaerobaculum.umeaense,2,After controls removal filter
+Lachnospira.eligens,2,After controls removal filter
+Lactobacillus.gasseri,2,After controls removal filter
+Lactobacillus.johnsonii,13,After controls removal filter
+Lactococcus.raffinolactis,3,After controls removal filter
+Leclercia.adecarboxylata,51,After controls removal filter
+Ligilactobacillus.murinus,45,After controls removal filter
+Limnohabitans.sp..103DPR2,12,After controls removal filter
+Megasphaera.stantonii,3,After controls removal filter
+Meiothermus.ruber,10,After controls removal filter
+Micrococcus.sp..KBS0714,20,After controls removal filter
+Moraxella.osloensis,5,After controls removal filter
+Mycolicibacterium.fortuitum,4,After controls removal filter
+Mycolicibacterium.litorale,6,After controls removal filter
+Mycolicibacterium.thermoresistibile,2,After controls removal filter
+Neisseria.sicca,9,After controls removal filter
+Neisseria.sp..Marseille-Q5346,3,After controls removal filter
+Neisseria.sp..RH3002v2g,1,After controls removal filter
+Neisseria.subflava,15,After controls removal filter
+Paracoccus.yeei,2,After controls removal filter
+Peptoniphilus.harei,3,After controls removal filter
+Peribacillus.psychrosaccharolyticus,8,After controls removal filter
+Phascolarctobacterium.faecium,2,After controls removal filter
+Phocaeicola.coprophilus,6,After controls removal filter
+Prevotella.corporis,36,After controls removal filter
+Prevotella.denticola,2,After controls removal filter
+Prevotella.histicola,3,After controls removal filter
+Prevotella.intermedia,26,After controls removal filter
+Prevotella.jejuni,3,After controls removal filter
+Prevotella.melaninogenica,30,After controls removal filter
+Proteus.mirabilis,21,After controls removal filter
+Pseudochrobactrum.algeriensis,4,After controls removal filter
+Pseudomonas.fluorescens,21,After controls removal filter
+Pseudomonas.fragi,6,After controls removal filter
+Pseudomonas.sp..DY-1,6,After controls removal filter
+Pseudoxanthomonas.mexicana,6,After controls removal filter
+Ralstonia.pickettii,9,After controls removal filter
+Rothia.mucilaginosa,7,After controls removal filter
+Serratia.liquefaciens,30,After controls removal filter
+Sphingobacterium.sp..UDSM-2020,2,After controls removal filter
+Sphingomonas.koreensis,2,After controls removal filter
+Sphingomonas.sp..AAP5,28,After controls removal filter
+Staphylococcus.arlettae,8,After controls removal filter
+Staphylococcus.epidermidis,57,After controls removal filter
+Staphylococcus.equorum,6,After controls removal filter
+Staphylococcus.nepalensis,8,After controls removal filter
+Staphylococcus.saprophyticus,52,After controls removal filter
+Stenotrophomonas.acidaminiphila,6,After controls removal filter
+Streptococcus.gordonii,6,After controls removal filter
+Streptococcus.koreensis,6,After controls removal filter
+Streptococcus.mitis,25,After controls removal filter
+Streptococcus.parapneumoniae,2,After controls removal filter
+Streptococcus.sanguinis,5,After controls removal filter
+Streptococcus.sp..oral.taxon.064,3,After controls removal filter
+Streptococcus.thermophilus,615,After controls removal filter
+Streptomyces.albus,2,After controls removal filter
+Thermus.sp..NEB1569,6,After controls removal filter
+Turicibacter.faecis,32,After controls removal filter
+Veillonella.nakazawae,8,After controls removal filter
+Veillonella.rogosae,157,After controls removal filter
+Veillonella.sp..S12025-13,8,After controls removal filter
+Acinetobacter.baumannii,30,After control and genome completion filter
+Acinetobacter.indicus,20,After control and genome completion filter
+Acinetobacter.nosocomialis,2,After control and genome completion filter
+Acinetobacter.radioresistens,9,After control and genome completion filter
+Actinomyces.pacaensis,2,After control and genome completion filter
+Aeromonas.hydrophila,15,After control and genome completion filter
+Bacteroides.caccae,2,After control and genome completion filter
+Bacteroides.eggerthii,21,After control and genome completion filter
+Bifidobacterium.catenulatum,16,After control and genome completion filter
+Bifidobacterium.pseudolongum,2,After control and genome completion filter
+Campylobacter.concisus,3,After control and genome completion filter
+Candidatus.Methylopumilus.rimovensis,2,After control and genome completion filter
+Capnocytophaga.sp..FDAARGOS 737,6,After control and genome completion filter
+Clostridium.perfringens,2,After control and genome completion filter
+Corynebacterium.aquatimens,6,After control and genome completion filter
+Corynebacterium.glaucum,2,After control and genome completion filter
+Corynebacterium.tuberculostearicum,20,After control and genome completion filter
+Cupriavidus.gilardii,8,After control and genome completion filter
+Dermacoccus.nishinomiyaensis,2,After control and genome completion filter
+Dietzia.kunjamensis,6,After control and genome completion filter
+Dolosigranulum.pigrum,12,After control and genome completion filter
+Enterocloster.bolteae,6,After control and genome completion filter
+Enterococcus.cecorum,2,After control and genome completion filter
+Faecalibaculum.rodentium,2,After control and genome completion filter
+Fusobacterium.nucleatum,28,After control and genome completion filter
+Gardnerella.vaginalis,8,After control and genome completion filter
+Granulicatella.adiacens,1,After control and genome completion filter
+Heyndrickxia.coagulans,12,After control and genome completion filter
+Janibacter.sp..CX7,21,After control and genome completion filter
+Jeotgalibaca.porci,10,After control and genome completion filter
+Jeotgalicoccus.sp..ATCC.8456,6,After control and genome completion filter
+Klebsiella.aerogenes,94,After control and genome completion filter
+Kocuria.rosea,8,After control and genome completion filter
+Lachnoanaerobaculum.umeaense,2,After control and genome completion filter
+Lachnospira.eligens,2,After control and genome completion filter
+Lactobacillus.gasseri,2,After control and genome completion filter
+Lactobacillus.johnsonii,13,After control and genome completion filter
+Lactococcus.raffinolactis,3,After control and genome completion filter
+Leclercia.adecarboxylata,51,After control and genome completion filter
+Ligilactobacillus.murinus,45,After control and genome completion filter
+Limnohabitans.sp..103DPR2,12,After control and genome completion filter
+Megasphaera.stantonii,3,After control and genome completion filter
+Meiothermus.ruber,10,After control and genome completion filter
+Micrococcus.sp..KBS0714,20,After control and genome completion filter
+Moraxella.osloensis,5,After control and genome completion filter
+Mycolicibacterium.fortuitum,4,After control and genome completion filter
+Mycolicibacterium.litorale,6,After control and genome completion filter
+Mycolicibacterium.thermoresistibile,2,After control and genome completion filter
+Neisseria.sicca,9,After control and genome completion filter
+Neisseria.sp..Marseille-Q5346,3,After control and genome completion filter
+Neisseria.sp..RH3002v2g,1,After control and genome completion filter
+Neisseria.subflava,15,After control and genome completion filter
+Paracoccus.yeei,2,After control and genome completion filter
+Peptoniphilus.harei,3,After control and genome completion filter
+Peribacillus.psychrosaccharolyticus,8,After control and genome completion filter
+Phascolarctobacterium.faecium,2,After control and genome completion filter
+Phocaeicola.coprophilus,6,After control and genome completion filter
+Prevotella.corporis,36,After control and genome completion filter
+Prevotella.denticola,2,After control and genome completion filter
+Prevotella.histicola,3,After control and genome completion filter
+Prevotella.intermedia,26,After control and genome completion filter
+Prevotella.jejuni,3,After control and genome completion filter
+Prevotella.melaninogenica,30,After control and genome completion filter
+Proteus.mirabilis,21,After control and genome completion filter
+Pseudochrobactrum.algeriensis,4,After control and genome completion filter
+Pseudomonas.fluorescens,21,After control and genome completion filter
+Pseudomonas.fragi,6,After control and genome completion filter
+Pseudomonas.sp..DY-1,6,After control and genome completion filter
+Pseudoxanthomonas.mexicana,6,After control and genome completion filter
+Ralstonia.pickettii,9,After control and genome completion filter
+Rothia.mucilaginosa,7,After control and genome completion filter
+Serratia.liquefaciens,30,After control and genome completion filter
+Sphingobacterium.sp..UDSM-2020,2,After control and genome completion filter
+Sphingomonas.koreensis,2,After control and genome completion filter
+Sphingomonas.sp..AAP5,28,After control and genome completion filter
+Staphylococcus.arlettae,8,After control and genome completion filter
+Staphylococcus.epidermidis,57,After control and genome completion filter
+Staphylococcus.equorum,6,After control and genome completion filter
+Staphylococcus.nepalensis,8,After control and genome completion filter
+Staphylococcus.saprophyticus,52,After control and genome completion filter
+Stenotrophomonas.acidaminiphila,6,After control and genome completion filter
+Streptococcus.gordonii,6,After control and genome completion filter
+Streptococcus.koreensis,6,After control and genome completion filter
+Streptococcus.mitis,25,After control and genome completion filter
+Streptococcus.sanguinis,5,After control and genome completion filter
+Streptococcus.sp..oral.taxon.064,3,After control and genome completion filter
+Streptococcus.thermophilus,615,After control and genome completion filter
+Streptomyces.albus,2,After control and genome completion filter
+Thermus.sp..NEB1569,6,After control and genome completion filter
+Veillonella.nakazawae,8,After control and genome completion filter
+Veillonella.rogosae,157,After control and genome completion filter
+Veillonella.sp..S12025-13,8,After control and genome completion filter
+Acinetobacter.nosocomialis,2,"After control, genome completion, and coverage filter"
+Actinomyces.pacaensis,2,"After control, genome completion, and coverage filter"
+Aeromonas.hydrophila,15,"After control, genome completion, and coverage filter"
+Bacteroides.caccae,2,"After control, genome completion, and coverage filter"
+Bacteroides.eggerthii,21,"After control, genome completion, and coverage filter"
+Bifidobacterium.catenulatum,16,"After control, genome completion, and coverage filter"
+Bifidobacterium.pseudolongum,2,"After control, genome completion, and coverage filter"
+Campylobacter.concisus,3,"After control, genome completion, and coverage filter"
+Candidatus.Methylopumilus.rimovensis,2,"After control, genome completion, and coverage filter"
+Capnocytophaga.sp..FDAARGOS 737,6,"After control, genome completion, and coverage filter"
+Clostridium.perfringens,2,"After control, genome completion, and coverage filter"
+Corynebacterium.glaucum,2,"After control, genome completion, and coverage filter"
+Corynebacterium.tuberculostearicum,20,"After control, genome completion, and coverage filter"
+Cupriavidus.gilardii,8,"After control, genome completion, and coverage filter"
+Dermacoccus.nishinomiyaensis,2,"After control, genome completion, and coverage filter"
+Dietzia.kunjamensis,6,"After control, genome completion, and coverage filter"
+Enterocloster.bolteae,6,"After control, genome completion, and coverage filter"
+Enterococcus.cecorum,2,"After control, genome completion, and coverage filter"
+Faecalibaculum.rodentium,2,"After control, genome completion, and coverage filter"
+Fusobacterium.nucleatum,28,"After control, genome completion, and coverage filter"
+Gardnerella.vaginalis,8,"After control, genome completion, and coverage filter"
+Granulicatella.adiacens,1,"After control, genome completion, and coverage filter"
+Heyndrickxia.coagulans,12,"After control, genome completion, and coverage filter"
+Jeotgalibaca.porci,10,"After control, genome completion, and coverage filter"
+Jeotgalicoccus.sp..ATCC.8456,6,"After control, genome completion, and coverage filter"
+Lachnoanaerobaculum.umeaense,2,"After control, genome completion, and coverage filter"
+Lachnospira.eligens,2,"After control, genome completion, and coverage filter"
+Lactobacillus.gasseri,2,"After control, genome completion, and coverage filter"
+Lactobacillus.johnsonii,13,"After control, genome completion, and coverage filter"
+Lactococcus.raffinolactis,3,"After control, genome completion, and coverage filter"
+Megasphaera.stantonii,3,"After control, genome completion, and coverage filter"
+Micrococcus.sp..KBS0714,20,"After control, genome completion, and coverage filter"
+Moraxella.osloensis,5,"After control, genome completion, and coverage filter"
+Mycolicibacterium.fortuitum,4,"After control, genome completion, and coverage filter"
+Mycolicibacterium.thermoresistibile,2,"After control, genome completion, and coverage filter"
+Neisseria.sp..Marseille-Q5346,3,"After control, genome completion, and coverage filter"
+Neisseria.sp..RH3002v2g,1,"After control, genome completion, and coverage filter"
+Neisseria.subflava,15,"After control, genome completion, and coverage filter"
+Paracoccus.yeei,2,"After control, genome completion, and coverage filter"
+Peptoniphilus.harei,3,"After control, genome completion, and coverage filter"
+Phascolarctobacterium.faecium,2,"After control, genome completion, and coverage filter"
+Phocaeicola.coprophilus,6,"After control, genome completion, and coverage filter"
+Prevotella.corporis,36,"After control, genome completion, and coverage filter"
+Prevotella.denticola,2,"After control, genome completion, and coverage filter"
+Prevotella.histicola,3,"After control, genome completion, and coverage filter"
+Prevotella.jejuni,3,"After control, genome completion, and coverage filter"
+Prevotella.melaninogenica,30,"After control, genome completion, and coverage filter"
+Pseudochrobactrum.algeriensis,4,"After control, genome completion, and coverage filter"
+Pseudomonas.fragi,6,"After control, genome completion, and coverage filter"
+Pseudoxanthomonas.mexicana,6,"After control, genome completion, and coverage filter"
+Ralstonia.pickettii,9,"After control, genome completion, and coverage filter"
+Sphingobacterium.sp..UDSM-2020,2,"After control, genome completion, and coverage filter"
+Sphingomonas.koreensis,2,"After control, genome completion, and coverage filter"
+Staphylococcus.arlettae,8,"After control, genome completion, and coverage filter"
+Staphylococcus.equorum,6,"After control, genome completion, and coverage filter"
+Staphylococcus.nepalensis,8,"After control, genome completion, and coverage filter"
+Stenotrophomonas.acidaminiphila,6,"After control, genome completion, and coverage filter"
+Streptococcus.gordonii,6,"After control, genome completion, and coverage filter"
+Streptococcus.koreensis,6,"After control, genome completion, and coverage filter"
+Streptococcus.sanguinis,5,"After control, genome completion, and coverage filter"
+Streptococcus.sp..oral.taxon.064,3,"After control, genome completion, and coverage filter"
+Streptomyces.albus,2,"After control, genome completion, and coverage filter"
+Veillonella.nakazawae,8,"After control, genome completion, and coverage filter"
+Veillonella.sp..S12025-13,8,"After control, genome completion, and coverage filter"
+Bacteroides.caccae,2,"After control, genome completion,coverage filter, and median of average letters"
+Bacteroides.eggerthii,21,"After control, genome completion,coverage filter, and median of average letters"
+Bifidobacterium.catenulatum,16,"After control, genome completion,coverage filter, and median of average letters"
+Capnocytophaga.sp..FDAARGOS 737,6,"After control, genome completion,coverage filter, and median of average letters"
+Clostridium.perfringens,2,"After control, genome completion,coverage filter, and median of average letters"
+Corynebacterium.glaucum,2,"After control, genome completion,coverage filter, and median of average letters"
+Enterococcus.cecorum,2,"After control, genome completion,coverage filter, and median of average letters"
+Faecalibaculum.rodentium,2,"After control, genome completion,coverage filter, and median of average letters"
+Fusobacterium.nucleatum,28,"After control, genome completion,coverage filter, and median of average letters"
+Gardnerella.vaginalis,8,"After control, genome completion,coverage filter, and median of average letters"
+Granulicatella.adiacens,1,"After control, genome completion,coverage filter, and median of average letters"
+Jeotgalibaca.porci,10,"After control, genome completion,coverage filter, and median of average letters"
+Lachnoanaerobaculum.umeaense,2,"After control, genome completion,coverage filter, and median of average letters"
+Lactobacillus.gasseri,2,"After control, genome completion,coverage filter, and median of average letters"
+Lactococcus.raffinolactis,3,"After control, genome completion,coverage filter, and median of average letters"
+Mycolicibacterium.fortuitum,4,"After control, genome completion,coverage filter, and median of average letters"
+Mycolicibacterium.thermoresistibile,2,"After control, genome completion,coverage filter, and median of average letters"
+Neisseria.sp..Marseille-Q5346,3,"After control, genome completion,coverage filter, and median of average letters"
+Neisseria.sp..RH3002v2g,1,"After control, genome completion,coverage filter, and median of average letters"
+Peptoniphilus.harei,3,"After control, genome completion,coverage filter, and median of average letters"
+Phascolarctobacterium.faecium,2,"After control, genome completion,coverage filter, and median of average letters"
+Phocaeicola.coprophilus,6,"After control, genome completion,coverage filter, and median of average letters"
+Prevotella.corporis,36,"After control, genome completion,coverage filter, and median of average letters"
+Prevotella.denticola,2,"After control, genome completion,coverage filter, and median of average letters"
+Prevotella.jejuni,3,"After control, genome completion,coverage filter, and median of average letters"
+Pseudomonas.fragi,6,"After control, genome completion,coverage filter, and median of average letters"
+Sphingobacterium.sp..UDSM-2020,2,"After control, genome completion,coverage filter, and median of average letters"
+Sphingomonas.koreensis,2,"After control, genome completion,coverage filter, and median of average letters"
+Streptococcus.koreensis,6,"After control, genome completion,coverage filter, and median of average letters"
+Streptomyces.albus,2,"After control, genome completion,coverage filter, and median of average letters"
+Veillonella.nakazawae,8,"After control, genome completion,coverage filter, and median of average letters"
+Veillonella.sp..S12025-13,8,"After control, genome completion,coverage filter, and median of average letters"

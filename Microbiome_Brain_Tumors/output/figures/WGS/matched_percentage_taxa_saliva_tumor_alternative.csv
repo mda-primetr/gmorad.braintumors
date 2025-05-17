@@ -1,0 +1,18 @@
+taxa_name,tumor_total_genome_length,other_sample_genome_match,percent_of_length_matching,coded_id,tumor_category
+Streptococcus koreensis,301,151,0.50166113,8f20,Glioma
+Granulicatella adiacens,151,151,1,8f20,Glioma
+Prevotella denticola,302,144,0.476821192,8f20,Glioma
+Veillonella sp  S12025-13,151,151,1,5f86,Glioma
+Prevotella jejuni,151,151,1,9d16,Glioma
+Granulicatella adiacens,151,151,1,fe5a,Glioma
+Veillonella sp  S12025-13,425,149,0.350588235,fe5a,Glioma
+Prevotella jejuni,302,301,0.996688742,fe5a,Glioma
+Veillonella nakazawae,532,532,1,f983,Glioma
+Prevotella jejuni,149,149,1,f983,Glioma
+Bacteroides eggerthii,151,151,1,a762,Glioma
+Veillonella nakazawae,302,151,0.5,8cb8,Met
+Veillonella sp  S12025-13,283,283,1,c275,Glioma
+Prevotella corporis,835,151,0.180838323,3e90,Met
+Lactococcus raffinolactis,176,176,1,2466,Glioma
+Neisseria sp  Marseille-Q5346,302,151,0.5,76b4,Glioma
+Veillonella sp  S12025-13,296,296,1,76b4,Glioma
