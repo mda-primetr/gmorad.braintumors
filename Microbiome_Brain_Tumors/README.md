@@ -38,9 +38,9 @@ for dir in $(ls -d ./scripts/[0-9]*_* | sort -n); do echo "Directory: $dir"; fin
 ```
 
 
-The `src folder` contains all the scripts for common function and loading libraries
+The `src folder` contains all the scripts for common function and loading libraries.
 
-The `script folder` contains all the scripts under numbered folder to guide the users for order or executing scripts
+The `script folder` contains all the scripts under numbered folder to guide the users for order of executing scripts.
 
 `data`  folder contains
 
@@ -50,8 +50,8 @@ The `script folder` contains all the scripts under numbered folder to guide the 
 
 `output` folder contains
 
-* `figures` : figures generated during the analysis
-* `tables` : Summary and stats table generated during the analysis
+* `figures` : figures generated during the analysis.
+* `tables` : Summary and stats table generated during the analysis.
 
 ``session_info.txt`` : This file contains all the packages that are loaded in the R environment during the analysis. 
 

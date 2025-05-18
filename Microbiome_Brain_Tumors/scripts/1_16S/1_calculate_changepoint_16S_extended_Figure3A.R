@@ -101,6 +101,8 @@ df_proportion_prev <- df_controls %>%
 
 
 
+# In this study, we only used the first detected change point, i.e., Q=1. 
+# The warning message at this step will be issued for any number of Q until no additional changepoints can be detected.
 
 pt_prop_asv <- ggcptplot(sort(df_proportion_prev$Percentage, decreasing = T),
     Q = 1,
