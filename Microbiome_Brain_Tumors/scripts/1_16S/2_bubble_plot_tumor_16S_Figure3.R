@@ -336,6 +336,16 @@ genera_order_to_be_grayed <- c(
 # Genera that needs to be colored ----
 genera_to_be_colored <- setdiff(all_genera_scrubbed$Genus, genera_order_to_be_grayed)
 
+
+# Genera that is common among the 16S and WGS samples ----
+common_genera_16S_WGS <- c(
+    "Fusobacterium",
+    "Prevotella_7",
+    "Veillonella",
+    "Capnocytophaga",
+    "Enterococcus"
+)
+
 # Get color palette for the genera to be colored ----
 color_for_other_genera <- distinct_palette()[1:length(genera_to_be_colored)]
 
@@ -373,7 +383,11 @@ physeq_all_scrubbed %>%
     group_by(dataset, tumor_category) %>%
     mutate(prop = prop.table(Abundance) * 100) %T>%
     write_csv("data/processed_data/16S/bubble_plot_figure_data_abundance.csv") %>%
-    mutate(Genus = factor(Genus, levels = c(genera_order_to_be_grayed, genera_to_be_colored))) %>%
+    mutate(Genus = factor(Genus, levels = c(
+        genera_order_to_be_grayed,
+        setdiff(genera_to_be_colored, common_genera_16S_WGS),
+        rev(common_genera_16S_WGS)
+    ))) %>%
     dplyr::select(Genus, prop, dataset, tumor_category) %>%
     mutate(Genus_cat = ifelse(Genus %in% genera_order_to_be_grayed, "Grayed", "Normal")) %>%
     ggplot(., aes(x = dataset, y = Genus, fill = prop, color = Genus)) +
@@ -391,7 +405,7 @@ physeq_all_scrubbed %>%
     ylab("Genera") +
     scale_size_continuous(range = c(3, 12)) +
     guides(color = "none", fill = "none")
-ggsave("output/figures/16S/bubble_plot_genera_after_scrubbing.pdf", width = 12, height = 10, dpi = 300)
+ggsave("output/figures/16S/bubble_plot_genera_after_scrubbing.pdf", width = 10, height = 10, dpi = 300)
 
 
 

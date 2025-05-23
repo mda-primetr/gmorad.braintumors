@@ -290,27 +290,10 @@ genera_order_to_be_grayed <- c(
     "Sphingobacterium",
     "Jeotgalibaca",
     "Mycolicibacterium",
-    "Streptomyces"
+    "Streptomyces",
+    "Sphingomonas"
 )
 
-
-# Genera that needs to be colored ----
-genera_to_be_colored <- setdiff(
-    unique(data.frame(tax_table(Tumor_only_WGS_filt3))$Genus),
-    genera_order_to_be_grayed
-)
-
-# Genera that are common with the 16S data using manual inspection ----
-common_genera_WGS_16S <- c(
-    "Fusobacterium",
-    "Prevotella",
-    "Veillonella"
-)
-
-non_common_genera_WGS_16S <- setdiff(
-    genera_to_be_colored,
-    common_genera_WGS_16S
-)
 
 
 # Get color palette for the genera to be colored ----
@@ -318,32 +301,66 @@ non_common_genera_WGS_16S <- setdiff(
 # Get color scheme from the 16s plot ----
 load("data/processed_data/16S/genera_colors.RData")
 
-# microViz::tax_palette_plot(genera_colors)
+
+genera_colors_16s <- genera_colors %>%
+    enframe() %>%
+    mutate(value = case_when(
+        name %in% genera_order_to_be_grayed ~ "gray",
+        TRUE ~ value
+    )) %>%
+    mutate(seq_tech = "16S") %>%
+    mutate(name = ifelse(name == "Prevotella_7", "Prevotella", name))
 
 
-color_for_other_genera <- rev(distinct_palette(pal = "greenArmytage")[1:length(genera_to_be_colored)])
+# Colors for WGS ---
+genera_colors_WGS <- rev(distinct_palette(pal = "greenArmytage")[1:length(unique(data.frame(tax_table(Tumor_only_WGS_filt3))$Genus))])
 
-# Set colors for the genera ----
-genera_colors_wgs <- setNames(
-    c(rep("gray", length(genera_order_to_be_grayed)), color_for_other_genera),
-    c(genera_order_to_be_grayed, genera_to_be_colored)
-)
 
-# microViz::tax_palette_plot(genera_colors_wgs)
+# Create a color assignment dataframe for WGS genera
+wgs_colors <- unique(data.frame(tax_table(Tumor_only_WGS_filt3))$Genus) %>%
+    enframe() %>%
+    rename(Genus = value) %>%
+    cbind(genera_colors_WGS) %>%
+    left_join(genera_colors_16s, by = c("Genus" = "name")) %>%
+    mutate(genera_colors_WGS = case_when(
+        !is.na(value) ~ value,
+        Genus %in% genera_order_to_be_grayed ~ "gray",
+        # Change some colors manually to enhance the contrast
+        Genus == "Bifidobacterium" ~ "#c2dbdd",
+        Genus == "Lactobacillus" ~ "#761646",
+        TRUE ~ genera_colors_WGS
+    ))
 
-# Replacing the matched genera colors with the 16S data colors ----
-# colors : 16s, colors: WGS
-genera_colors_wgs[c(
+# Genera of interest and common with 16S data----
+genera_of_interest <- c(
     "Fusobacterium",
     "Prevotella",
-    "Veillonella"
-)] <- genera_colors[c(
-    "Fusobacterium",
-    "Prevotella_7",
-    "Veillonella"
-)]
+    "Veillonella",
+    "Capnocytophaga",
+    "Enterococcus"
+)
+
+# Define the manual order for genera
+# Put the gray genera at the bottom and the colored ones on top
+manual_order <- c(
+    # First the genera NOT to be grayed out (those not in genera_order_to_be_grayed)
+    genera_of_interest,
+    # Add colored genera (not in genera_of_interest and to be grayed out)
+    setdiff(
+        wgs_colors$Genus[!wgs_colors$Genus %in% c(genera_of_interest)],
+        c(genera_of_interest, genera_order_to_be_grayed)
+    ),
+    # Add gray genera at the bottom
+    genera_order_to_be_grayed
+)
 
 
+
+
+# Create color palatte for WGS genera ----
+wgs_colors_genera <- wgs_colors %>%
+    dplyr::select(Genus, genera_colors_WGS) %>%
+    deframe()
 
 
 
@@ -422,13 +439,12 @@ Tumor_only_WGS_filt3 %>%
     group_by(dataset, tumor_category) %>%
     mutate(prop = prop.table(Abundance) * 100) %>%
     dplyr::select(Genus, prop, dataset, tumor_category) %>%
+    ungroup() %>%
     mutate(
         Genus = factor(
             Genus,
             levels = c(
-                genera_order_to_be_grayed,
-                non_common_genera_WGS_16S,
-                rev(common_genera_WGS_16S)
+                rev(manual_order)
             )
         )
     ) %>%
@@ -437,7 +453,7 @@ Tumor_only_WGS_filt3 %>%
     facet_grid(. ~ tumor_category, scales = "free_x", space = "free") +
     theme_bw(base_size = 20) +
     scale_size_continuous(range = c(3, 12)) +
-    scale_color_manual(values = genera_colors_wgs) +
+    scale_color_manual(values = wgs_colors_genera) +
     theme(
         strip.background = element_blank(),
         strip.text.y = element_text(size = 24, face = "italic"),

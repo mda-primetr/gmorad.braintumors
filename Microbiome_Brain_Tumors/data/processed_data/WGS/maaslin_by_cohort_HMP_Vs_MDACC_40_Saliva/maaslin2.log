@@ -1,44 +1,44 @@
-2025-05-15 22:18:54.607685 INFO::Writing function arguments to log file
-2025-05-15 22:18:54.608129 DEBUG::Function arguments
-2025-05-15 22:18:54.608418 DEBUG::Output folder: data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva
-2025-05-15 22:18:54.608559 DEBUG::Min Abundance: 0.000000
-2025-05-15 22:18:54.60866 DEBUG::Min Prevalence: 0.000000
-2025-05-15 22:18:54.608748 DEBUG::Normalization: TMM
-2025-05-15 22:18:54.608832 DEBUG::Transform: NONE
-2025-05-15 22:18:54.608913 DEBUG::Analysis method: NEGBIN
-2025-05-15 22:18:54.608992 DEBUG::Max significance: 0.250000
-2025-05-15 22:18:54.609074 DEBUG::Random effects:
-2025-05-15 22:18:54.609153 DEBUG::Fixed effects: cohort
-2025-05-15 22:18:54.609232 DEBUG::Correction method: BH
-2025-05-15 22:18:54.609312 DEBUG::Standardize: TRUE
-2025-05-15 22:18:54.60939 DEBUG::Cores: 24
-2025-05-15 22:18:54.609466 INFO::Verifying options selected are valid
-2025-05-15 22:18:54.609751 INFO::Determining format of input files
-2025-05-15 22:18:54.610035 INFO::Input format is data samples as rows and metadata samples as rows
-2025-05-15 22:18:54.610387 DEBUG::A total of 41 samples were found in both the data and metadata
-2025-05-15 22:18:54.610476 DEBUG::Reordering data/metadata to use same sample ordering
-2025-05-15 22:18:54.610991 INFO::Formula for fixed effects: expr ~  cohort
-2025-05-15 22:18:54.611295 INFO::Filter data based on min abundance and min prevalence
-2025-05-15 22:18:54.611515 INFO::Total samples in data: 41
-2025-05-15 22:18:54.611721 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
-2025-05-15 22:18:54.612561 INFO::Total filtered features: 0
-2025-05-15 22:18:54.612784 INFO::Filtered feature names from abundance and prevalence filtering:
-2025-05-15 22:18:54.613795 INFO::Total filtered features with variance filtering: 0
-2025-05-15 22:18:54.614006 INFO::Filtered feature names from variance filtering:
-2025-05-15 22:18:54.614209 INFO::Running selected normalization method: TMM
-2025-05-15 22:18:54.617815 INFO::Applying z-score to standardize continuous metadata
-2025-05-15 22:18:54.619092 INFO::Running selected transform method: NONE
-2025-05-15 22:18:54.619559 INFO::Running selected analysis method: NEGBIN
-2025-05-15 22:18:54.619832 INFO::Creating cluster of 24 R processes
-2025-05-15 22:18:59.260624 INFO::Counting total values for each feature
-2025-05-15 22:18:59.263322 WARNING::Deleting existing model objects file: data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/fits/models.rds
-2025-05-15 22:18:59.263912 INFO::Writing model objects to file data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/fits/models.rds
-2025-05-15 22:18:59.725402 INFO::Writing filtered data to file data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/features/filtered_data.tsv
-2025-05-15 22:18:59.728575 INFO::Writing filtered, normalized data to file data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/features/filtered_data_norm.tsv
-2025-05-15 22:18:59.732243 INFO::Writing filtered, normalized, transformed data to file data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/features/filtered_data_norm_transformed.tsv
-2025-05-15 22:18:59.735677 WARNING::Deleting existing residuals file: data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/fits/residuals.rds
-2025-05-15 22:18:59.736129 INFO::Writing residuals to file data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/fits/residuals.rds
-2025-05-15 22:18:59.739053 WARNING::Deleting existing fitted file: data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/fits/fitted.rds
-2025-05-15 22:18:59.739416 INFO::Writing fitted values to file data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/fits/fitted.rds
-2025-05-15 22:18:59.74001 INFO::Writing all results to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/all_results.tsv
-2025-05-15 22:18:59.740931 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/significant_results.tsv
+2025-05-22 22:35:57.907407 INFO::Writing function arguments to log file
+2025-05-22 22:35:57.908216 DEBUG::Function arguments
+2025-05-22 22:35:57.908395 DEBUG::Output folder: data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva
+2025-05-22 22:35:57.908536 DEBUG::Min Abundance: 0.000000
+2025-05-22 22:35:57.908651 DEBUG::Min Prevalence: 0.000000
+2025-05-22 22:35:57.908756 DEBUG::Normalization: TMM
+2025-05-22 22:35:57.90885 DEBUG::Transform: NONE
+2025-05-22 22:35:57.908946 DEBUG::Analysis method: NEGBIN
+2025-05-22 22:35:57.909038 DEBUG::Max significance: 0.250000
+2025-05-22 22:35:57.909131 DEBUG::Random effects:
+2025-05-22 22:35:57.909222 DEBUG::Fixed effects: cohort
+2025-05-22 22:35:57.909314 DEBUG::Correction method: BH
+2025-05-22 22:35:57.909403 DEBUG::Standardize: TRUE
+2025-05-22 22:35:57.909496 DEBUG::Cores: 24
+2025-05-22 22:35:57.909585 INFO::Verifying options selected are valid
+2025-05-22 22:35:57.909904 INFO::Determining format of input files
+2025-05-22 22:35:57.91016 INFO::Input format is data samples as rows and metadata samples as rows
+2025-05-22 22:35:57.910535 DEBUG::A total of 41 samples were found in both the data and metadata
+2025-05-22 22:35:57.910628 DEBUG::Reordering data/metadata to use same sample ordering
+2025-05-22 22:35:57.911235 INFO::Formula for fixed effects: expr ~  cohort
+2025-05-22 22:35:57.911576 INFO::Filter data based on min abundance and min prevalence
+2025-05-22 22:35:57.911812 INFO::Total samples in data: 41
+2025-05-22 22:35:57.912032 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
+2025-05-22 22:35:57.912944 INFO::Total filtered features: 0
+2025-05-22 22:35:57.913223 INFO::Filtered feature names from abundance and prevalence filtering:
+2025-05-22 22:35:57.914436 INFO::Total filtered features with variance filtering: 0
+2025-05-22 22:35:57.914673 INFO::Filtered feature names from variance filtering:
+2025-05-22 22:35:57.914894 INFO::Running selected normalization method: TMM
+2025-05-22 22:35:57.918742 INFO::Applying z-score to standardize continuous metadata
+2025-05-22 22:35:57.919958 INFO::Running selected transform method: NONE
+2025-05-22 22:35:57.920247 INFO::Running selected analysis method: NEGBIN
+2025-05-22 22:35:57.920496 INFO::Creating cluster of 24 R processes
+2025-05-22 22:36:02.467008 INFO::Counting total values for each feature
+2025-05-22 22:36:02.469673 WARNING::Deleting existing model objects file: data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/fits/models.rds
+2025-05-22 22:36:02.4703 INFO::Writing model objects to file data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/fits/models.rds
+2025-05-22 22:36:02.927876 INFO::Writing filtered data to file data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/features/filtered_data.tsv
+2025-05-22 22:36:02.930761 INFO::Writing filtered, normalized data to file data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/features/filtered_data_norm.tsv
+2025-05-22 22:36:02.934186 INFO::Writing filtered, normalized, transformed data to file data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/features/filtered_data_norm_transformed.tsv
+2025-05-22 22:36:02.93827 WARNING::Deleting existing residuals file: data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/fits/residuals.rds
+2025-05-22 22:36:02.938825 INFO::Writing residuals to file data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/fits/residuals.rds
+2025-05-22 22:36:02.940005 WARNING::Deleting existing fitted file: data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/fits/fitted.rds
+2025-05-22 22:36:02.94036 INFO::Writing fitted values to file data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/fits/fitted.rds
+2025-05-22 22:36:02.94098 INFO::Writing all results to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/all_results.tsv
+2025-05-22 22:36:02.941874 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_by_cohort_HMP_Vs_MDACC_40_Saliva/significant_results.tsv

@@ -1,44 +1,44 @@
-2025-05-15 22:19:59.615857 INFO::Writing function arguments to log file
-2025-05-15 22:19:59.618445 DEBUG::Function arguments
-2025-05-15 22:19:59.620479 DEBUG::Output folder: data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool
-2025-05-15 22:19:59.620589 DEBUG::Min Abundance: 0.000000
-2025-05-15 22:19:59.62068 DEBUG::Min Prevalence: 0.000000
-2025-05-15 22:19:59.62077 DEBUG::Normalization: TMM
-2025-05-15 22:19:59.620855 DEBUG::Transform: NONE
-2025-05-15 22:19:59.620938 DEBUG::Analysis method: NEGBIN
-2025-05-15 22:19:59.621018 DEBUG::Max significance: 0.250000
-2025-05-15 22:19:59.621099 DEBUG::Random effects:
-2025-05-15 22:19:59.621181 DEBUG::Fixed effects: glioma_progression_overall,age_at_surgery,grade_category,glioma_idh_mutation,steroids_at_surgery
-2025-05-15 22:19:59.62126 DEBUG::Correction method: BH
-2025-05-15 22:19:59.621339 DEBUG::Standardize: TRUE
-2025-05-15 22:19:59.621418 DEBUG::Cores: 24
-2025-05-15 22:19:59.621494 INFO::Verifying options selected are valid
-2025-05-15 22:19:59.633272 INFO::Determining format of input files
-2025-05-15 22:19:59.633578 INFO::Input format is data samples as rows and metadata samples as rows
-2025-05-15 22:19:59.63394 DEBUG::A total of 57 samples were found in both the data and metadata
-2025-05-15 22:19:59.634033 DEBUG::Reordering data/metadata to use same sample ordering
-2025-05-15 22:19:59.634756 INFO::Formula for fixed effects: expr ~  glioma_progression_overall + age_at_surgery + grade_category + glioma_idh_mutation + steroids_at_surgery
-2025-05-15 22:19:59.635323 INFO::Filter data based on min abundance and min prevalence
-2025-05-15 22:19:59.635555 INFO::Total samples in data: 57
-2025-05-15 22:19:59.635775 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
-2025-05-15 22:19:59.636773 INFO::Total filtered features: 0
-2025-05-15 22:19:59.637036 INFO::Filtered feature names from abundance and prevalence filtering:
-2025-05-15 22:19:59.638326 INFO::Total filtered features with variance filtering: 0
-2025-05-15 22:19:59.638628 INFO::Filtered feature names from variance filtering:
-2025-05-15 22:19:59.638875 INFO::Running selected normalization method: TMM
-2025-05-15 22:19:59.722847 INFO::Applying z-score to standardize continuous metadata
-2025-05-15 22:19:59.724576 INFO::Running selected transform method: NONE
-2025-05-15 22:19:59.724891 INFO::Running selected analysis method: NEGBIN
-2025-05-15 22:19:59.725626 INFO::Creating cluster of 24 R processes
-2025-05-15 22:20:04.561914 INFO::Counting total values for each feature
-2025-05-15 22:20:04.583112 WARNING::Deleting existing model objects file: data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/fits/models.rds
-2025-05-15 22:20:04.583755 INFO::Writing model objects to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/fits/models.rds
-2025-05-15 22:20:05.244632 INFO::Writing filtered data to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/features/filtered_data.tsv
-2025-05-15 22:20:05.251135 INFO::Writing filtered, normalized data to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/features/filtered_data_norm.tsv
-2025-05-15 22:20:05.255463 INFO::Writing filtered, normalized, transformed data to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/features/filtered_data_norm_transformed.tsv
-2025-05-15 22:20:05.259894 WARNING::Deleting existing residuals file: data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/fits/residuals.rds
-2025-05-15 22:20:05.260382 INFO::Writing residuals to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/fits/residuals.rds
-2025-05-15 22:20:05.262526 WARNING::Deleting existing fitted file: data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/fits/fitted.rds
-2025-05-15 22:20:05.262926 INFO::Writing fitted values to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/fits/fitted.rds
-2025-05-15 22:20:05.264805 INFO::Writing all results to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/all_results.tsv
-2025-05-15 22:20:05.267501 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/significant_results.tsv
+2025-05-22 22:45:31.584983 INFO::Writing function arguments to log file
+2025-05-22 22:45:31.587947 DEBUG::Function arguments
+2025-05-22 22:45:31.590324 DEBUG::Output folder: data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool
+2025-05-22 22:45:31.590452 DEBUG::Min Abundance: 0.000000
+2025-05-22 22:45:31.590556 DEBUG::Min Prevalence: 0.000000
+2025-05-22 22:45:31.590656 DEBUG::Normalization: TMM
+2025-05-22 22:45:31.590757 DEBUG::Transform: NONE
+2025-05-22 22:45:31.590853 DEBUG::Analysis method: NEGBIN
+2025-05-22 22:45:31.590954 DEBUG::Max significance: 0.250000
+2025-05-22 22:45:31.59105 DEBUG::Random effects:
+2025-05-22 22:45:31.591152 DEBUG::Fixed effects: glioma_progression_overall,age_at_surgery,grade_category,glioma_idh_mutation,steroids_at_surgery
+2025-05-22 22:45:31.591244 DEBUG::Correction method: BH
+2025-05-22 22:45:31.591338 DEBUG::Standardize: TRUE
+2025-05-22 22:45:31.591432 DEBUG::Cores: 24
+2025-05-22 22:45:31.591522 INFO::Verifying options selected are valid
+2025-05-22 22:45:31.613704 INFO::Determining format of input files
+2025-05-22 22:45:31.614196 INFO::Input format is data samples as rows and metadata samples as rows
+2025-05-22 22:45:31.614662 DEBUG::A total of 57 samples were found in both the data and metadata
+2025-05-22 22:45:31.614775 DEBUG::Reordering data/metadata to use same sample ordering
+2025-05-22 22:45:31.61575 INFO::Formula for fixed effects: expr ~  glioma_progression_overall + age_at_surgery + grade_category + glioma_idh_mutation + steroids_at_surgery
+2025-05-22 22:45:31.616601 INFO::Filter data based on min abundance and min prevalence
+2025-05-22 22:45:31.616985 INFO::Total samples in data: 57
+2025-05-22 22:45:31.61729 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
+2025-05-22 22:45:31.618458 INFO::Total filtered features: 0
+2025-05-22 22:45:31.61874 INFO::Filtered feature names from abundance and prevalence filtering:
+2025-05-22 22:45:31.620202 INFO::Total filtered features with variance filtering: 0
+2025-05-22 22:45:31.620464 INFO::Filtered feature names from variance filtering:
+2025-05-22 22:45:31.620684 INFO::Running selected normalization method: TMM
+2025-05-22 22:45:31.717265 INFO::Applying z-score to standardize continuous metadata
+2025-05-22 22:45:31.719159 INFO::Running selected transform method: NONE
+2025-05-22 22:45:31.719481 INFO::Running selected analysis method: NEGBIN
+2025-05-22 22:45:31.720494 INFO::Creating cluster of 24 R processes
+2025-05-22 22:45:37.377706 INFO::Counting total values for each feature
+2025-05-22 22:45:37.408836 WARNING::Deleting existing model objects file: data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/fits/models.rds
+2025-05-22 22:45:37.409715 INFO::Writing model objects to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/fits/models.rds
+2025-05-22 22:45:42.917518 INFO::Writing filtered data to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/features/filtered_data.tsv
+2025-05-22 22:45:42.921821 INFO::Writing filtered, normalized data to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/features/filtered_data_norm.tsv
+2025-05-22 22:45:42.926395 INFO::Writing filtered, normalized, transformed data to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/features/filtered_data_norm_transformed.tsv
+2025-05-22 22:45:42.930835 WARNING::Deleting existing residuals file: data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/fits/residuals.rds
+2025-05-22 22:45:42.93181 INFO::Writing residuals to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/fits/residuals.rds
+2025-05-22 22:45:42.934799 WARNING::Deleting existing fitted file: data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/fits/fitted.rds
+2025-05-22 22:45:42.935665 INFO::Writing fitted values to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/fits/fitted.rds
+2025-05-22 22:45:42.937867 INFO::Writing all results to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/all_results.tsv
+2025-05-22 22:45:42.94044 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Stool/significant_results.tsv
