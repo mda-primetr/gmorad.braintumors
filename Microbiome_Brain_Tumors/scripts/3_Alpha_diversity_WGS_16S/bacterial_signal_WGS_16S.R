@@ -11,16 +11,6 @@ m1 <- read_csv("data/metadata/megametadata_combined_16S_WGS_2025_05_01.csv") %>%
     janitor::clean_names()
 
 
-# m1  %>%
-#     filter(microbiome_sample_type %in% c("Tumor")) %>%
-#     filter(sequencing_technology %in% c("16S", "WGS")) %>%
-#     filter(tumor_category %in% c("Met", "Glioma")) %>%
-#     dplyr::select(coded_id, sequencing_id, tumor_category,multi_focal_lesion) %>%
-#      filter(multi_focal_lesion %in% c("Y","N") )%>%
-#     distinct(coded_id) %>%
-
-#     nrow()
-
 # Load 16s data after all filters ----
 load("data/processed_data/16S/physeq_scrubbed_plus_nc_rem.RData")
 
