@@ -37,6 +37,8 @@ Spatial_Profiling/
 │       └── Figures/      # Final plots from IF analysis (PDF)
 │
 ├── Processed_data/       # Intermediate .RData files for DSP analysis
+│   ├── BrM/              # Intermediate .RData files for BrM analysis
+│   └── Glioma/           # Intermediate .RData files for glioma analysis
 │
 └── src/                  # Shared libraries, custom functions, and plotting tools
 ```
