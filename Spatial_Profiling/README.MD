@@ -14,7 +14,7 @@ Spatial_Profiling/
 │   ├── SMI/              # Spatial Molecular Imaging 
 │   │   ├── BrM/          # Code for brain metastasis samples
 │   │   └── Glioma/       # Code for glioma samples
-│   └── IF/               #  Code for multiplex immunofluorescence imaging
+│   └── IF/               # Code for multiplex immunofluorescence imaging
 │
 │
 ├── Input_files/          # Input files for DSP, SMI, and IF 
