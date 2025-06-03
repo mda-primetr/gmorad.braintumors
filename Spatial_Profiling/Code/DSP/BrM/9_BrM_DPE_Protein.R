@@ -28,6 +28,8 @@ save(BrM_ProteinData, file = "Processed_data/BrM/BrM_ProteinData_PCA.RData")
 # Differential protein expression (Linear Mix Model)
 #---------------------------------------------------------------------------------------------------
 
+set.seed(42)
+
 # 25-75% (Tumor only)
 results <- c()
 
@@ -59,6 +61,7 @@ for (compartment in "BrM") {
     )]
     results <- rbind(results, r_test)
 }
+
 BrM_DPE_by_16S_25_75 <- as.data.frame(results) %>%
     dplyr::rename(log2FC = Estimate) # rename for better readability
 
@@ -137,4 +140,4 @@ ggplot(BrM_DPE_by_16S_25_75_dotplot, aes(
     labs(x = " ", y = " ", size = "log2FC", color = "FDR")
 
 # Save pdf
-ggsave("Output_files/DSP/Figures/Figure3D.pdf", width = 8, height = 2.25)
+ggsave("Output_files/DSP/Figures/Figure4D.pdf", width = 8, height = 2.25)
