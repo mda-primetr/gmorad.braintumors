@@ -8,8 +8,8 @@
 
 source("src/Libraries.R")
 source("src/Functions.R")
-load("Structure/DSP/BrM/BrM_ProteinData_raw.RData")
-load("Structure/DSP/BrM/BrM_target_Data_WTA_16S_25_75.RData")
+load("Processed_data/BrM/BrM_ProteinData_raw.RData")
+load("Processed_data/BrM/BrM_target_Data_WTA_16S_25_75.RData")
 
 #----------------------------------------------------------------------------------------------------
 # Match RNA ROIs
@@ -75,4 +75,4 @@ rect(
 # Save object
 #----------------------------------------------------------------------------------------------------
 
-save(BrM_ProteinData, file = "Structure/DSP/BrM/BrM_ProteinData.RData")
+save(BrM_ProteinData, file = "Processed_data/BrM/BrM_ProteinData.RData")
