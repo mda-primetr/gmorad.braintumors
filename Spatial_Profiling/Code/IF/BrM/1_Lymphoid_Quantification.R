@@ -4,7 +4,7 @@
 
 source("src/Libraries.R")
 source("src/Functions.R")
-load("Structure/DSP/BrM/BrM_target_Data_WTA_PCA.RData")
+load("Processed_data/BrM/BrM_target_Data_WTA_PCA.RData")
 
 #----------------------------------------------------------------------------------------------------
 # Load and transform IF data
@@ -118,7 +118,7 @@ save(BrM_Lymphoid_IF_by_16S_25_75_log,
 # Write csv
 write.csv(
     BrM_Lymphoid_IF_by_16S_25_75_log,
-    "Output_files/IF/BrM_Lymphoid_IF_by_16S_25_75_log.csv"
+    "Output_files/IF/Tables/BrM_Lymphoid_IF_by_16S_25_75_log.csv"
 )
 
 # 25-75% non-log
@@ -154,16 +154,10 @@ for (compartment in "BrM") {
 }
 BrM_Lymphoid_IF_by_16S_25_75_non_log <- as.data.frame(results)
 
-# Save object
-save(BrM_Lymphoid_IF_by_16S_25_75_non_log,
-    file =
-        "Structure/IF/BrM_Lymphoid_IF_by_16S_25_75_non_log.RData"
-)
-
 # Write csv
 write.csv(
     BrM_Lymphoid_IF_by_16S_25_75_non_log,
-    "Output_files/IF/BrM_Lymphoid_IF_by_16S_25_75_non_log.csv"
+    "Output_files/IF/Tables/BrM_Lymphoid_IF_by_16S_25_75_non_log.csv"
 )
 #----------------------------------------------------------------------------------------------------
 # Plot immune cells
@@ -195,4 +189,4 @@ ggplot(df_data_Lymphoid_plot, aes(
     labs(x = "", y = "CD16+ CD56- GZMB-")
 
 # Save pdf
-ggsave("Figures/Figure3F.pdf", width = 1.85, height = 2.2)
+ggsave("Output_files/IF/Figures/Figure4F.pdf", width = 1.85, height = 2.2)
