@@ -54,7 +54,7 @@ ggplot(df_assay_BIS, aes(x = Type, y = `16SrRNA_score`, fill = Type)) +
     scale_x_discrete(, labels = function(x) str_wrap(x, width = 5))
 
 # Save pdf
-ggsave("Figures/FigureS4A2.pdf", width = 1.85, height = 2.2)
+ggsave("Output_files/DSP/Figures/FigureS4A2.pdf", width = 1.85, height = 2.2)
 
 # Add ROI # to BIS
 pData(BrM_target_Data_BIS) <- pData(BrM_target_Data_BIS) %>%
