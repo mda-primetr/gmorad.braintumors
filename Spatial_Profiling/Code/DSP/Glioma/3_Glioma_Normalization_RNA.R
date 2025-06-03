@@ -8,8 +8,8 @@
 #----------------------------------------------------------------------------------------------------
 
 source("src/Libraries.R")
-load("Structure/DSP/Glioma/Glioma_target_Data_WTA.RData")
-load("Structure/DSP/Glioma/Glioma_target_Data_BIS.RData")
+load("Processed_data/Glioma/Glioma_target_Data_WTA.RData")
+load("Processed_data/Glioma/Glioma_target_Data_BIS.RData")
 
 #----------------------------------------------------------------------------------------------------
 # Signal:Background
@@ -178,5 +178,5 @@ assayDataElement(Glioma_target_Data_BIS, "neg_norm_bgsub_1")[assayDataElement(
 # Save objects
 #----------------------------------------------------------------------------------------------------
 
-save(Glioma_target_Data_WTA, file = "Structure/DSP/Glioma/Glioma_target_Data_WTA_norm.RData")
-save(Glioma_target_Data_BIS, file = "Structure/DSP/Glioma/Glioma_target_Data_BIS_norm.RData")
+save(Glioma_target_Data_WTA, file = "Processed_data/Glioma/Glioma_target_Data_WTA_norm.RData")
+save(Glioma_target_Data_BIS, file = "Processed_data/Glioma/Glioma_target_Data_BIS_norm.RData")
