@@ -3,8 +3,8 @@
 #----------------------------------------------------------------------------------------------------
 
 source("src/Libraries.R")
-load("Structure/DSP/BrM/BrM_target_Data_BIS_norm.RData")
-load("Structure/DSP/BrM/BrM_target_Data_WTA_norm.RData")
+load("Processed_data/BrM/BrM_target_Data_BIS_norm.RData")
+load("Processed_data/BrM/BrM_target_Data_WTA_norm.RData")
 
 #----------------------------------------------------------------------------------------------------
 # Create 16S score
@@ -68,5 +68,5 @@ pData(BrM_target_Data_WTA) <- pData(BrM_target_Data_WTA) %>%
 # Save objects
 #----------------------------------------------------------------------------------------------------
 
-save(BrM_target_Data_BIS, file = "Structure/DSP/BrM/BrM_target_Data_BIS_BIS_scores.RData")
-save(BrM_target_Data_WTA, file = "Structure/DSP/BrM/BrM_target_Data_WTA_BIS_scores.RData")
+save(BrM_target_Data_BIS, file = "Processed_data/BrM/BrM_target_Data_BIS_BIS_scores.RData")
+save(BrM_target_Data_WTA, file = "Processed_data/BrM/BrM_target_Data_WTA_BIS_scores.RData")
