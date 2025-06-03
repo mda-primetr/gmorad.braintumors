@@ -91,7 +91,7 @@ ggplot(df_BIS_scores, aes(
     labs(x = "", y = "16S rRNA score")
 
 # Save pdf
-ggsave("Otput_files/DSp/Figures/FigureS4B2.pdf", width = 1.85, height = 2.2)
+ggsave("Otput_files/DSP/Figures/FigureS4B2.pdf", width = 1.85, height = 2.2)
 
 #----------------------------------------------------------------------------------------------------
 # Differential gene expression (Linear Mix Model)
