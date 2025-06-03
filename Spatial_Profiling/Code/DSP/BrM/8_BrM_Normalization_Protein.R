@@ -7,7 +7,7 @@
 #----------------------------------------------------------------------------------------------------
 
 source("src/Libraries.R")
-load("Structure/DSP/BrM/BrM_ProteinData.RData")
+load("Processed_data/BrM/BrM_ProteinData.RData")
 
 #----------------------------------------------------------------------------------------------------
 # Choose best normalization method                                                                                                   
@@ -69,4 +69,4 @@ assayDataElement(BrM_ProteinData, "neg_norm") <-
 # Save object                                                                                                   
 #----------------------------------------------------------------------------------------------------
 
-save(BrM_ProteinData, file = "Structure/DSP/BrM/BrM_ProteinDatanorm.RData")
+save(BrM_ProteinData, file = "Processed_data/BrM/BrM_ProteinDatanorm.RData")
