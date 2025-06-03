@@ -8,8 +8,8 @@
 #----------------------------------------------------------------------------------------------------
 
 source("src/Libraries.R")
-load("Structure/DSP/Glioma/Glioma_RNAData_raw.RData")
-load("Structure/DSP/Glioma/Glioma_Modules.RData")
+load("Processed_data/Glioma/Glioma_RNAData_raw.RData")
+load("Processed_data/Glioma/Glioma_Modules.RData")
 
 #----------------------------------------------------------------------------------------------------
 # Pre-processing
@@ -245,9 +245,9 @@ Glioma_target_Data <- Glioma_target_Data[fData(Glioma_target_Data)$DetectionRate
 
 # Subset WTA counts
 Glioma_target_Data_WTA <- subset(Glioma_target_Data, Module == "Hs_R_NGS_WTA_v1.0")
-save(Glioma_target_Data_WTA, file = "Structure/DSP/Glioma/Glioma_target_Data_WTA.RData")
+save(Glioma_target_Data_WTA, file = "Processed_data/Glioma/Glioma_target_Data_WTA.RData")
 
 # Subset BIS counts
 Glioma_target_Data_BIS <- subset(Glioma_target_Data, Module == "BiS_pilot_1_RnD_v1.2")
-save(Glioma_target_Data_BIS, file = "Structure/DSP/Glioma/Glioma_target_Data_BIS.RData")
+save(Glioma_target_Data_BIS, file = "Processed_data/Glioma/Glioma_target_Data_BIS.RData")
 
