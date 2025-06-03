@@ -6,9 +6,12 @@
 #----------------------------------------------------------------------------------------------------
 # Source files
 #----------------------------------------------------------------------------------------------------
-set.seed(42)
+
 source("src/Libraries.R")
 load("Processed_data/BrM/BrM_target_Data_WTA_BIS_scores.RData")
+
+# Set reproducibility seed
+set.seed(42)
 
 #----------------------------------------------------------------------------------------------------
 # Transform data                                                                                                   
@@ -106,7 +109,7 @@ for (compartment in "BrM") {
         mixedModelDE(BrM_target_Data_WTA_16S_25_75[, ind],
             elt = "log_q_bgsub",
             modelFormula = ~ test_16SrRNA_status_25_75 +
-                (1  | Patient), # Controlling for Primary tumor and 16S random slope
+                (1  | Patient), # Fixed effect: 16S status, Random effect: patient
             groupVar = "test_16SrRNA_status_25_75",
             nCores = parallel::detectCores(),
             multiCore = FALSE
@@ -137,9 +140,9 @@ save(BrM_DGE_by_16S_25_75, file = "Processed_data/BrM/BrM_DGE_by_16S_25_75.RData
 # Write csv
 write.csv(BrM_DGE_by_16S_25_75, "Output_files/DSP/Tables/BrM_DGE_by_16S_25_75.csv")
 
-# #----------------------------------------------------------------------------------------------------
-# # Dot plot                                                                                                   
-# #----------------------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------------------
+# Dot plot                                                                                                   
+#----------------------------------------------------------------------------------------------------
 
 # Select biologically relevant genes
 genes <- c("MAPK14","MYD88", "TRIM14", "TRIM25", "TRIM27", "MAVS", "B2M", "CD63", "GABARAP", "EEA1", 
