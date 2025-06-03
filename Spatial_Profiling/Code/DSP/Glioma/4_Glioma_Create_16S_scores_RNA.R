@@ -3,8 +3,8 @@
 #----------------------------------------------------------------------------------------------------
 
 source("src/Libraries.R")
-load("Structure/DSP/Glioma/Glioma_target_Data_BIS_norm.RData")
-load("Structure/DSP/Glioma/Glioma_target_Data_WTA_norm.RData")
+load("Processed_data/Glioma/Glioma_target_Data_BIS_norm.RData")
+load("Processed_data/Glioma/Glioma_target_Data_WTA_norm.RData")
 
 #---------------------------------------------------------------------------------------------------
 # Create 16S score
@@ -53,7 +53,7 @@ ggplot(df_assay_BIS, aes(x = Type, y = `16SrRNA_score`, fill = Type)) +
     scale_x_discrete(, labels = function(x) str_wrap(x, width = 5))
 
 # Save pdf
-ggsave("Figures/FigureS4A1.pdf", width = 1.85, height = 2.2)
+ggsave("Output_files/DSP/Figures/FigureS4A1.pdf", width = 1.85, height = 2.2)
 
 # Add ROI # to BIS
 pData(Glioma_target_Data_BIS) <- pData(Glioma_target_Data_BIS) %>%
@@ -66,5 +66,5 @@ pData(Glioma_target_Data_WTA) <- pData(Glioma_target_Data_WTA) %>%
 # Save objects
 #----------------------------------------------------------------------------------------------------
 
-save(Glioma_target_Data_BIS, file = "Structure/DSP/Glioma/Glioma_target_Data_BIS_BIS_scores.RData")
-save(Glioma_target_Data_WTA, file = "Structure/DSP/Glioma/Glioma_target_Data_WTA_BIS_scores.RData")
+save(Glioma_target_Data_BIS, file = "Processed_data/Glioma/Glioma_target_Data_BIS_BIS_scores.RData")
+save(Glioma_target_Data_WTA, file = "Processed_data/Glioma/Glioma_target_Data_WTA_BIS_scores.RData")
