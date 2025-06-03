@@ -77,4 +77,4 @@ ggplot(df_data_test, aes(x = PC1, y = PC2, color = test_16SrRNA_status_25_75)) +
     )
 
 # Save pdf
-ggsave("Output_files/DSP/Figures/Figure3B2.pdf", width = 4, height = 2.5)
+ggsave("Output_files/DSP/Figures/Figure4B2.pdf", width = 4, height = 2.5)
