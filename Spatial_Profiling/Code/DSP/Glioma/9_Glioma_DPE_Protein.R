@@ -8,7 +8,7 @@
 
 source("src/Libraries.R")
 source("src/Functions.R")
-load("Structure/DSP/Glioma/Glioma_ProteinDatanorm.RData")
+load("Processed_data/Glioma/Glioma_ProteinDatanorm.RData")
 
 #----------------------------------------------------------------------------------------------------
 # Transform data
@@ -22,12 +22,12 @@ assayDataElement(object = Glioma_ProteinData, elt = "log_q_neg_norm") <-
 # Save object
 #----------------------------------------------------------------------------------------------------
 
-save(Glioma_ProteinData, file = "Structure/DSP/Glioma/Glioma_ProteinData_PCA.RData")
+save(Glioma_ProteinData, file = "Processed_data/Glioma/Glioma_ProteinData_PCA.RData")
 
 #---------------------------------------------------------------------------------------------------
 # Differential protein expression (Linear Mix Model)
 #---------------------------------------------------------------------------------------------------
-
+set.seed(42)
 # 25-75% (Tumor only)
 results <- c()
 
@@ -36,8 +36,7 @@ for (compartment in "Glioma") {
     mixedOutmc <-
         mixedModelDE(Glioma_ProteinData[, ind],
             elt = "log_q_neg_norm",
-            modelFormula = ~ test_16SrRNA_status_25_75 + IDH + Recurrence +
-                (1 | Patient), # Controlling for IDH and Recurrence
+            modelFormula = ~ test_16SrRNA_status_25_75 + IDH + Recurrence + (1 | Patient), # Controlling for IDH and Recurrence
             groupVar = "test_16SrRNA_status_25_75",
             nCores = parallel::detectCores(),
             multiCore = FALSE
@@ -63,10 +62,10 @@ Glioma_DPE_by_16S_25_75 <- as.data.frame(results) %>%
     dplyr::rename(log2FC = Estimate) # rename for better readability
 
 # Save object
-save(Glioma_DPE_by_16S_25_75, file = "Structure/DSP/Glioma/Glioma_DPE_by_16S_25_75.RData")
+save(Glioma_DPE_by_16S_25_75, file = "Processed_data/Glioma/Glioma_DPE_by_16S_25_75.RData")
 
 # Write csv
-write.csv(Glioma_DPE_by_16S_25_75, "Output_files/DSP/Glioma/Glioma_DPE_by_16S_25_75.csv")
+write.csv(Glioma_DPE_by_16S_25_75, "Output_files/DSP/Tables/Glioma_DPE_by_16S_25_75.csv")
 
 #----------------------------------------------------------------------------------------------------
 # Protein volcano plot
@@ -82,7 +81,7 @@ add_volcano_protein(Glioma_DPE_by_16S_25_75, theme_size = 12) +
     )
 
 # Save pdf
-ggsave("Figures/FigureS4C.pdf", width = 6, height = 4)
+ggsave("Output_files/Figures/FigureS4C.pdf", width = 6, height = 4)
 
 #----------------------------------------------------------------------------------------------------
 # Protein dotplot
@@ -90,9 +89,8 @@ ggsave("Figures/FigureS4C.pdf", width = 6, height = 4)
 
 # Select biologically relevant proteins
 proteins <- c(
-    "HMGB2", "HMGB1", "GLB1/Beta-galactosidase", "Fatty Acid Synthase", "Histone H2A (acetyl K5)",
-    "Histone H3 (phospho S10)", "Histone H3 (acetyl K9)", "Histone H3 (tri methyl K9)", "Histone H3 (acetyl K18)",
-    "Histone H3 (acetyl K14)", "MSH2", "PARP1", "HDAC3"
+    "HMGB1", "HMGB2", "CD44", "ErbB4 / HER4+ErbB2 / HER2", "HDAC3", "Bak", "Histone H3 (acetyl K9)",
+    "Histone H3 (acetyl K14)", "Histone H3 (acetyl K18)" ,"Histone H2A (acetyl K5)", "Histone H3 (tri methyl K9)"
 )
 
 # Transform data for plotting
@@ -101,16 +99,16 @@ Glioma_DPE_by_16S_25_75_dotplot <- Glioma_DPE_by_16S_25_75 %>%
     dplyr::rename("Target" = "Protein") %>%
     arrange(factor(Target, levels = proteins)) %>%
     mutate(
-        Analyte = rep("Protein", 13),
+        Analyte = rep("Protein", 11),
         Category = (rep(c(
-            "Anti-microbial response", "Metabolism and lipid homeostasis",
-            "Chromatin remodeling and genomic stability"
-        ), times = c(2, 2, 9)))
+             "Anti-microbial, immune signatures",
+            "Chromatin remodeling, stress, and apoptosis"
+        ), times = c(3, 8)))
     ) %>%
     group_by(Category) %>%
     arrange(log2FC, .by_group = TRUE) %>%
     ungroup() %>%
-    mutate(Order = (rep(1:13)))
+    mutate(Order = (rep(1:11)))
 
 # Plot dotplot
 ggplot(Glioma_DPE_by_16S_25_75_dotplot, aes(
@@ -138,4 +136,4 @@ ggplot(Glioma_DPE_by_16S_25_75_dotplot, aes(
     labs(x = " ", y = " ", size = "log2FC", color = "FDR")
 
 # Save pdf
-ggsave("Figures/Figure3C.pdf", width = 8, height = 2.25)
+ggsave("Output_files/DSP/Figures/Figure3C.pdf", width = 8, height = 2.25)
