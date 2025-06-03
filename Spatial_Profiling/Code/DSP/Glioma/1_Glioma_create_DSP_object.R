@@ -90,6 +90,6 @@ Glioma_ProteinData <- suppressWarnings(NanoStringGeoMxSet(
 # Save objects
 #---------------------------------------------------------------------------------------------------
 
-save(modules, file = "Structure/DSP/Glioma/Glioma_Modules.RData")
-save(Glioma_RNAData, file = "Structure/DSP/Glioma/Glioma_RNAData_raw.RData")
-save(Glioma_ProteinData, file = "Structure/DSP/Glioma/Glioma_ProteinData_raw.RData")
+save(modules, file = "Processed_data/Glioma/Glioma_Modules.RData")
+save(Glioma_RNAData, file = "Processed_data/Glioma/Glioma_RNAData_raw.RData")
+save(Glioma_ProteinData, file = "Processed_data/Glioma/Glioma_ProteinData_raw.RData")
