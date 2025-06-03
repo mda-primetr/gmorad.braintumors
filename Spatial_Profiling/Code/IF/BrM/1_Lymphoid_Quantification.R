@@ -6,6 +6,9 @@ source("src/Libraries.R")
 source("src/Functions.R")
 load("Processed_data/BrM/BrM_target_Data_WTA_PCA.RData")
 
+# Set reproducibility seed
+set.seed(42)
+
 #----------------------------------------------------------------------------------------------------
 # Load and transform IF data
 #----------------------------------------------------------------------------------------------------
@@ -108,12 +111,6 @@ for (compartment in "BrM") {
 }
 BrM_Lymphoid_IF_by_16S_25_75_log <- as.data.frame(results) %>%
     dplyr::rename(log2FC = Estimate) # rename for better readability
-
-# Save object
-save(BrM_Lymphoid_IF_by_16S_25_75_log,
-    file =
-        "Structure/IF/BrM_Lymphoid_IF_by_16S_25_75_log.RData"
-)
 
 # Write csv
 write.csv(
