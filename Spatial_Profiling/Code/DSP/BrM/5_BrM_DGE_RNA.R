@@ -6,9 +6,9 @@
 #----------------------------------------------------------------------------------------------------
 # Source files
 #----------------------------------------------------------------------------------------------------
-
+set.seed(42)
 source("src/Libraries.R")
-load("Structure/DSP/BrM/BrM_target_Data_WTA_BIS_scores.RData")
+load("Processed_data/BrM/BrM_target_Data_WTA_BIS_scores.RData")
 
 #----------------------------------------------------------------------------------------------------
 # Transform data                                                                                                   
@@ -28,8 +28,8 @@ BrM_target_Data_WTA <- BrM_target_Data_WTA[, which(BrM_target_Data_WTA$Type != "
 # Create 16S categories
 pData(BrM_target_Data_WTA) <- pData(BrM_target_Data_WTA) %>%
     mutate(`16SrRNA_status_25_75` = case_when(
-        `16SrRNA_score` < quantile(`16SrRNA_score`, 0.25) ~ "Low",
-        `16SrRNA_score` > quantile(`16SrRNA_score`, 0.75) ~ "High"
+        `16SrRNA_score` <= quantile(`16SrRNA_score`, 0.25) ~ "Low",
+        `16SrRNA_score` >= quantile(`16SrRNA_score`, 0.75) ~ "High"
     ))
 
 # Create DGE factors
@@ -56,10 +56,10 @@ BrM_target_Data_WTA_16S_25_75 <- BrM_target_Data_WTA[
 #---------------------------------------------------------------------------------------------------
 
 # All tumor ROIs
-save(BrM_target_Data_WTA, file = "Structure/DSP/BrM/BrM_target_Data_WTA_PCA.RData")
+save(BrM_target_Data_WTA, file = "Processed_data/BrM/BrM_target_Data_WTA_PCA.RData")
 
 # Only those w/no NAs in test_16SrRNA_status_25_75
-save(BrM_target_Data_WTA_16S_25_75, file = "Structure/DSP/BrM/BrM_target_Data_WTA_16S_25_75.RData")
+save(BrM_target_Data_WTA_16S_25_75, file = "Processed_data/BrM/BrM_target_Data_WTA_16S_25_75.RData")
 
 #---------------------------------------------------------------------------------------------------
 #  Bacterial plot by High vs Low
@@ -91,7 +91,7 @@ ggplot(df_BIS_scores, aes(
     labs(x = "", y = "16S rRNA score")
 
 # Save pdf
-ggsave("Figures/FigureS4B2.pdf", width = 1.85, height = 2.2)
+ggsave("Otput_files/DSp/Figures/FigureS4B2.pdf", width = 1.85, height = 2.2)
 
 #----------------------------------------------------------------------------------------------------
 # Differential gene expression (Linear Mix Model)
@@ -105,8 +105,8 @@ for (compartment in "BrM") {
     mixedOutmc <-
         mixedModelDE(BrM_target_Data_WTA_16S_25_75[, ind],
             elt = "log_q_bgsub",
-            modelFormula = ~ test_16SrRNA_status_25_75 + Primary_Tumor +
-                (1 + test_16SrRNA_status_25_75 | Patient), # Controlling for Primary tumor and 16S random slope
+            modelFormula = ~ test_16SrRNA_status_25_75 +
+                (1  | Patient), # Controlling for Primary tumor and 16S random slope
             groupVar = "test_16SrRNA_status_25_75",
             nCores = parallel::detectCores(),
             multiCore = FALSE
@@ -132,17 +132,18 @@ BrM_DGE_by_16S_25_75 <- as.data.frame(results) %>%
     dplyr::rename(log2FC = Estimate) # rename for better readability
 
 # Save object
-save(BrM_DGE_by_16S_25_75, file = "Structure/DSP/BrM/BrM_DGE_by_16S_25_75.RData")
+save(BrM_DGE_by_16S_25_75, file = "Processed_data/BrM/BrM_DGE_by_16S_25_75.RData")
 
 # Write csv
-write.csv(BrM_DGE_by_16S_25_75, "Output_files/DSP/BrM/BrM_DGE_by_16S_25_75.csv")
+write.csv(BrM_DGE_by_16S_25_75, "Output_files/DSP/Tables/BrM_DGE_by_16S_25_75.csv")
 
-#----------------------------------------------------------------------------------------------------
-# Dot plot                                                                                                   
-#----------------------------------------------------------------------------------------------------
+# #----------------------------------------------------------------------------------------------------
+# # Dot plot                                                                                                   
+# #----------------------------------------------------------------------------------------------------
 
 # Select biologically relevant genes
-genes <- c("PRDX4", "B2M", "LTBR", "TRAF2")
+genes <- c("MAPK14","MYD88", "TRIM14", "TRIM25", "TRIM27", "MAVS", "B2M", "CD63", "GABARAP", "EEA1", 
+"LGALS3", "CD81", "CD24", "IFNAR1") 
 
 # Transform data for plotting
 BrM_DGE_by_16S_25_75_dotplot <- BrM_DGE_by_16S_25_75 %>%
@@ -150,8 +151,8 @@ BrM_DGE_by_16S_25_75_dotplot <- BrM_DGE_by_16S_25_75 %>%
     dplyr::rename("Target" = "Gene") %>%
     arrange(factor(Target, levels = genes)) %>%
     mutate(
-        Analyte = rep("RNA", 4),
-        Order = (rep(1:4))
+        Analyte = "RNA",
+        Order = (rep(1:14))
     )
 
 # Plot genes
@@ -171,4 +172,4 @@ ggplot(BrM_DGE_by_16S_25_75_dotplot, aes(
     guides(color = guide_colorbar(order = 1), size = guide_legend(order = 2))
 
 # Save pdf
-ggsave("Figures/FigureS4F.pdf", width = 2.5, height = 2.5)
+ggsave("Output_files/DSP/Figures/FigureS4F.pdf", width = 2.5, height = 4.5)
