@@ -4,16 +4,13 @@
 
 # Define required packages
 cran_packages <- c(
-  "tidyverse", "ggforce", "ggpubr", "ggrepel", "scales", "ggrastr", "ggsci", "here",
-  "patchwork", "gridExtra", "data.table", "RColorBrewer", "viridis", "ComplexHeatmap",
-  "circlize", "kableExtra", "cowplot", "pheatmap", "DT", "spdep", "ggsignif", "MASS", "stringr", "forcats",
-  "sf", "purrr", "tidyr", "rlang"
-)
+ "tidyverse", "ggforce", "ggpubr", "ggrepel", "scales", "ggrastr", "ggsci", "patchwork", "gridExtra", 
+  "data.table", "RColorBrewer", "viridis", "kableExtra", "cowplot", "DT", "spdep", "ggsignif", "MASS", 
+  "stringr", "forcats", "sf", "purrr", "tidyr", "rlang")
 
 bioc_packages <- c(
-  "NanoStringNCTools", "GeomxTools", "GeoMxWorkflows", "Seurat", "SeuratObject",
-  "InSituType",  "lmerTest", "lme4", "clusterProfiler", "org.Hs.eg.db", "enrichplot", "ReactomePA", "msigdbr", "AUCell"
-)
+  "ComplexHeatmap", "circlize", "NanoStringNCTools", "GeomxTools", "GeoMxWorkflows", "Seurat", "SeuratObject",
+  "lmerTest", "lme4", "clusterProfiler", "org.Hs.eg.db", "enrichplot")
 
 # Install CRAN packages if missing
 cran_missing <- setdiff(cran_packages, rownames(installed.packages()))
