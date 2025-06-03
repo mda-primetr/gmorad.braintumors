@@ -12,7 +12,7 @@ set.seed(42)
 #----------------------------------------------------------------------------------------------------
 
 # Load DGE results across all patients (P11, P15, P26) and compute additional stats
-glioma_dge_all <- as.data.frame(read_csv(here(dge_dir, "glioma_dge_P11_P15_P26.csv"))) %>%
+glioma_dge_all <- read_csv("Input_files/SMI/Glioma/glioma_dge_P11_P15_P26.csv") %>%
   dplyr::select(contrast, term, target, ncells_1, ncells_2, fold_change, p.value) %>%
   mutate(
     Patient = "ALL",                          # Label all rows with a unified patient tag
