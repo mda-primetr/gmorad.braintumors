@@ -56,3 +56,12 @@ Each platform’s scripts are organized into:
 3. Run scripts in numerical order
 
 Scripts are modular but designed to work in sequence, with each step building on the previous one.
+
+## R Package Dependencies
+
+All required R packages are automatically installed when missing. Each script includes code to check for and install:
+- CRAN packages
+- Bioconductor packages
+
+No manual installation is required. Packages will be installed from CRAN or Bioconductor the first time a script is run.
+
