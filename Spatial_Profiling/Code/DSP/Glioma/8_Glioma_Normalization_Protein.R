@@ -7,7 +7,7 @@
 #----------------------------------------------------------------------------------------------------
 
 source("src/Libraries.R")
-load("Structure/DSP/Glioma/Glioma_ProteinData.RData")
+load("Processed_data/Glioma/Glioma_ProteinData.RData")
 
 #----------------------------------------------------------------------------------------------------
 # Choose best normalization method
@@ -69,4 +69,4 @@ assayDataElement(Glioma_ProteinData, "neg_norm") <-
 # Save object
 #----------------------------------------------------------------------------------------------------
 
-save(Glioma_ProteinData, file = "Structure/DSP/Glioma/Glioma_ProteinDatanorm.RData")
+save(Glioma_ProteinData, file = "Processed_data/DSP/Glioma_ProteinDatanorm.RData")
