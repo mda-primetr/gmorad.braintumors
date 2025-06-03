@@ -8,8 +8,8 @@
 #----------------------------------------------------------------------------------------------------
 
 source("src/Libraries.R")
-load("Structure/DSP/BrM/BrM_RNAData_raw.RData")
-load("Structure/DSP/BrM/BrM_Modules.RData")
+load("Processed_data/BrM/BrM_RNAData_raw.RData")
+load("Processed_data/BrM/BrM_Modules.RData")
 
 #----------------------------------------------------------------------------------------------------
 # Pre-processing
@@ -245,8 +245,8 @@ BrM_target_Data <- BrM_target_Data[fData(BrM_target_Data)$DetectionRate >= 0.1 |
 
 # Subset WTA counts
 BrM_target_Data_WTA <- subset(BrM_target_Data, Module == "Hs_R_NGS_WTA_v1.0")
-save(BrM_target_Data_WTA, file = "Structure/DSP/BrM/BrM_target_Data_WTA.RData")
+save(BrM_target_Data_WTA, file = "Processed_data/BrM/BrM_target_Data_WTA.RData")
 
 # Subset BIS counts
 BrM_target_Data_BIS <- subset(BrM_target_Data, Module == "BiS_pilot_1_RnD_v1.2")
-save(BrM_target_Data_BIS, file = "Structure/DSP/BrM/BrM_target_Data_BIS.RData")
+save(BrM_target_Data_BIS, file = "Processed_data/BrM/BrM_target_Data_BIS.RData")
