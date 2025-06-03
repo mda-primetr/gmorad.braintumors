@@ -4,6 +4,8 @@
 
 source("src/Libraries.R")
 load("Structure/DSP/BrM/BrM_ProteinData_PCA.RData")
+
+# Set reproducibility seed
 set.seed(42)
 
 #----------------------------------------------------------------------------------------------------
@@ -32,12 +34,20 @@ signature_proteins <- list(
 signature_score_list <- list()
 
 for (sig_name in names(signature_proteins)) {
+    # Filter proteins available in the dataset
     present_proteins <- signature_proteins[[sig_name]][signature_proteins[[sig_name]] %in% rownames(BrM_ProteinData)]
+
+    # Subset to available markers
     sig_data <- BrM_ProteinData[present_proteins, ]
+
+    # Compute geometric mean (original scale) across all markers per sample
     score <- assayDataApply(sig_data, MARGIN = 2, FUN = ngeoMean, elt = "neg_norm")
+
+    # Log2-transform and store scores
     signature_score_list[[sig_name]] <- log2(score)
 }
 
+# Combine into matrix with samples as rows and signatures as columns
 score_matrix <- t(do.call(cbind, signature_score_list))
 
 #----------------------------------------------------------------------------------------------------
@@ -65,7 +75,7 @@ signature_set <- NanoStringGeoMxSet(
 model_results <- mixedModelDE(
     signature_set,
     elt = "exprs",
-    modelFormula = ~ test_16SrRNA_status_25_75 + (1 | Patient),
+    modelFormula = ~ test_16SrRNA_status_25_75 + (1 | Patient), # Fixed effect: 16S status, Random effect: patient
     groupVar = "test_16SrRNA_status_25_75",
     nCores = parallel::detectCores(),
     multiCore = FALSE
@@ -79,8 +89,8 @@ results_df <- map_dfr(names(signature_proteins), function(sig) {
     lsm <- model_results["lsmeans", ][[sig]]
     data.frame(
         signature = sig,
-        estimate = lsm[1, "Estimate"],
-        p_value = lsm[1, "Pr(>|t|)"]
+        estimate = lsm[1, "Estimate"],  #log2 fold-change
+        p_value = lsm[1, "Pr(>|t|)"]    # p-value
     )
 }) %>%
     mutate(
@@ -133,7 +143,7 @@ ggplot(results_df, aes(x = estimate, y = reorder(signature, estimate))) +
         size = guide_legend(order = 2)
     )
 
-# Save plot
+# Save pdf
 ggsave("Output_files_DSP/Figures/Supp4G1.pdf", width = 5, height = 3)
 
 # Write csv
