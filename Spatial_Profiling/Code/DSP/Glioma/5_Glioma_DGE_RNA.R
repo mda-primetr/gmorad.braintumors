@@ -8,7 +8,10 @@
 #----------------------------------------------------------------------------------------------------
 
 source("src/Libraries.R")
-load("Structure/DSP/Glioma/Glioma_target_Data_WTA_BIS_scores.RData")
+load("Processed_data/Glioma/Glioma_target_Data_WTA_BIS_scores.RData")
+
+# Set reproducibility seed
+set.seed(42)
 
 #----------------------------------------------------------------------------------------------------
 # Transform data                                                                                                   
@@ -58,11 +61,11 @@ Glioma_target_Data_WTA_16S_25_75 <- Glioma_target_Data_WTA[
 #----------------------------------------------------------------------------------------------------
 
 # All tumor ROIs
-save(Glioma_target_Data_WTA, file = "Structure/DSP/Glioma/Glioma_target_Data_WTA_PCA.RData")
+save(Glioma_target_Data_WTA, file = "Processed_data/Glioma/Glioma_target_Data_WTA_PCA.RData")
 
 # Only those w/no NAs in test_16SrRNA_status_25_75
 save(Glioma_target_Data_WTA_16S_25_75,
-    file = "Structure/DSP/Glioma/Glioma_target_Data_WTA_16S_25_75.RData"
+    file = "Processed_data/Glioma/Glioma_target_Data_WTA_16S_25_75.RData"
 )
 
 #----------------------------------------------------------------------------------------------------
@@ -93,7 +96,7 @@ ggplot(df_BIS_scores, aes(
     labs(x = "", y = "16S rRNA score")
 
 # Save pdf
-ggsave("Figures/FigureS4B1.pdf", width = 1.85, height = 2.2)
+ggsave("Output_files/DSP/Figures/FigureS4B1.pdf", width = 1.85, height = 2.2)
 
 #----------------------------------------------------------------------------------------------------
 # Differential gene expression (Linear Mix Model)
@@ -134,20 +137,18 @@ Glioma_DGE_by_16S_25_75 <- as.data.frame(results) %>%
     dplyr::rename(log2FC = Estimate) # rename for better readability
 
 # Save object
-save(Glioma_DGE_by_16S_25_75, file = "Structure/DSP/Glioma/Glioma_DGE_by_16S_25_75.RData")
+save(Glioma_DGE_by_16S_25_75, file = "Processed_data/Glioma/Glioma_DGE_by_16S_25_75.RData")
+
 # Write csv
-write.csv(Glioma_DGE_by_16S_25_75, "Output_files/DSP/Glioma/Glioma_DGE_by_16S_25_75.csv")
+write.csv(Glioma_DGE_by_16S_25_75, "Output_files/DSP/Tables/Glioma_DGE_by_16S_25_75.csv")
 
 #----------------------------------------------------------------------------------------------------
-# Dot plots                                                                                                   
+# Dot plots                                                                                                  
 #----------------------------------------------------------------------------------------------------
 
 # Select biologically relevant genes
-genes <- c(
-    "ECSIT", "IL32", "CADM1", "GSDME", "FKBIL1", "TRIM5", "TRIM24", "TRAF3IP1", "TRIM26",
-    "TNFAIP1", "SP110", "IL11RA", "CBLB", "IFI35", "PILRB", "TRADD", "TAP1", "STAT5B", "TNFRSF10B", 
-    "IL17RB", "NKIRAS2", "LRBA"
-)
+genes <- c("HMGB1", "TRIM14", "TRIM5", "TRIM8", "TRAF3IP1", "NKFNIA", "NFKNIL1", "STAT5B", "AIMP2", 
+"HDAC7", "TRIM33","TRIM24", "IFNAR1", "TNFAIP1", "IL17RD", "ILDR2" , "NAT10")
 
 # Transform data for plotting
 Glioma_DGE_by_16S_25_75_dotplot <- Glioma_DGE_by_16S_25_75 %>%
@@ -155,8 +156,8 @@ Glioma_DGE_by_16S_25_75_dotplot <- Glioma_DGE_by_16S_25_75 %>%
     dplyr::rename("Target" = "Gene") %>%
     arrange(factor(Target, levels = genes)) %>%
     mutate(
-        Analyte = rep("RNA", 21),
-        Order = (rep(1:21))
+        Analyte = "RNA",
+        Order = (rep(1:14))
     )
 
 # Plot genes
@@ -176,4 +177,4 @@ ggplot(Glioma_DGE_by_16S_25_75_dotplot, aes(
     guides(color = guide_colorbar(order = 1), size = guide_legend(order = 2))
 
 # Save pdf
-ggsave("Figures/FigureS4E.pdf", width = 2.8, height = 6)
+ggsave("Output_files/DSP/Figures/FigureS4E.pdf", width = 2.8, height = 6)
