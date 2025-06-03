@@ -8,8 +8,8 @@
 #----------------------------------------------------------------------------------------------------
 
 source("src/Libraries.R")
-load("Structure/DSP/BrM/BrM_target_Data_WTA.RData")
-load("Structure/DSP/BrM/BrM_target_Data_BIS.RData")
+load("Processed_data/BrM/BrM_target_Data_WTA.RData")
+load("Processed_data/BrM/BrM_target_Data_BIS.RData")
 
 #----------------------------------------------------------------------------------------------------
 # Signal:Background                                                                                                   
@@ -178,5 +178,5 @@ assayDataElement(BrM_target_Data_BIS, "neg_norm_bgsub_1")[assayDataElement(
 # Save objects
 #----------------------------------------------------------------------------------------------------
 
-save(BrM_target_Data_WTA, file = "Structure/DSP/BrM/BrM_target_Data_WTA_norm.RData")
-save(BrM_target_Data_BIS, file = "Structure/DSP/BrM/BrM_target_Data_BIS_norm.RData")
+save(BrM_target_Data_WTA, file = "Processed_data/BrM/BrM_target_Data_WTA_norm.RData")
+save(BrM_target_Data_BIS, file = "Processed_data/BrM/BrM_target_Data_BIS_norm.RData")
