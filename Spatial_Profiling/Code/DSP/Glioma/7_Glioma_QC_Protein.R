@@ -8,8 +8,8 @@
 
 source("src/Libraries.R")
 source("src/Functions.R")
-load("Structure/DSP/Glioma/Glioma_ProteinData_raw.RData")
-load("Structure/DSP/Glioma/Glioma_target_Data_WTA_16S_25_75.RData")
+load("Processed_data/Glioma/Glioma_ProteinData_raw.RData")
+load("Processed_data/Glioma/Glioma_target_Data_WTA_16S_25_75.RData")
 
 #----------------------------------------------------------------------------------------------------
 # Match RNA ROIs
@@ -76,5 +76,5 @@ rect(
 # Save object
 #----------------------------------------------------------------------------------------------------
 
-save(Glioma_ProteinData, file = "Structure/DSP/Glioma/Glioma_ProteinData.RData")
+save(Glioma_ProteinData, file = "Processed_data/Glioma/Glioma_ProteinData.RData")
 
