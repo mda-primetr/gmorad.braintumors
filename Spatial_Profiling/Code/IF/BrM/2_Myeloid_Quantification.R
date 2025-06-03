@@ -4,7 +4,10 @@
 
 source("src/Libraries.R")
 source("src/Functions.R")
-load("Structure/DSP/BrM/BrM_target_Data_WTA_PCA.RData")
+load("Processed_Data/BrM/BrM_target_Data_WTA_PCA.RData")
+
+# Set reproducibility seed
+set.seed(42)
 
 #----------------------------------------------------------------------------------------------------
 # Load and transform IF data
@@ -109,15 +112,10 @@ for (compartment in "BrM") {
 BrM_Myeloid_IF_by_16S_25_75_log <- as.data.frame(results) %>%
     dplyr::rename(log2FC = Estimate) # rename for better readability
 
-# Save object
-save(BrM_Myeloid_IF_by_16S_25_75_log,
-    file =
-        "Structure/IF/BrM_Myeloid_IF_by_16S_25_75_log.RData"
-)
 # Write csv
 write.csv(
     BrM_Myeloid_IF_by_16S_25_75_log,
-    "Output_files/IF/BrM_Myeloid_IF_by_16S_25_75_log.csv"
+    "Output_files/IF/Tables/BrM_Myeloid_IF_by_16S_25_75_log.csv"
 )
 
 # 25-75% non-log
@@ -153,13 +151,8 @@ for (compartment in "BrM") {
 }
 BrM_Myeloid_IF_by_16S_25_75_non_log <- as.data.frame(results)
 
-# Save object
-save(BrM_Myeloid_IF_by_16S_25_75_non_log,
-    file =
-        "Structure/IF/BrM_Myeloid_IF_by_16S_25_75_non_log.RData"
-)
 # Write csv
 write.csv(
     BrM_Myeloid_IF_by_16S_25_75_non_log,
-    "Output_files/IF/BrM_Myeloid_IF_by_16S_25_75_non_log.csv"
+    "Output_files/IF/Tables/BrM_Myeloid_IF_by_16S_25_75_non_log.csv"
 )
