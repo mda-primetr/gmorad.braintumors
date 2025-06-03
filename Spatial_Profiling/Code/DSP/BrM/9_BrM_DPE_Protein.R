@@ -28,6 +28,7 @@ save(BrM_ProteinData, file = "Processed_data/BrM/BrM_ProteinData_PCA.RData")
 # Differential protein expression (Linear Mix Model)
 #---------------------------------------------------------------------------------------------------
 
+# Set reproducibility seed
 set.seed(42)
 
 # 25-75% (Tumor only)
@@ -38,7 +39,7 @@ for (compartment in "BrM") {
     mixedOutmc <-
         mixedModelDE(BrM_ProteinData[, ind],
             elt = "log_q_neg_norm",
-            modelFormula = ~ test_16SrRNA_status_25_75 +
+            modelFormula = ~ test_16SrRNA_status_25_75 + # Fixed effect: 16S status, Random effect: patient
                 (1| Patient),
             groupVar = "test_16SrRNA_status_25_75",
             nCores = parallel::detectCores(),
