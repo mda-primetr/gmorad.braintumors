@@ -90,6 +90,6 @@ BrM_ProteinData <- suppressWarnings(NanoStringGeoMxSet(
 # Save objects                                                                                                   
 #----------------------------------------------------------------------------------------------------
 
-save(modules, file = "Structure/DSP/BrM/BrM_Modules.RData")
-save(BrM_RNAData, file = "Structure/DSP/BrM/BrM_RNAData_raw.RData")
-save(BrM_ProteinData, file = "Structure/DSP/BrM/BrM_ProteinData_raw.RData")
+save(modules, file = "Processed_data/DSP/BrM/BrM_Modules.RData")
+save(BrM_RNAData, file = "Processed_data/DSP/BrM/BrM_RNAData_raw.RData")
+save(BrM_ProteinData, file = "Processed_data/DSP/BrM/BrM_ProteinData_raw.RData")
