@@ -3,7 +3,7 @@
 #----------------------------------------------------------------------------------------------------
 
 source("src/Libraries.R")
-load("Structure/DSP/BrM/BrM_ProteinData_PCA.RData")
+load("Processed_data/DSP/BrM/BrM_ProteinData_PCA.RData")
 
 # Set reproducibility seed
 set.seed(42)
@@ -23,7 +23,7 @@ signature_proteins <- list(
         "ENO1 + ENO2 + ENO3", "Lactate Dehydrogenase"
     ),
     general_inflammation = c(
-        "CD68", "HLA-DR", "CD44", "MMP9", "S100A4", "CD74"
+        "CD68", "HLA-DR", "CD44", "MMP9", "C Reactive Protein", "STAT3"
     )
 )
 
@@ -75,7 +75,8 @@ signature_set <- NanoStringGeoMxSet(
 model_results <- mixedModelDE(
     signature_set,
     elt = "exprs",
-    modelFormula = ~ test_16SrRNA_status_25_75 + (1 | Patient), # Fixed effect: 16S status, Random effect: patient
+    modelFormula = ~ test_16SrRNA_status_25_75 + Primary_Tumor +
+                (1 + test_16SrRNA_status_25_75 | Patient),
     groupVar = "test_16SrRNA_status_25_75",
     nCores = parallel::detectCores(),
     multiCore = FALSE
@@ -144,7 +145,6 @@ ggplot(results_df, aes(x = estimate, y = reorder(signature, estimate))) +
     )
 
 # Save pdf
-ggsave("Output_files_DSP/Figures/Supp4G1.pdf", width = 5, height = 3)
+ggsave("Output_files/DSP/Figures/FigureS4G1.pdf", width = 5, height = 3)
 
-# Write csv
-write.csv(results_df, "Output_files/DSP/Tables/BrM_protein_signature_analysis.csv", row.names = FALSE)
+
