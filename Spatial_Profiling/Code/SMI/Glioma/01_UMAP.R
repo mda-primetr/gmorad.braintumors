@@ -155,7 +155,7 @@ ggplot(plot_df, aes(x = UMAP_1, y = UMAP_2, color = signal)) +
     shape = 16
   ) +
   scale_color_viridis_c(
-    name = "16S reads",
+    name = "16S signal",
     option = "D",
     breaks = c(11, 50, 100, 500),
     labels = c("11", "50", "100", "500"),
@@ -169,8 +169,7 @@ ggplot(plot_df, aes(x = UMAP_1, y = UMAP_2, color = signal)) +
   ) +
   coord_fixed() +
   theme_classic(base_size = 9) +
-  theme(axis.title = element_text(face = "bold"),
-        legend.position = "right") +
+  theme(legend.position = "right") +
   labs(x = "UMAP 1", y = "UMAP 2")
 
 # Save plot
