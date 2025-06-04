@@ -31,7 +31,3 @@ All input data are pre-processed and stored as intermediate .rds` files.
 
 - **Figures:**  
   `.pdf` plots saved to `Output_files/SMI/Figures/`
-
-## Notes
-
-- Raw CosMx outputs are not stored here due to file size constraints. Please contact the authors for full datasets.
