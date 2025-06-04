@@ -145,6 +145,6 @@ ggplot(results_df, aes(x = estimate, y = reorder(signature, estimate))) +
     )
 
 # Save pdf
-ggsave("Output_files/DSP/Figures/FigureS4G1.pdf", width = 5, height = 3)
+ggsave("Output_files/DSP/Figures/FigureS4G2.pdf", width = 5, height = 3)
 
 
