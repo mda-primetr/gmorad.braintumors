@@ -65,3 +65,5 @@ All required R packages are automatically installed when missing. Each script in
 
 No manual installation is required. Packages will be installed from CRAN or Bioconductor the first time a script is run.
 
+R package versions can be found in the sessionInfo files per platform. 
+
