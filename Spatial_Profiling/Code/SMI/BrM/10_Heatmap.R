@@ -12,7 +12,7 @@ set.seed(42)
 #----------------------------------------------------------------------------------------------------
 
 # Read CSV file with z-scored values for each gene module across conditions
-heat_mat <- read_csv(file = "Input_files/SMI/BrM/figureS5D_heatmap_matrix.csv") %>%
+heat_mat <- read_csv("Input_files/SMI/BrM/figureS5D_heatmap_matrix.csv") %>%
   dplyr::select(`16S- Neighborhood`, `16S+ Neighborhood`, `16S+ Tumor`) %>%
   as.matrix()
 
