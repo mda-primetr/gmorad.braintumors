@@ -1,44 +1,44 @@
-2025-05-22 22:32:52.186369 INFO::Writing function arguments to log file
-2025-05-22 22:32:52.189136 DEBUG::Function arguments
-2025-05-22 22:32:52.191163 DEBUG::Output folder: data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool
-2025-05-22 22:32:52.191263 DEBUG::Min Abundance: 0.000000
-2025-05-22 22:32:52.191357 DEBUG::Min Prevalence: 0.000000
-2025-05-22 22:32:52.19145 DEBUG::Normalization: TMM
-2025-05-22 22:32:52.191539 DEBUG::Transform: NONE
-2025-05-22 22:32:52.191633 DEBUG::Analysis method: NEGBIN
-2025-05-22 22:32:52.19172 DEBUG::Max significance: 0.250000
-2025-05-22 22:32:52.19181 DEBUG::Random effects:
-2025-05-22 22:32:52.191894 DEBUG::Fixed effects: br_m_progression_overall
-2025-05-22 22:32:52.191975 DEBUG::Correction method: BH
-2025-05-22 22:32:52.192056 DEBUG::Standardize: TRUE
-2025-05-22 22:32:52.192135 DEBUG::Cores: 24
-2025-05-22 22:32:52.192213 INFO::Verifying options selected are valid
-2025-05-22 22:32:52.206168 INFO::Determining format of input files
-2025-05-22 22:32:52.206452 INFO::Input format is data samples as rows and metadata samples as rows
-2025-05-22 22:32:52.206804 DEBUG::A total of 22 samples were found in both the data and metadata
-2025-05-22 22:32:52.206898 DEBUG::Reordering data/metadata to use same sample ordering
-2025-05-22 22:32:52.207512 INFO::Formula for fixed effects: expr ~  br_m_progression_overall
-2025-05-22 22:32:52.207933 INFO::Filter data based on min abundance and min prevalence
-2025-05-22 22:32:52.208156 INFO::Total samples in data: 22
-2025-05-22 22:32:52.208374 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
-2025-05-22 22:32:52.209285 INFO::Total filtered features: 0
-2025-05-22 22:32:52.209533 INFO::Filtered feature names from abundance and prevalence filtering:
-2025-05-22 22:32:52.210641 INFO::Total filtered features with variance filtering: 0
-2025-05-22 22:32:52.210869 INFO::Filtered feature names from variance filtering:
-2025-05-22 22:32:52.211087 INFO::Running selected normalization method: TMM
-2025-05-22 22:32:52.290116 INFO::Applying z-score to standardize continuous metadata
-2025-05-22 22:32:52.291469 INFO::Running selected transform method: NONE
-2025-05-22 22:32:52.291774 INFO::Running selected analysis method: NEGBIN
-2025-05-22 22:32:52.292701 INFO::Creating cluster of 24 R processes
-2025-05-22 22:32:53.258533 INFO::Counting total values for each feature
-2025-05-22 22:32:53.265393 WARNING::Deleting existing model objects file: data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/fits/models.rds
-2025-05-22 22:32:53.266954 INFO::Writing model objects to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/fits/models.rds
-2025-05-22 22:32:53.519871 INFO::Writing filtered data to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/features/filtered_data.tsv
-2025-05-22 22:32:53.521988 INFO::Writing filtered, normalized data to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/features/filtered_data_norm.tsv
-2025-05-22 22:32:53.52399 INFO::Writing filtered, normalized, transformed data to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/features/filtered_data_norm_transformed.tsv
-2025-05-22 22:32:53.525893 WARNING::Deleting existing residuals file: data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/fits/residuals.rds
-2025-05-22 22:32:53.526414 INFO::Writing residuals to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/fits/residuals.rds
-2025-05-22 22:32:53.527188 WARNING::Deleting existing fitted file: data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/fits/fitted.rds
-2025-05-22 22:32:53.527526 INFO::Writing fitted values to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/fits/fitted.rds
-2025-05-22 22:32:53.528051 INFO::Writing all results to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/all_results.tsv
-2025-05-22 22:32:53.530117 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/significant_results.tsv
+2025-07-15 09:11:35.067143 INFO::Writing function arguments to log file
+2025-07-15 09:11:35.067567 DEBUG::Function arguments
+2025-07-15 09:11:35.067803 DEBUG::Output folder: data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool
+2025-07-15 09:11:35.0679 DEBUG::Min Abundance: 0.000000
+2025-07-15 09:11:35.067992 DEBUG::Min Prevalence: 0.000000
+2025-07-15 09:11:35.068079 DEBUG::Normalization: TMM
+2025-07-15 09:11:35.068165 DEBUG::Transform: NONE
+2025-07-15 09:11:35.068249 DEBUG::Analysis method: NEGBIN
+2025-07-15 09:11:35.068333 DEBUG::Max significance: 0.250000
+2025-07-15 09:11:35.068419 DEBUG::Random effects:
+2025-07-15 09:11:35.068503 DEBUG::Fixed effects: br_m_progression_overall
+2025-07-15 09:11:35.068586 DEBUG::Correction method: BH
+2025-07-15 09:11:35.06867 DEBUG::Standardize: TRUE
+2025-07-15 09:11:35.068753 DEBUG::Cores: 24
+2025-07-15 09:11:35.068833 INFO::Verifying options selected are valid
+2025-07-15 09:11:35.069083 INFO::Determining format of input files
+2025-07-15 09:11:35.069313 INFO::Input format is data samples as rows and metadata samples as rows
+2025-07-15 09:11:35.069641 DEBUG::A total of 22 samples were found in both the data and metadata
+2025-07-15 09:11:35.069721 DEBUG::Reordering data/metadata to use same sample ordering
+2025-07-15 09:11:35.070302 INFO::Formula for fixed effects: expr ~  br_m_progression_overall
+2025-07-15 09:11:35.070625 INFO::Filter data based on min abundance and min prevalence
+2025-07-15 09:11:35.070846 INFO::Total samples in data: 22
+2025-07-15 09:11:35.071063 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
+2025-07-15 09:11:35.071815 INFO::Total filtered features: 0
+2025-07-15 09:11:35.072046 INFO::Filtered feature names from abundance and prevalence filtering:
+2025-07-15 09:11:35.073363 INFO::Total filtered features with variance filtering: 0
+2025-07-15 09:11:35.07376 INFO::Filtered feature names from variance filtering:
+2025-07-15 09:11:35.074021 INFO::Running selected normalization method: TMM
+2025-07-15 09:11:35.076307 INFO::Applying z-score to standardize continuous metadata
+2025-07-15 09:11:35.077324 INFO::Running selected transform method: NONE
+2025-07-15 09:11:35.077636 INFO::Running selected analysis method: NEGBIN
+2025-07-15 09:11:35.077982 INFO::Creating cluster of 24 R processes
+2025-07-15 09:11:39.943124 INFO::Counting total values for each feature
+2025-07-15 09:11:39.945828 WARNING::Deleting existing model objects file: data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/fits/models.rds
+2025-07-15 09:11:39.946558 INFO::Writing model objects to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/fits/models.rds
+2025-07-15 09:11:42.90402 INFO::Writing filtered data to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/features/filtered_data.tsv
+2025-07-15 09:11:42.905836 INFO::Writing filtered, normalized data to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/features/filtered_data_norm.tsv
+2025-07-15 09:11:42.907573 INFO::Writing filtered, normalized, transformed data to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/features/filtered_data_norm_transformed.tsv
+2025-07-15 09:11:42.909269 WARNING::Deleting existing residuals file: data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/fits/residuals.rds
+2025-07-15 09:11:42.909672 INFO::Writing residuals to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/fits/residuals.rds
+2025-07-15 09:11:42.910462 WARNING::Deleting existing fitted file: data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/fits/fitted.rds
+2025-07-15 09:11:42.910874 INFO::Writing fitted values to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/fits/fitted.rds
+2025-07-15 09:11:42.911637 INFO::Writing all results to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/all_results.tsv
+2025-07-15 09:11:42.912543 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Stool/significant_results.tsv

@@ -1,44 +1,44 @@
-2025-05-22 22:47:47.405658 INFO::Writing function arguments to log file
-2025-05-22 22:47:47.406096 DEBUG::Function arguments
-2025-05-22 22:47:47.406377 DEBUG::Output folder: data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab
-2025-05-22 22:47:47.406486 DEBUG::Min Abundance: 0.000000
-2025-05-22 22:47:47.406592 DEBUG::Min Prevalence: 0.000000
-2025-05-22 22:47:47.406687 DEBUG::Normalization: TMM
-2025-05-22 22:47:47.406786 DEBUG::Transform: NONE
-2025-05-22 22:47:47.406884 DEBUG::Analysis method: NEGBIN
-2025-05-22 22:47:47.406978 DEBUG::Max significance: 0.250000
-2025-05-22 22:47:47.407075 DEBUG::Random effects:
-2025-05-22 22:47:47.407175 DEBUG::Fixed effects: glioma_progression_overall,age_at_surgery,grade_category,glioma_idh_mutation
-2025-05-22 22:47:47.407269 DEBUG::Correction method: BH
-2025-05-22 22:47:47.407363 DEBUG::Standardize: TRUE
-2025-05-22 22:47:47.407452 DEBUG::Cores: 24
-2025-05-22 22:47:47.407534 INFO::Verifying options selected are valid
-2025-05-22 22:47:47.407794 INFO::Determining format of input files
-2025-05-22 22:47:47.408043 INFO::Input format is data samples as rows and metadata samples as rows
-2025-05-22 22:47:47.40835 DEBUG::A total of 96 samples were found in both the data and metadata
-2025-05-22 22:47:47.408444 DEBUG::Reordering data/metadata to use same sample ordering
-2025-05-22 22:47:47.408941 INFO::Formula for fixed effects: expr ~  glioma_progression_overall + age_at_surgery + grade_category + glioma_idh_mutation
-2025-05-22 22:47:47.409403 INFO::Filter data based on min abundance and min prevalence
-2025-05-22 22:47:47.409643 INFO::Total samples in data: 96
-2025-05-22 22:47:47.410156 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
-2025-05-22 22:47:47.41072 INFO::Total filtered features: 0
-2025-05-22 22:47:47.410964 INFO::Filtered feature names from abundance and prevalence filtering:
-2025-05-22 22:47:47.411661 INFO::Total filtered features with variance filtering: 0
-2025-05-22 22:47:47.411886 INFO::Filtered feature names from variance filtering:
-2025-05-22 22:47:47.412093 INFO::Running selected normalization method: TMM
-2025-05-22 22:47:47.417955 INFO::Applying z-score to standardize continuous metadata
-2025-05-22 22:47:47.419276 INFO::Running selected transform method: NONE
-2025-05-22 22:47:47.419518 INFO::Running selected analysis method: NEGBIN
-2025-05-22 22:47:47.419892 INFO::Creating cluster of 24 R processes
-2025-05-22 22:47:52.238934 INFO::Counting total values for each feature
-2025-05-22 22:47:52.243272 WARNING::Deleting existing model objects file: data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/fits/models.rds
-2025-05-22 22:47:52.244435 INFO::Writing model objects to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/fits/models.rds
-2025-05-22 22:47:54.03478 INFO::Writing filtered data to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/features/filtered_data.tsv
-2025-05-22 22:47:54.037629 INFO::Writing filtered, normalized data to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/features/filtered_data_norm.tsv
-2025-05-22 22:47:54.040975 INFO::Writing filtered, normalized, transformed data to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/features/filtered_data_norm_transformed.tsv
-2025-05-22 22:47:54.044373 WARNING::Deleting existing residuals file: data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/fits/residuals.rds
-2025-05-22 22:47:54.044879 INFO::Writing residuals to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/fits/residuals.rds
-2025-05-22 22:47:54.046425 WARNING::Deleting existing fitted file: data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/fits/fitted.rds
-2025-05-22 22:47:54.047418 INFO::Writing fitted values to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/fits/fitted.rds
-2025-05-22 22:47:54.049121 INFO::Writing all results to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/all_results.tsv
-2025-05-22 22:47:54.050675 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/significant_results.tsv
+2025-07-15 09:18:54.917179 INFO::Writing function arguments to log file
+2025-07-15 09:18:54.91761 DEBUG::Function arguments
+2025-07-15 09:18:54.917714 DEBUG::Output folder: data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab
+2025-07-15 09:18:54.917805 DEBUG::Min Abundance: 0.000000
+2025-07-15 09:18:54.917891 DEBUG::Min Prevalence: 0.000000
+2025-07-15 09:18:54.917974 DEBUG::Normalization: TMM
+2025-07-15 09:18:54.918056 DEBUG::Transform: NONE
+2025-07-15 09:18:54.918138 DEBUG::Analysis method: NEGBIN
+2025-07-15 09:18:54.918218 DEBUG::Max significance: 0.250000
+2025-07-15 09:18:54.918304 DEBUG::Random effects:
+2025-07-15 09:18:54.918387 DEBUG::Fixed effects: glioma_progression_overall,age_at_surgery,grade_category,glioma_idh_mutation
+2025-07-15 09:18:54.918467 DEBUG::Correction method: BH
+2025-07-15 09:18:54.918562 DEBUG::Standardize: TRUE
+2025-07-15 09:18:54.91865 DEBUG::Cores: 24
+2025-07-15 09:18:54.91873 INFO::Verifying options selected are valid
+2025-07-15 09:18:54.918981 INFO::Determining format of input files
+2025-07-15 09:18:54.91921 INFO::Input format is data samples as rows and metadata samples as rows
+2025-07-15 09:18:54.919494 DEBUG::A total of 96 samples were found in both the data and metadata
+2025-07-15 09:18:54.919575 DEBUG::Reordering data/metadata to use same sample ordering
+2025-07-15 09:18:54.920034 INFO::Formula for fixed effects: expr ~  glioma_progression_overall + age_at_surgery + grade_category + glioma_idh_mutation
+2025-07-15 09:18:54.92047 INFO::Filter data based on min abundance and min prevalence
+2025-07-15 09:18:54.920705 INFO::Total samples in data: 96
+2025-07-15 09:18:54.920926 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
+2025-07-15 09:18:54.921475 INFO::Total filtered features: 0
+2025-07-15 09:18:54.921706 INFO::Filtered feature names from abundance and prevalence filtering:
+2025-07-15 09:18:54.922427 INFO::Total filtered features with variance filtering: 0
+2025-07-15 09:18:54.922825 INFO::Filtered feature names from variance filtering:
+2025-07-15 09:18:54.923103 INFO::Running selected normalization method: TMM
+2025-07-15 09:18:54.928806 INFO::Applying z-score to standardize continuous metadata
+2025-07-15 09:18:54.930147 INFO::Running selected transform method: NONE
+2025-07-15 09:18:54.930383 INFO::Running selected analysis method: NEGBIN
+2025-07-15 09:18:54.930595 INFO::Creating cluster of 24 R processes
+2025-07-15 09:18:59.6411 INFO::Counting total values for each feature
+2025-07-15 09:18:59.645501 WARNING::Deleting existing model objects file: data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/fits/models.rds
+2025-07-15 09:18:59.647655 INFO::Writing model objects to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/fits/models.rds
+2025-07-15 09:19:01.651692 INFO::Writing filtered data to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/features/filtered_data.tsv
+2025-07-15 09:19:01.654233 INFO::Writing filtered, normalized data to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/features/filtered_data_norm.tsv
+2025-07-15 09:19:01.656878 INFO::Writing filtered, normalized, transformed data to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/features/filtered_data_norm_transformed.tsv
+2025-07-15 09:19:01.660044 WARNING::Deleting existing residuals file: data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/fits/residuals.rds
+2025-07-15 09:19:01.660576 INFO::Writing residuals to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/fits/residuals.rds
+2025-07-15 09:19:01.662305 WARNING::Deleting existing fitted file: data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/fits/fitted.rds
+2025-07-15 09:19:01.662789 INFO::Writing fitted values to file data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/fits/fitted.rds
+2025-07-15 09:19:01.664277 INFO::Writing all results to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/all_results.tsv
+2025-07-15 09:19:01.665444 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_phyloseq_by_Glioma_categorical_glioma_progression_overall_Oral swab/significant_results.tsv

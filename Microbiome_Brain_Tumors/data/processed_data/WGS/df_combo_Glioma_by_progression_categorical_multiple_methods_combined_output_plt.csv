@@ -24,14 +24,16 @@ Blautia glucerasea,4.108098841763144,0.206717857139941,Y,Stool,Maaslin2
 Roseburia intestinalis,2.7850482786444797,0.206717857139941,Y,Stool,Maaslin2
 Dorea formicigenerans,2.161857211763046,0.216137030028509,Y,Stool,Maaslin2
 Actinomyces graevenitzii,2.8051077089943193,0.238750899705088,Y,Stool,Maaslin2
-Blautia glucerasea,2.7956468186513908,0,Y,Stool,AncomBC
-Clostridium sp AF20 17LB,2.8807762512332418,0,Y,Stool,AncomBC
-Veillonella dispar,2.9037698580711617,0,Y,Stool,AncomBC
-Christensenella minuta,2.7302738569277447,7.103843036698773e-4,Y,Stool,AncomBC2
-Eubacterium ramulus,2.8371104727583885,7.053968368844436e-5,Y,Stool,AncomBC2
-Klebsiella pneumoniae,-4.237247523368738,2.580862949133466e-4,N,Stool,AncomBC2
-Ruminococcaceae unclassified SGB15234,-2.7370610775627893,0.00233568729022763,N,Stool,AncomBC2
-Ruminococcus lactaris,2.3689354903919986,0.00693392869349403,Y,Stool,AncomBC2
+Blautia glucerasea,2.795646818697697,0,Y,Stool,AncomBC
+Clostridium sp AF20 17LB,2.8807762512795474,0,Y,Stool,AncomBC
+Veillonella dispar,2.903769858117468,0,Y,Stool,AncomBC
+Paraprevotella clara,2.1761486487877306,0.06686641685853771,Y,Stool,AncomBC2
+Klebsiella pneumoniae,-4.06195905180702,4.201687113313586e-4,N,Stool,AncomBC2
+Ruminococcaceae unclassified SGB15234,-2.565724379229872,0.00488258229861443,N,Stool,AncomBC2
+Christensenella minuta,2.9068609398215544,4.486608518249675e-4,Y,Stool,AncomBC2
+Ruminococcus lactaris,2.5401827205899887,0.00389683361379711,Y,Stool,AncomBC2
+Eubacterium ramulus,3.013204149506745,3.7243370612169706e-5,Y,Stool,AncomBC2
+Acidaminococcus intestini,2.590905185453085,0.18006837708051723,Y,Stool,AncomBC2
 Neisseria sp oral taxon 014,-2.403267199641513,0,N,Saliva,Maaslin2
 Streptococcus mutans,-2.460320293541474,0,N,Saliva,Maaslin2
 Actinomyces SGB17168,2.3454961429374355,0,Y,Saliva,Maaslin2

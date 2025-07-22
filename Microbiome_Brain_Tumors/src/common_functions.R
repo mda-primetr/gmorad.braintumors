@@ -302,3 +302,188 @@ get_ancombc2_df <- function(
             qval
         )
 }
+
+
+# Get ANCOMBC1 Data Frame ----
+get_ancombc_2_8_df <- function(
+    ancombc_out,
+    taxa_level,
+    group_var,
+    phyloseq_obj,
+    group_var_order) {
+    # Get taxa table from phyloseq object
+    df_taxa <- tax_table(phyloseq_obj) %>%
+        data.frame() %>%
+        janitor::clean_names() %>%
+        rownames_to_column(var = "taxon") %>%
+        dplyr::select(taxon, species)
+
+
+
+    # Extract lfc values
+    df_ancombc_lfc <- ancombc_out %>%
+        data.frame() %>%
+        janitor::clean_names() %>%
+        dplyr::select(starts_with("lfc_")) %>%
+        dplyr::select(-c("lfc_intercept")) %>%
+        pivot_longer(-c("lfc_taxon"), names_to = "metadata", values_to = "lfc") %>%
+        mutate(metadata = str_remove(metadata, "lfc_")) %>%
+        rename(taxon = lfc_taxon)
+
+
+
+    # Extract se values
+    df_ancombc_se <- ancombc_out %>%
+        data.frame() %>%
+        janitor::clean_names() %>%
+        dplyr::select(starts_with("se_")) %>%
+        dplyr::select(-c("se_intercept")) %>%
+        pivot_longer(
+            -c("se_taxon"),
+            names_to = "metadata",
+            values_to = "stderr"
+        ) %>%
+        mutate(metadata = str_remove(metadata, "se_")) %>%
+        rename(taxon = se_taxon)
+
+
+    # Extract p-values
+    df_ancombc_pval <- ancombc_out %>%
+        data.frame() %>%
+        janitor::clean_names() %>%
+        dplyr::select(starts_with("p_")) %>%
+        dplyr::select(-c("p_val_intercept")) %>%
+        pivot_longer(-c("p_val_taxon"), names_to = "metadata", values_to = "pval") %>%
+        mutate(metadata = str_remove(metadata, "p_val_")) %>%
+        rename(taxon = p_val_taxon)
+
+
+
+    # Extract q-values
+    df_ancombc_qval <- ancombc_out %>%
+        data.frame() %>%
+        janitor::clean_names() %>%
+        dplyr::select(starts_with("q_")) %>%
+        dplyr::select(-c("q_val_intercept")) %>%
+        pivot_longer(-c("q_val_taxon"), names_to = "metadata", values_to = "qval") %>%
+        mutate(metadata = str_remove(metadata, "q_val_")) %>%
+        rename(taxon = q_val_taxon)
+
+
+
+
+    df_for_heatmap <- df_ancombc_lfc %>%
+        inner_join(df_ancombc_se, by = c("taxon", "metadata")) %>%
+        inner_join(df_ancombc_pval, by = c("taxon", "metadata")) %>%
+        inner_join(df_ancombc_qval, by = c("taxon", "metadata")) %>%
+        dplyr::mutate_all(., as.vector) %>%
+        rowwise() %>%
+        mutate(
+            value = toupper(strsplit(metadata, "_(?!.*_)", perl = TRUE)[[1]][2])
+        ) %>%
+        mutate(
+            metadata = strsplit(metadata, "_(?!.*_)", perl = TRUE)[[1]][1]
+        ) %>%
+        left_join(df_taxa, by = c("taxon")) %>%
+        dplyr::select(
+            feature = species,
+            metadata,
+            value,
+            log2fc = lfc,
+            stderr,
+            pval,
+            qval
+        )
+
+    df_for_heatmap
+}
+
+
+# get AncomBC2 2.8 Data Frame ----
+get_ancombc2_2_8_df <- function(
+    ancombc_out,
+    taxa_level,
+    group_var,
+    phyloseq_obj,
+    group_var_order) {
+    # Get taxa table from phyloseq object
+    df_taxa <- tax_table(phyloseq_obj) %>%
+        data.frame() %>%
+        janitor::clean_names() %>%
+        rownames_to_column(var = "taxon") %>%
+        dplyr::select(taxon, species)
+
+
+
+    # Extract lfc values
+    df_ancombc_lfc <- ancombc_out %>%
+        data.frame() %>%
+        janitor::clean_names() %>%
+        dplyr::select(starts_with("lfc_"), taxon) %>%
+        dplyr::select(-c("lfc_intercept")) %>%
+        pivot_longer(-c("taxon"), names_to = "metadata", values_to = "lfc") %>%
+        mutate(metadata = str_remove(metadata, "lfc_"))
+
+
+
+    # Extract se values
+    df_ancombc_se <- ancombc_out %>%
+        data.frame() %>%
+        janitor::clean_names() %>%
+        dplyr::select(starts_with("se_"), taxon) %>%
+        dplyr::select(-c("se_intercept")) %>%
+        pivot_longer(
+            -c("taxon"),
+            names_to = "metadata",
+            values_to = "stderr"
+        ) %>%
+        mutate(metadata = str_remove(metadata, "se_"))
+
+
+    # Extract p-values
+    df_ancombc_pval <- ancombc_out %>%
+        data.frame() %>%
+        janitor::clean_names() %>%
+        dplyr::select(starts_with("p_"), taxon) %>%
+        dplyr::select(-c("p_intercept")) %>%
+        pivot_longer(-c("taxon"), names_to = "metadata", values_to = "pval") %>%
+        mutate(metadata = str_remove(metadata, "p_"))
+
+
+
+    # Extract q-values
+    df_ancombc_qval <- ancombc_out %>%
+        data.frame() %>%
+        janitor::clean_names() %>%
+        dplyr::select(starts_with("q_"), taxon) %>%
+        dplyr::select(-c("q_intercept")) %>%
+        pivot_longer(-c("taxon"), names_to = "metadata", values_to = "qval") %>%
+        mutate(metadata = str_remove(metadata, "q_"))
+
+
+
+    df_for_heatmap <- df_ancombc_lfc %>%
+        inner_join(df_ancombc_se, by = c("taxon", "metadata")) %>%
+        inner_join(df_ancombc_pval, by = c("taxon", "metadata")) %>%
+        inner_join(df_ancombc_qval, by = c("taxon", "metadata")) %>%
+        dplyr::mutate_all(., as.vector) %>%
+        rowwise() %>%
+        mutate(
+            value = toupper(strsplit(metadata, "_(?!.*_)", perl = TRUE)[[1]][2])
+        ) %>%
+        mutate(
+            metadata = strsplit(metadata, "_(?!.*_)", perl = TRUE)[[1]][1]
+        ) %>%
+        left_join(df_taxa, by = c("taxon")) %>%
+        dplyr::select(
+            feature = species,
+            metadata,
+            value,
+            log2fc = lfc,
+            stderr,
+            pval,
+            qval
+        )
+
+    df_for_heatmap
+}

@@ -18,5 +18,5 @@ suppressPackageStartupMessages({
     library(janitor)
     library(cardx)
     library(ggh4x)
-    library(sessioninfo)
+    library(jsonlite)
 })

@@ -1,44 +1,44 @@
-2025-05-22 22:34:40.58141 INFO::Writing function arguments to log file
-2025-05-22 22:34:40.581986 DEBUG::Function arguments
-2025-05-22 22:34:40.582103 DEBUG::Output folder: data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab
-2025-05-22 22:34:40.58221 DEBUG::Min Abundance: 0.000000
-2025-05-22 22:34:40.582303 DEBUG::Min Prevalence: 0.000000
-2025-05-22 22:34:40.5824 DEBUG::Normalization: TMM
-2025-05-22 22:34:40.582495 DEBUG::Transform: NONE
-2025-05-22 22:34:40.582586 DEBUG::Analysis method: NEGBIN
-2025-05-22 22:34:40.582676 DEBUG::Max significance: 0.250000
-2025-05-22 22:34:40.582772 DEBUG::Random effects:
-2025-05-22 22:34:40.582863 DEBUG::Fixed effects: br_m_progression_overall,shotgun_seq_batch
-2025-05-22 22:34:40.582952 DEBUG::Correction method: BH
-2025-05-22 22:34:40.583042 DEBUG::Standardize: TRUE
-2025-05-22 22:34:40.58313 DEBUG::Cores: 24
-2025-05-22 22:34:40.583218 INFO::Verifying options selected are valid
-2025-05-22 22:34:40.583492 INFO::Determining format of input files
-2025-05-22 22:34:40.583739 INFO::Input format is data samples as rows and metadata samples as rows
-2025-05-22 22:34:40.584035 DEBUG::A total of 35 samples were found in both the data and metadata
-2025-05-22 22:34:40.584124 DEBUG::Reordering data/metadata to use same sample ordering
-2025-05-22 22:34:40.58455 INFO::Formula for fixed effects: expr ~  br_m_progression_overall + shotgun_seq_batch
-2025-05-22 22:34:40.584952 INFO::Filter data based on min abundance and min prevalence
-2025-05-22 22:34:40.585203 INFO::Total samples in data: 35
-2025-05-22 22:34:40.585432 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
-2025-05-22 22:34:40.585939 INFO::Total filtered features: 0
-2025-05-22 22:34:40.586185 INFO::Filtered feature names from abundance and prevalence filtering:
-2025-05-22 22:34:40.586798 INFO::Total filtered features with variance filtering: 0
-2025-05-22 22:34:40.587048 INFO::Filtered feature names from variance filtering:
-2025-05-22 22:34:40.587284 INFO::Running selected normalization method: TMM
-2025-05-22 22:34:40.590215 INFO::Applying z-score to standardize continuous metadata
-2025-05-22 22:34:40.591668 INFO::Running selected transform method: NONE
-2025-05-22 22:34:40.591997 INFO::Running selected analysis method: NEGBIN
-2025-05-22 22:34:40.592255 INFO::Creating cluster of 24 R processes
-2025-05-22 22:34:41.471226 INFO::Counting total values for each feature
-2025-05-22 22:34:41.484847 WARNING::Deleting existing model objects file: data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/fits/models.rds
-2025-05-22 22:34:41.48781 INFO::Writing model objects to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/fits/models.rds
-2025-05-22 22:34:41.553034 INFO::Writing filtered data to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/features/filtered_data.tsv
-2025-05-22 22:34:41.554303 INFO::Writing filtered, normalized data to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/features/filtered_data_norm.tsv
-2025-05-22 22:34:41.555794 INFO::Writing filtered, normalized, transformed data to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/features/filtered_data_norm_transformed.tsv
-2025-05-22 22:34:41.557454 WARNING::Deleting existing residuals file: data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/fits/residuals.rds
-2025-05-22 22:34:41.558014 INFO::Writing residuals to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/fits/residuals.rds
-2025-05-22 22:34:41.558654 WARNING::Deleting existing fitted file: data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/fits/fitted.rds
-2025-05-22 22:34:41.55913 INFO::Writing fitted values to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/fits/fitted.rds
-2025-05-22 22:34:41.559687 INFO::Writing all results to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/all_results.tsv
-2025-05-22 22:34:41.560801 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/significant_results.tsv
+2025-07-15 09:12:09.717626 INFO::Writing function arguments to log file
+2025-07-15 09:12:09.718074 DEBUG::Function arguments
+2025-07-15 09:12:09.718195 DEBUG::Output folder: data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab
+2025-07-15 09:12:09.7183 DEBUG::Min Abundance: 0.000000
+2025-07-15 09:12:09.718405 DEBUG::Min Prevalence: 0.000000
+2025-07-15 09:12:09.718494 DEBUG::Normalization: TMM
+2025-07-15 09:12:09.718607 DEBUG::Transform: NONE
+2025-07-15 09:12:09.7187 DEBUG::Analysis method: NEGBIN
+2025-07-15 09:12:09.718794 DEBUG::Max significance: 0.250000
+2025-07-15 09:12:09.718881 DEBUG::Random effects:
+2025-07-15 09:12:09.718987 DEBUG::Fixed effects: br_m_progression_overall,shotgun_seq_batch
+2025-07-15 09:12:09.719083 DEBUG::Correction method: BH
+2025-07-15 09:12:09.719187 DEBUG::Standardize: TRUE
+2025-07-15 09:12:09.719283 DEBUG::Cores: 24
+2025-07-15 09:12:09.719385 INFO::Verifying options selected are valid
+2025-07-15 09:12:09.719661 INFO::Determining format of input files
+2025-07-15 09:12:09.719919 INFO::Input format is data samples as rows and metadata samples as rows
+2025-07-15 09:12:09.720221 DEBUG::A total of 35 samples were found in both the data and metadata
+2025-07-15 09:12:09.720309 DEBUG::Reordering data/metadata to use same sample ordering
+2025-07-15 09:12:09.720752 INFO::Formula for fixed effects: expr ~  br_m_progression_overall + shotgun_seq_batch
+2025-07-15 09:12:09.721343 INFO::Filter data based on min abundance and min prevalence
+2025-07-15 09:12:09.721708 INFO::Total samples in data: 35
+2025-07-15 09:12:09.722074 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
+2025-07-15 09:12:09.722948 INFO::Total filtered features: 0
+2025-07-15 09:12:09.723333 INFO::Filtered feature names from abundance and prevalence filtering:
+2025-07-15 09:12:09.72434 INFO::Total filtered features with variance filtering: 0
+2025-07-15 09:12:09.724713 INFO::Filtered feature names from variance filtering:
+2025-07-15 09:12:09.725064 INFO::Running selected normalization method: TMM
+2025-07-15 09:12:09.729285 INFO::Applying z-score to standardize continuous metadata
+2025-07-15 09:12:09.7306 INFO::Running selected transform method: NONE
+2025-07-15 09:12:09.730869 INFO::Running selected analysis method: NEGBIN
+2025-07-15 09:12:09.731092 INFO::Creating cluster of 24 R processes
+2025-07-15 09:12:10.627366 INFO::Counting total values for each feature
+2025-07-15 09:12:10.632119 WARNING::Deleting existing model objects file: data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/fits/models.rds
+2025-07-15 09:12:10.633476 INFO::Writing model objects to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/fits/models.rds
+2025-07-15 09:12:11.113568 INFO::Writing filtered data to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/features/filtered_data.tsv
+2025-07-15 09:12:11.114857 INFO::Writing filtered, normalized data to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/features/filtered_data_norm.tsv
+2025-07-15 09:12:11.116047 INFO::Writing filtered, normalized, transformed data to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/features/filtered_data_norm_transformed.tsv
+2025-07-15 09:12:11.117165 WARNING::Deleting existing residuals file: data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/fits/residuals.rds
+2025-07-15 09:12:11.117579 INFO::Writing residuals to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/fits/residuals.rds
+2025-07-15 09:12:11.118202 WARNING::Deleting existing fitted file: data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/fits/fitted.rds
+2025-07-15 09:12:11.11861 INFO::Writing fitted values to file data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/fits/fitted.rds
+2025-07-15 09:12:11.119146 INFO::Writing all results to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/all_results.tsv
+2025-07-15 09:12:11.120335 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): data/processed_data/WGS/maaslin_phyloseq_by_Met_categorical_br_m_progression_overall_Oral swab/significant_results.tsv

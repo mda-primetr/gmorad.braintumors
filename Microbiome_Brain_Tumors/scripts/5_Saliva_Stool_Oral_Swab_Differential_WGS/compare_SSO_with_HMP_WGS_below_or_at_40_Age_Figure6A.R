@@ -6,10 +6,6 @@ physeq_SSO_clean <- readRDS(
     "data/raw_data/WGS/combined_MDA_sub_cosmos_final.rds"
 )
 
-cat("=======================================================================\n")
-cat("  IMPORTANT: Please use ANCOMBC version 2.6 for this analysis\n")
-cat("=======================================================================\n")
-
 # Summarize the samples that went into this analysis ----
 sample_data(physeq_SSO_clean) %>%
     data.frame() %>%
@@ -252,10 +248,12 @@ for (i in c("Stool", "Saliva", "Oral swab")) {
     )
 
     # Get AncomBC1 results as a dataframe
-    get_ancombc_df(
+    get_ancombc_2_8_df(
         ancombc_out$res,
         taxa_level = "Species",
-        group_var = "cohort"
+        group_var = "cohort",
+        group_var_order = c("HMP", "MDACC"),
+        phyloseq_obj = final_phyloseq_before_rarefaction_species_i
     ) %>%
         tibble() %>%
         write_tsv(paste0(
@@ -277,10 +275,12 @@ for (i in c("Stool", "Saliva", "Oral swab")) {
     )
 
     # Get AncomBC2 results as a dataframe
-    get_ancombc2_df(
+    get_ancombc2_2_8_df(
         ancombc_out2$res,
         taxa_level = "Species",
-        group_var = "cohort"
+        group_var = "cohort",
+        group_var_order = c("HMP", "MDACC"),
+        phyloseq_obj = final_phyloseq_before_rarefaction_species_i
     ) %>%
         write_tsv(paste0(
             "data/processed_data/WGS/ancombc2_by_cohort_HMP_vs_MDACC_40_",
