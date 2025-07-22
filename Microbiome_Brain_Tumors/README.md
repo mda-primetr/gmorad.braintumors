@@ -2,30 +2,73 @@
 
 
 ## R packages:
-Please install these packages
 
-| Package Name | Version | Purpose  | Repository
-|:--|:--|:--|:--|
-| ANCOMBC | ==2.6.0|Differential analysis|https://bioconductor.org/packages/3.19/bioc/html/ANCOMBC.html
-| cardx | =0.5.1 | For data summary table | CRAN (R 4.4.1)
-| ggalluvial | =0.12.5 | Alluvial plots | CRAN (R 4.4.0)
-| ggchangepoint | =0.1.0 | Detect and plot change points | CRAN (R 4.4.0)
-| ggh4x | =0.3.0 | Adjust faceted plot sizing | CRAN (R 4.4.1)
-| ggrepel |= 0.9.6| Label plots | CRAN (R 4.4.1)
-| gtsummary |  =2.1.0| Summary tables stats | CRAN (R 4.4.1)
-| janitor | =2.2.1 | sanitize column headers | CRAN (R 4.4.1)
-| Maaslin2 | =1.20.0 | Differential analysis | Bioconductor 3.20 (R 4.4.1)
-| microViz | =0.12.6 | Visualize taxonomy | https://github.com/david-barnett/microViz/
-| patchwork | =1.3.0 | Combine ggplot2 plots | CRAN (R 4.4.1)
-|phyloseq  | =1.50.0 | Transform and pack microbiome data | Bioconductor 3.20 (R 4.4.3)
-|speedyseq | =0.5.3.9021| Transform and filter microbiome data | https://github.com/mikemc/speedyseq
-|tidytext | =0.4.2| rearrange taxa within ggplot2 facets | CRAN (R 4.4.0)
-|tidyverse  | =2.0.0 | Transform tabular data | CRAN (R 4.4.0)
-|vegan | =2.6-8 | Alpha diversity indices | CRAN (R 4.4.1)
+Please use `renv` R package and packages listed below as R list. Make sure to use R version 4.4.3 and Bioconductor release version 3.20. This analysis was conducted using macOS 15.5 with  ARMv9 CPU architecture. 
+
+
+```
+packages <- c(
+    "ANCOMBC@2.8.1",
+    "tidyverse@2.0.0",
+    "broom@1.0.8",
+    "cardx@0.2.5",
+    "ggalluvial@0.12.5",
+    "ggchangepoint@0.1.0",
+    "ggh4x@0.3.0",
+    "ggrepel@0.9.6",
+    "gtsummary@2.1.0",
+    "janitor@2.2.1",
+    "Maaslin2@1.20.0",
+    "patchwork@1.3.0", 
+    "phyloseq@1.50.0",
+    "tidytext@0.4.2",
+    "vegan@2.7-1",
+    "david-barnett/microViz@1dadd117bd3c5bd724c0be66e9572b4aa6443191",  #MicroViz@0.12.6
+    "mikemc/speedyseq@0057652ff7a4244ccef2b786dca58d901ec2fc62", # speedyseq@0.5.3.9021
+     "Shenhav-and-Korem-labs/SCRuB@fcbb8524190f0b27b7ad52cde232c8c4f59810e0"  #"SCRuB@0.0.1"
+)
+```
+
+## Initial setup:
+This initial setup is optional if the required packages are installed correctly using `renv::restore()` function. However, if any issue arises, one can recreate the environment using this script `setup_for_renv.R` located within `src` folder. Within terminal type these commands. 
+
+```
+pwd # to make sure one is in Microbiome_Brain_Tumors folder
+
+Rscript src/setup_for_renv.R
+```
+
+This script will make sure the above required packages are installed and and snapshot is created with these package. It will update the renv.lock file so we have included the renv.lock.orig file to compare for resolving any issues. 
+
+## Helper script:
+Please use `check_packages.R` script for restoring/installing or   checking packages installed in the renv.lock file. 
+
+```
+pwd # to make sure one is in Microbiome_Brain_Tumors folder
+Rscript src/check_packages.R
+```
+
+If all the installed packages are same as the one in renv.lock.orig file then it should print
+
+
+> Restoring packages from renv.lock...
+> 
+> The library is already synchronized with the lockfile.
+> 
+> Setup complete!
+> 
+> [1] package      version      repo_type    repo_version source_type 
+> 
+> <0 rows> (or 0-length row.names)
+> 
+> All required and standard packages are already installed.
+
+
+
 
 ## Script structure
 
-Go to the microbiome folder
+If the installation part looks ok. Proceed to the microbiome folder if not already in that folder by using these commands. 
 
 ```
 cd Microbiome_Brain_Tumors
