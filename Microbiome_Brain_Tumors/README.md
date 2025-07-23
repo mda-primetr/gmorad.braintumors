@@ -3,7 +3,7 @@
 
 ## R packages:
 
-Please use `renv` R package and packages listed below as R list. Make sure to use R version 4.4.3 and Bioconductor release version 3.20. This analysis was conducted using macOS 15.5 with  ARMv9 CPU architecture. 
+Please use `renv` R package and packages listed below as R list. Make sure to use R version 4.4.3 from (https://cran.r-project.org/bin) and Bioconductor release version 3.20. This analysis was conducted using macOS 15.5 with  ARMv9 CPU architecture. 
 
 
 ```
@@ -30,7 +30,7 @@ packages <- c(
 ```
 
 ## Initial setup:
-This initial setup is optional if the required packages are installed correctly using `renv::restore()` function. However, if any issue arises, one can recreate the environment using this script `setup_for_renv.R` located within `src` folder. Within terminal type these commands. 
+This initial setup is **optional** if the required packages are installed correctly using `renv::restore()` function. However, if any issue arises, one can recreate the environment using this script `setup_for_renv.R` located within `src` folder. Within terminal type these commands. 
 
 ```
 pwd # to make sure one is in Microbiome_Brain_Tumors folder
@@ -39,6 +39,7 @@ Rscript src/setup_for_renv.R
 ```
 
 This script will make sure the above required packages are installed and and snapshot is created with these package. It will update the renv.lock file so we have included the renv.lock.orig file to compare for resolving any issues. 
+
 
 ## Helper script:
 Please use `check_packages.R` script for restoring/installing or   checking packages installed in the renv.lock file. 
@@ -64,6 +65,12 @@ If all the installed packages are same as the one in renv.lock.orig file then it
 > All required and standard packages are already installed.
 
 
+## Manual Install:
+Use this option if you are comfortable installing the packages globally and have the required R version. One can also use Rig (https://github.com/r-lib/rig) package to install and manage multiple versions of R. Install script is available within `src` folder. 
+
+```
+Rscript src/manual_install_without_renv.R
+```
 
 
 ## Script structure
