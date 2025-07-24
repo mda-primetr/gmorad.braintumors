@@ -23,7 +23,7 @@ signature_proteins <- list(
         "ENO1 + ENO2 + ENO3", "Lactate Dehydrogenase"
     ),
     general_inflammation = c(
-        "CD68", "HLA-DR", "CD44", "MMP9", "C Reactive Protein", "STAT3"
+        "CD68", "CD14", "CD44", "MMP9", "C Reactive Protein", "STAT3"
     )
 )
 
@@ -75,8 +75,7 @@ signature_set <- NanoStringGeoMxSet(
 model_results <- mixedModelDE(
     signature_set,
     elt = "exprs",
-    modelFormula = ~ test_16SrRNA_status_25_75 + Primary_Tumor +
-                (1 + test_16SrRNA_status_25_75 | Patient),
+    modelFormula = ~ test_16SrRNA_status_25_75 + (1 | Patient),
     groupVar = "test_16SrRNA_status_25_75",
     nCores = parallel::detectCores(),
     multiCore = FALSE
@@ -90,8 +89,8 @@ results_df <- map_dfr(names(signature_proteins), function(sig) {
     lsm <- model_results["lsmeans", ][[sig]]
     data.frame(
         signature = sig,
-        estimate = lsm[1, "Estimate"],  #log2 fold-change
-        p_value = lsm[1, "Pr(>|t|)"]    # p-value
+        estimate = lsm[1, "Estimate"], # log2 fold-change
+        p_value = lsm[1, "Pr(>|t|)"] # p-value
     )
 }) %>%
     mutate(
@@ -146,5 +145,3 @@ ggplot(results_df, aes(x = estimate, y = reorder(signature, estimate))) +
 
 # Save pdf
 ggsave("Output_files/DSP/Figures/FigureS4G2.pdf", width = 5, height = 3)
-
-

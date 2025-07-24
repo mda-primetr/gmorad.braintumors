@@ -20,7 +20,7 @@ signature_proteins <- list(
         "GLB1/Beta-galactosidase", "Fatty Acid Synthase"
     ),
     general_inflammation = c(
-        "CD68", "HLA-DR", "CD44", "IL-6R", "MMP9", "C Reactive Protein", "STAT3" 
+        "CD68", "CD14", "CD44", "IL-6R", "MMP9", "C Reactive Protein", "STAT3"
     )
 )
 
@@ -126,9 +126,9 @@ ggplot(results_df, aes(x = estimate, y = reorder(signature, estimate))) +
         limits = c(0 - padding, x_max + padding + 0.1)
     ) +
     scale_y_discrete(labels = c(
-        "Tumor\ninflammation",
-        "Anti-microbial",
-        "Metabolic"
+        "general_inflammation" = "Tumor\ninflammation",
+        "bacterial_response" = "Anti-microbial",
+        "metabolic_response" = "Metabolic"
     )) +
     labs(
         x = expression("16S-High vs 16S-Low (log"[2] * " fold change)"),

@@ -86,8 +86,7 @@ for (compartment in "BrM") {
     mixedOutmc <-
         mixedModelDE(Lymphoid_IF_log[, ind],
             elt = "exprs",
-            modelFormula = ~ test_16SrRNA_status_25_75 + Primary_Tumor +
-                (1 + test_16SrRNA_status_25_75 | Patient), # Same as DSP
+            modelFormula = ~ test_16SrRNA_status_25_75 + (1 | Patient), # Same as DSP
             groupVar = "test_16SrRNA_status_25_75",
             nCores = parallel::detectCores(),
             multiCore = FALSE
@@ -126,8 +125,7 @@ for (compartment in "BrM") {
     mixedOutmc <-
         mixedModelDE(Lymphoid_IF[, ind],
             elt = "exprs",
-            modelFormula = ~ test_16SrRNA_status_25_75 + Primary_Tumor +
-                (1 + test_16SrRNA_status_25_75 | Patient),
+            modelFormula = ~ test_16SrRNA_status_25_75 + (1 | Patient), # Same as DSP
             groupVar = "test_16SrRNA_status_25_75",
             nCores = parallel::detectCores(),
             multiCore = FALSE

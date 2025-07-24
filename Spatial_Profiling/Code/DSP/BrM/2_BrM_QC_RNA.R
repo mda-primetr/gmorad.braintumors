@@ -250,3 +250,4 @@ save(BrM_target_Data_WTA, file = "Processed_data/BrM/BrM_target_Data_WTA.RData")
 # Subset BIS counts
 BrM_target_Data_BIS <- subset(BrM_target_Data, Module == "BiS_pilot_1_RnD_v1.2")
 save(BrM_target_Data_BIS, file = "Processed_data/BrM/BrM_target_Data_BIS.RData")
+View(fData(BrM_target_Data_BIS))
